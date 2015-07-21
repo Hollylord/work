@@ -14,6 +14,8 @@
 		A18C3A891B5DF98000BC5BF1 /* programViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C3A881B5DF98000BC5BF1 /* programViewController.m */; };
 		A18C3A981B5E29AF00BC5BF1 /* pictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C3A971B5E29AF00BC5BF1 /* pictureView.m */; };
 		A18C3A9B1B5E2CFD00BC5BF1 /* INSSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C3A9A1B5E2CFD00BC5BF1 /* INSSearchBar.m */; };
+		A18C3AB91B5E398500BC5BF1 /* segmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C3AB81B5E398500BC5BF1 /* segmentView.m */; };
+		A18C3ABB1B5E399F00BC5BF1 /* segmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18C3ABA1B5E399F00BC5BF1 /* segmentView.xib */; };
 		A1CB48AE1B578DBC00BB2489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48AD1B578DBC00BB2489 /* main.m */; };
 		A1CB48B11B578DBC00BB2489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48B01B578DBC00BB2489 /* AppDelegate.m */; };
 		A1CB48B71B578DBC00BB2489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CB48B51B578DBC00BB2489 /* Main.storyboard */; };
@@ -47,6 +49,9 @@
 		A18C3A971B5E29AF00BC5BF1 /* pictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pictureView.m; sourceTree = "<group>"; };
 		A18C3A991B5E2CFD00BC5BF1 /* INSSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSSearchBar.h; sourceTree = "<group>"; };
 		A18C3A9A1B5E2CFD00BC5BF1 /* INSSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSSearchBar.m; sourceTree = "<group>"; };
+		A18C3AB71B5E398500BC5BF1 /* segmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = segmentView.h; sourceTree = "<group>"; };
+		A18C3AB81B5E398500BC5BF1 /* segmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = segmentView.m; sourceTree = "<group>"; };
+		A18C3ABA1B5E399F00BC5BF1 /* segmentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = segmentView.xib; sourceTree = "<group>"; };
 		A1CB48A81B578DBC00BB2489 /* ad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CB48AC1B578DBC00BB2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CB48AD1B578DBC00BB2489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,6 +145,9 @@
 				A18C3A9A1B5E2CFD00BC5BF1 /* INSSearchBar.m */,
 				A18C3A961B5E29AF00BC5BF1 /* pictureView.h */,
 				A18C3A971B5E29AF00BC5BF1 /* pictureView.m */,
+				A18C3AB71B5E398500BC5BF1 /* segmentView.h */,
+				A18C3AB81B5E398500BC5BF1 /* segmentView.m */,
+				A18C3ABA1B5E399F00BC5BF1 /* segmentView.xib */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -283,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18C3ABB1B5E399F00BC5BF1 /* segmentView.xib in Resources */,
 				A1CB48B71B578DBC00BB2489 /* Main.storyboard in Resources */,
 				A1CB48BC1B578DBC00BB2489 /* LaunchScreen.xib in Resources */,
 				A1CB48B91B578DBC00BB2489 /* Images.xcassets in Resources */,
@@ -311,6 +320,7 @@
 				A1CB48B11B578DBC00BB2489 /* AppDelegate.m in Sources */,
 				A1CB48D31B578E6600BB2489 /* advertViewController.m in Sources */,
 				A1CB48AE1B578DBC00BB2489 /* main.m in Sources */,
+				A18C3AB91B5E398500BC5BF1 /* segmentView.m in Sources */,
 				A18C3A891B5DF98000BC5BF1 /* programViewController.m in Sources */,
 				A18C3A981B5E29AF00BC5BF1 /* pictureView.m in Sources */,
 				A18C3A9B1B5E2CFD00BC5BF1 /* INSSearchBar.m in Sources */,

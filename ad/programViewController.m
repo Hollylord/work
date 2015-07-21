@@ -22,11 +22,20 @@
     
     self.view.backgroundColor = [UIColor blackColor];
     
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 800);
+    
+    
+    //配置搜索框
     self.searchBarWithDelegate = [[INSSearchBar alloc] initWithFrame:CGRectMake(10, 20, 44, 34)];
     self.searchBarWithDelegate.delegate = self;
-    
     [self.view addSubview:self.searchBarWithDelegate];
    
+    //配置segementView
+    UIView *segmentView = [[[NSBundle mainBundle] loadNibNamed:@"segmentView" owner:self options:nil] firstObject];
+    //*** frame 是按照父view为参照来算的，所以是152，如果是按照self.view来算就是216了
+    segmentView.frame = CGRectMake(0, 152, self.view.frame.size.width, 42);
+    [self.scrollView addSubview:segmentView];
+    
     
     
 }

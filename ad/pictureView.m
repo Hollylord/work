@@ -29,10 +29,10 @@
     
     //创建scrlloview
     UIScrollView *scrollView = [[UIScrollView alloc] init];
-    scrollView.frame = CGRectMake(0, 0, 400, 150);
+    scrollView.frame = CGRectMake(0, 0, 400, 152);
     self.scrollView = scrollView;
     scrollView.pagingEnabled = YES;
-    scrollView.contentSize = CGSizeMake(400 * images, 150);
+    scrollView.contentSize = CGSizeMake(400 * images, 152);
     scrollView.backgroundColor = [UIColor redColor];
     NSLog(@"%@",NSStringFromCGRect(scrollView.frame));
     [self addSubview:scrollView];
@@ -53,7 +53,7 @@
     
     for (i = 0; i < images; i ++) {
         
-        CGRect imageFrame = CGRectMake(0,0,400 * (i + 1),150);
+        CGRect imageFrame = CGRectMake(0,0,400 * (i + 1),152);
         
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:imageFrame];
         
