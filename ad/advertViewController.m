@@ -84,16 +84,17 @@
     int i = contentOffset.x / self.view.frame.size.width;
     
     self.pageControl.currentPage = i;
-   
     
 }
 
+#pragma mark - 点击按钮
 - (void)turnToHomeViewController{
 //   UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"main" bundle:nil];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UITabBarController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"tabbar"];
 //    UIViewController *firstViewController = [[UIViewController alloc]initWithNibName:@"firstViewController" bundle:nil];
     [self presentViewController:viewController animated:YES completion:NULL];
+    
 }
 
 
