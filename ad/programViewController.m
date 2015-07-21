@@ -36,6 +36,11 @@
     segmentView.frame = CGRectMake(0, 152, self.view.frame.size.width, 42);
     [self.scrollView addSubview:segmentView];
     
+    //配置recommendView
+    UIView *recommendView = [[[NSBundle mainBundle] loadNibNamed:@"recommend" owner:self options:nil] firstObject];
+    recommendView.frame = CGRectMake(6.5, segmentView.frame.origin.y + segmentView.frame.size.height, 362, 212);
+    [self.scrollView addSubview:recommendView];
+    
     
     
 }
