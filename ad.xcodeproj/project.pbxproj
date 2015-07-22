@@ -39,6 +39,8 @@
 		A1CB48C81B578DBC00BB2489 /* adTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48C71B578DBC00BB2489 /* adTests.m */; };
 		A1CB48D31B578E6600BB2489 /* advertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48D21B578E6600BB2489 /* advertViewController.m */; };
 		A1CB48D91B57A80800BB2489 /* tabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48D81B57A80800BB2489 /* tabViewController.m */; };
+		F00A177D1B5FBBCE00763096 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */; };
+		F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A177C1B5FBBCE00763096 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,9 +107,7 @@
 		A1CB48AD1B578DBC00BB2489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1CB48AF1B578DBC00BB2489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1CB48B01B578DBC00BB2489 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A1CB48B61B578DBC00BB2489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1CB48B81B578DBC00BB2489 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A1CB48BB1B578DBC00BB2489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A1CB48C11B578DBC00BB2489 /* adTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CB48C61B578DBC00BB2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CB48C71B578DBC00BB2489 /* adTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = adTests.m; sourceTree = "<group>"; };
@@ -115,6 +115,8 @@
 		A1CB48D21B578E6600BB2489 /* advertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = advertViewController.m; sourceTree = "<group>"; };
 		A1CB48D71B57A80800BB2489 /* tabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabViewController.h; sourceTree = "<group>"; };
 		A1CB48D81B57A80800BB2489 /* tabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabViewController.m; sourceTree = "<group>"; };
+		F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		F00A177C1B5FBBCE00763096 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +311,11 @@
 		A1CB48AA1B578DBC00BB2489 /* ad */ = {
 			isa = PBXGroup;
 			children = (
+				A1CB48AF1B578DBC00BB2489 /* AppDelegate.h */,
+				A1CB48B01B578DBC00BB2489 /* AppDelegate.m */,
+				A1CB48B81B578DBC00BB2489 /* Images.xcassets */,
+				F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */,
+				F00A177C1B5FBBCE00763096 /* Main.storyboard */,
 				A189FB341B5F7E580002AAA5 /* library */,
 				A1770A501B5C887100C272E9 /* Main */,
 				A18C3A841B5DF93500BC5BF1 /* 首页 */,
@@ -321,11 +328,6 @@
 		A1CB48AB1B578DBC00BB2489 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A1CB48AF1B578DBC00BB2489 /* AppDelegate.h */,
-				A1CB48B01B578DBC00BB2489 /* AppDelegate.m */,
-				A1CB48B51B578DBC00BB2489 /* Main.storyboard */,
-				A1CB48B81B578DBC00BB2489 /* Images.xcassets */,
-				A1CB48BA1B578DBC00BB2489 /* LaunchScreen.xib */,
 				A1CB48AC1B578DBC00BB2489 /* Info.plist */,
 				A1CB48AD1B578DBC00BB2489 /* main.m */,
 			);
@@ -436,12 +438,14 @@
 				A189FBBC1B5F8ECE0002AAA5 /* UMSShareListController.xib in Resources */,
 				A189FBB91B5F8ECE0002AAA5 /* UMShareEditViewControlleriPad.xib in Resources */,
 				A189FBB51B5F8ECE0002AAA5 /* UMSCommentDetailController.xib in Resources */,
+				F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */,
 				A189FBB81B5F8ECE0002AAA5 /* UMShareEditViewController.xib in Resources */,
 				A189FBB31B5F8ECE0002AAA5 /* UMSocialLocalizable.strings in Resources */,
 				A189FBBB1B5F8ECE0002AAA5 /* UMSnsAccountViewController.xib in Resources */,
 				A189FBBD1B5F8ECE0002AAA5 /* UMSocialSDKResourcesNew.bundle in Resources */,
 				A18C3AC01B5E454900BC5BF1 /* recommend.xib in Resources */,
 				A189FBBA1B5F8ECE0002AAA5 /* UMSLoginViewController.xib in Resources */,
+				F00A177D1B5FBBCE00763096 /* LaunchScreen.xib in Resources */,
 				A189FBB71B5F8ECE0002AAA5 /* UMSCommentInputControlleriPad.xib in Resources */,
 				A1770A571B5C8A6E00C272E9 /* MyTabBar.xib in Resources */,
 				A1770A5C1B5CE10200C272E9 /* RainBow.xib in Resources */,
@@ -505,22 +509,6 @@
 				A189FBB21B5F8ECE0002AAA5 /* zh-Hans */,
 			);
 			name = UMSocialLocalizable.strings;
-			sourceTree = "<group>";
-		};
-		A1CB48B51B578DBC00BB2489 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1CB48B61B578DBC00BB2489 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A1CB48BA1B578DBC00BB2489 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1CB48BB1B578DBC00BB2489 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -616,6 +604,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3";
 				ONLY_ACTIVE_ARCH = YES;
@@ -633,6 +622,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3";
 				ONLY_ACTIVE_ARCH = NO;
