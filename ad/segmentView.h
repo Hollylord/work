@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface segmentView : UIView
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 @end

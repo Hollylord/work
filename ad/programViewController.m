@@ -9,11 +9,28 @@
 #import "programViewController.h"
 #import "INSSearchBar.h"
 #import "ASProgressPopUpView.h"
+#import "recommendView.h"
+#import "segmentView.h"
 
-@interface programViewController () <INSSearchBarDelegate>
+@interface programViewController () <INSSearchBarDelegate,ASProgressPopUpViewDataSource>
+@property (strong, nonatomic) IBOutlet segmentView *segmentView;
+@property (strong, nonatomic) IBOutlet recommendView *recommendView;
 @property (weak, nonatomic) IBOutlet ASProgressPopUpView *progressView;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
 @property (nonatomic, strong) INSSearchBar *searchBarWithDelegate;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIButton *onGoingBtn;
+@property (weak, nonatomic) IBOutlet UIButton *prepareBtn;
+
+
+
+
+
+
+- (IBAction)onGoingBtn:(id)sender;
+- (IBAction)prepareBtn:(id)sender;
+
 @end
 
 @implementation programViewController
@@ -22,6 +39,10 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor blackColor];
+    //这种方式设置imageview 默认大小和图片一样
+    UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"dabeijing"]];
+    
+    [self.view insertSubview:background belowSubview:self.scrollView];
     
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 800);
     
@@ -32,21 +53,26 @@
     [self.view addSubview:self.searchBarWithDelegate];
    
     //配置segementView
-    UIView *segmentView = [[[NSBundle mainBundle] loadNibNamed:@"segmentView" owner:self options:nil] firstObject];
+    segmentView *segmentView = [[[NSBundle mainBundle] loadNibNamed:@"segmentView" owner:self options:nil] firstObject];
+    self.segmentView = segmentView;
     //*** frame 是按照父view为参照来算的，所以是152，如果是按照self.view来算就是216了
     segmentView.frame = CGRectMake(0, 152, self.view.frame.size.width, 42);
     [self.scrollView addSubview:segmentView];
+    self.onGoingBtn.selected = YES;
     
     //配置recommendView
-    UIView *recommendView = [[[NSBundle mainBundle] loadNibNamed:@"recommend" owner:self options:nil] firstObject];
+    recommendView *recommendView = [[[NSBundle mainBundle] loadNibNamed:@"recommend" owner:self options:nil] firstObject];
+    self.recommendView = recommendView;
     recommendView.frame = CGRectMake(6.5, segmentView.frame.origin.y + segmentView.frame.size.height, 362, 212);
     [self.scrollView addSubview:recommendView];
     
     //配置progressView 进度条
-    self.progressView.popUpViewCornerRadius = 12.0;
-    self.progressView.font = [UIFont fontWithName:@"Futura-CondensedExtraBold" size:28];
+    self.progressView.popUpViewCornerRadius = 8.0;
+    self.progressView.popUpViewColor = [UIColor grayColor];
+    self.progressView.font = [UIFont fontWithName:@"Futura-CondensedExtraBold" size:24];
     [self.progressView showPopUpViewAnimated:YES];
     self.progressView.progress = 0.0;
+    self.progressView.dataSource = self;
     [self progress];
     
     
@@ -92,12 +118,11 @@
 - (void)progress
 {
     float progress = self.progressView.progress;
-    if (self.progressView.progress < 1.0) {
+    if (self.progressView.progress < 1.0 && self.onGoingBtn.selected) {
         
         progress += 0.005;
         
         [self.progressView setProgress:progress animated:YES];
-        
         
         [NSTimer scheduledTimerWithTimeInterval:0.1
                                          target:self
@@ -110,5 +135,35 @@
 - (BOOL)progressViewShouldPreCalculatePopUpViewSize:(ASProgressPopUpView *)progressView;
 {
     return NO;
+}
+
+- (NSString *)progressView:(ASProgressPopUpView *)progressView stringForProgress:(float)progress{
+    if (self.prepareBtn.selected) {
+        return @"未开始";
+    }
+    else {
+        return nil;
+    }
+}
+
+#pragma mark - 进行中/预热中
+- (IBAction)onGoingBtn:(id)sender {
+    
+    self.onGoingBtn.selected = YES;
+    self.prepareBtn.selected = NO;
+    self.progressView.popUpViewColor = [UIColor grayColor];
+    [self progress];
+    self.segmentView.backgroundImage.image = [UIImage imageNamed:@"segmentBackground1"];
+    self.recommendView.backgroundImage.image = [UIImage imageNamed:@"recommendBackground"];
+}
+
+- (IBAction)prepareBtn:(id)sender {
+    
+    self.prepareBtn.selected = YES;
+    self.onGoingBtn.selected = NO;
+    [self.progressView setProgress:0.0 animated:YES];
+    self.progressView.popUpViewColor = [UIColor redColor];
+    self.segmentView.backgroundImage.image = [UIImage imageNamed:@"segmentBackground2"];
+    self.recommendView.backgroundImage.image = [UIImage imageNamed:@"yurezhongBackground"];
 }
 @end

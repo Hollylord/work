@@ -25,7 +25,7 @@
     self = [super initWithCoder:aDecoder];
 //    self.backgroundColor = [UIColor blackColor];
     
-        NSLog(@"%@",NSStringFromCGRect(self.frame));
+
     
     //创建scrlloview
     UIScrollView *scrollView = [[UIScrollView alloc] init];
@@ -34,7 +34,7 @@
     scrollView.pagingEnabled = YES;
     scrollView.contentSize = CGSizeMake(400 * images, 152);
     scrollView.backgroundColor = [UIColor redColor];
-    NSLog(@"%@",NSStringFromCGRect(scrollView.frame));
+
     [self addSubview:scrollView];
     
     
