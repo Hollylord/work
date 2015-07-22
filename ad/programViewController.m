@@ -12,6 +12,7 @@
 #import "recommendView.h"
 #import "segmentView.h"
 
+
 @interface programViewController () <INSSearchBarDelegate,ASProgressPopUpViewDataSource>
 @property (strong, nonatomic) IBOutlet segmentView *segmentView;
 @property (strong, nonatomic) IBOutlet recommendView *recommendView;
@@ -37,6 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     
     self.view.backgroundColor = [UIColor blackColor];
     //这种方式设置imageview 默认大小和图片一样
