@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461731B5F2E51004CA48D /* ASPopUpView.m */; };
+		A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */; };
 		A1770A551B5C8A4F00C272E9 /* MyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1770A541B5C8A4F00C272E9 /* MyTabBar.m */; };
 		A1770A571B5C8A6E00C272E9 /* MyTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1770A561B5C8A6E00C272E9 /* MyTabBar.xib */; };
 		A1770A5A1B5CE0F400C272E9 /* RainBow.m in Sources */ = {isa = PBXBuildFile; fileRef = A1770A591B5CE0F400C272E9 /* RainBow.m */; };
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A15461721B5F2E51004CA48D /* ASPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPopUpView.h; sourceTree = "<group>"; };
+		A15461731B5F2E51004CA48D /* ASPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopUpView.m; sourceTree = "<group>"; };
+		A15461741B5F2E51004CA48D /* ASProgressPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProgressPopUpView.h; sourceTree = "<group>"; };
+		A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASProgressPopUpView.m; sourceTree = "<group>"; };
 		A1770A531B5C8A4F00C272E9 /* MyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBar.h; sourceTree = "<group>"; };
 		A1770A541B5C8A4F00C272E9 /* MyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBar.m; sourceTree = "<group>"; };
 		A1770A561B5C8A6E00C272E9 /* MyTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTabBar.xib; sourceTree = "<group>"; };
@@ -156,6 +162,10 @@
 				A18C3ABC1B5E453800BC5BF1 /* recommendView.h */,
 				A18C3ABD1B5E453800BC5BF1 /* recommendView.m */,
 				A18C3ABF1B5E454900BC5BF1 /* recommend.xib */,
+				A15461721B5F2E51004CA48D /* ASPopUpView.h */,
+				A15461731B5F2E51004CA48D /* ASPopUpView.m */,
+				A15461741B5F2E51004CA48D /* ASProgressPopUpView.h */,
+				A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -323,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */,
 				A1CB48D91B57A80800BB2489 /* tabViewController.m in Sources */,
 				A1770A551B5C8A4F00C272E9 /* MyTabBar.m in Sources */,
 				A1770A5A1B5CE0F400C272E9 /* RainBow.m in Sources */,
@@ -330,6 +341,7 @@
 				A1CB48D31B578E6600BB2489 /* advertViewController.m in Sources */,
 				A1CB48AE1B578DBC00BB2489 /* main.m in Sources */,
 				A18C3AB91B5E398500BC5BF1 /* segmentView.m in Sources */,
+				A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */,
 				A18C3A891B5DF98000BC5BF1 /* programViewController.m in Sources */,
 				A18C3A981B5E29AF00BC5BF1 /* pictureView.m in Sources */,
 				A18C3ABE1B5E453800BC5BF1 /* recommendView.m in Sources */,
