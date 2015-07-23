@@ -9,8 +9,9 @@
 #import "dengluViewController.h"
 
 @interface dengluViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *weixinBtn;
-@property (weak, nonatomic) IBOutlet UIButton *dengluBtn;
+
+
+- (IBAction)weiboBtn:(id)sender;
 
 @end
 
@@ -34,4 +35,7 @@
     [alert  show];
 }
 
+- (IBAction)weiboBtn:(id)sender {
+    
+}
 @end

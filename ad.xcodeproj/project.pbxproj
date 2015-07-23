@@ -34,7 +34,6 @@
 		A18C3ABE1B5E453800BC5BF1 /* recommendView.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C3ABD1B5E453800BC5BF1 /* recommendView.m */; };
 		A18C3AC01B5E454900BC5BF1 /* recommend.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18C3ABF1B5E454900BC5BF1 /* recommend.xib */; };
 		A1C4D3471B607F5E00FE4A35 /* login.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C4D3461B607F5E00FE4A35 /* login.xib */; };
-		A1C4D3491B60824100FE4A35 /* personInformation.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C4D3481B60824100FE4A35 /* personInformation.xib */; };
 		A1C4D34D1B60BA0D00FE4A35 /* dengluViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C4D34C1B60BA0D00FE4A35 /* dengluViewController.m */; };
 		A1CB48AE1B578DBC00BB2489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48AD1B578DBC00BB2489 /* main.m */; };
 		A1CB48B11B578DBC00BB2489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48B01B578DBC00BB2489 /* AppDelegate.m */; };
@@ -106,7 +105,6 @@
 		A18C3ABD1B5E453800BC5BF1 /* recommendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recommendView.m; sourceTree = "<group>"; };
 		A18C3ABF1B5E454900BC5BF1 /* recommend.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = recommend.xib; sourceTree = "<group>"; };
 		A1C4D3461B607F5E00FE4A35 /* login.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = login.xib; sourceTree = "<group>"; };
-		A1C4D3481B60824100FE4A35 /* personInformation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = personInformation.xib; sourceTree = "<group>"; };
 		A1C4D34B1B60BA0D00FE4A35 /* dengluViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dengluViewController.h; sourceTree = "<group>"; };
 		A1C4D34C1B60BA0D00FE4A35 /* dengluViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dengluViewController.m; sourceTree = "<group>"; };
 		A1CB48A81B578DBC00BB2489 /* ad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ad.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				A1C4D3461B607F5E00FE4A35 /* login.xib */,
-				A1C4D3481B60824100FE4A35 /* personInformation.xib */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -462,7 +459,6 @@
 				A189FBB31B5F8ECE0002AAA5 /* UMSocialLocalizable.strings in Resources */,
 				A189FBBB1B5F8ECE0002AAA5 /* UMSnsAccountViewController.xib in Resources */,
 				A189FBBD1B5F8ECE0002AAA5 /* UMSocialSDKResourcesNew.bundle in Resources */,
-				A1C4D3491B60824100FE4A35 /* personInformation.xib in Resources */,
 				A18C3AC01B5E454900BC5BF1 /* recommend.xib in Resources */,
 				A189FBBA1B5F8ECE0002AAA5 /* UMSLoginViewController.xib in Resources */,
 				A1C4D3471B607F5E00FE4A35 /* login.xib in Resources */,
