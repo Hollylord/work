@@ -89,7 +89,7 @@
             </objects>
             <point key="canvasLocation" x="344" y="317"/>
         </scene>
-        <!--Login View Controller-->
+        <!--个人中心-->
         <scene sceneID="H91-id-sBZ">
             <objects>
                 <viewController id="eOZ-Co-ft2" customClass="loginViewController" sceneMemberID="viewController">
@@ -100,13 +100,64 @@
                     <view key="view" contentMode="scaleToFill" id="Ssx-xp-Ubl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.88321738186508802" blue="0.24185024335740246" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oTz-rY-VYc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="Rwz-TT-TQ6">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rwz-TT-TQ6" id="lUD-z2-LrD">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oTz-rY-VYc" firstAttribute="leading" secondItem="Ssx-xp-Ubl" secondAttribute="leading" id="14O-2F-SYM"/>
+                            <constraint firstItem="oTz-rY-VYc" firstAttribute="top" secondItem="wEE-pu-zl0" secondAttribute="bottom" constant="152" id="FT3-ww-YyT">
+                                <variation key="heightClass=regular-widthClass=compact" constant="162"/>
+                            </constraint>
+                            <constraint firstItem="RIN-gD-cC0" firstAttribute="top" secondItem="oTz-rY-VYc" secondAttribute="bottom" id="gpY-o1-xf7">
+                                <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="oTz-rY-VYc" secondAttribute="trailing" id="s9s-IL-Ild"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="oTz-rY-VYc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="14O-2F-SYM"/>
+                                <exclude reference="FT3-ww-YyT"/>
+                                <exclude reference="s9s-IL-Ild"/>
+                                <exclude reference="gpY-o1-xf7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="oTz-rY-VYc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="14O-2F-SYM"/>
+                                <include reference="FT3-ww-YyT"/>
+                                <include reference="s9s-IL-Ild"/>
+                                <include reference="gpY-o1-xf7"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="htP-7H-GqZ"/>
+                    <navigationItem key="navigationItem" title="个人中心" id="htP-7H-GqZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="oTz-rY-VYc" id="sLn-f3-nTl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="skI-m8-afp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1261.5" y="1662.75"/>
+            <point key="canvasLocation" x="1237.5" y="1658.25"/>
         </scene>
         <!--Item-->
         <scene sceneID="7WI-H9-Xa3">
@@ -154,6 +205,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NDu-Jz-T8s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.078431372549019607" green="0.48627450980392156" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -162,7 +218,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iik-IU-0bG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343.5" y="1644.75"/>
+            <point key="canvasLocation" x="390" y="1652.25"/>
         </scene>
     </scenes>
     <resources>

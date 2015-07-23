@@ -129,7 +129,7 @@
         </view>
     </objects>
     <resources>
-        <image name="segmentBackground1" width="204" height="41"/>
+        <image name="segmentBackground1" width="374" height="42"/>
         <image name="yurezhong" width="96" height="20"/>
         <image name="yurezhongHigh" width="96" height="20"/>
         <image name="zhengzai" width="96" height="20"/>

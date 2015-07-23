@@ -33,6 +33,8 @@
 		A18C3ABB1B5E399F00BC5BF1 /* segmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18C3ABA1B5E399F00BC5BF1 /* segmentView.xib */; };
 		A18C3ABE1B5E453800BC5BF1 /* recommendView.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C3ABD1B5E453800BC5BF1 /* recommendView.m */; };
 		A18C3AC01B5E454900BC5BF1 /* recommend.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18C3ABF1B5E454900BC5BF1 /* recommend.xib */; };
+		A1C4D3471B607F5E00FE4A35 /* login.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C4D3461B607F5E00FE4A35 /* login.xib */; };
+		A1C4D3491B60824100FE4A35 /* personInformation.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C4D3481B60824100FE4A35 /* personInformation.xib */; };
 		A1CB48AE1B578DBC00BB2489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48AD1B578DBC00BB2489 /* main.m */; };
 		A1CB48B11B578DBC00BB2489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48B01B578DBC00BB2489 /* AppDelegate.m */; };
 		A1CB48B91B578DBC00BB2489 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CB48B81B578DBC00BB2489 /* Images.xcassets */; };
@@ -102,6 +104,8 @@
 		A18C3ABC1B5E453800BC5BF1 /* recommendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recommendView.h; sourceTree = "<group>"; };
 		A18C3ABD1B5E453800BC5BF1 /* recommendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recommendView.m; sourceTree = "<group>"; };
 		A18C3ABF1B5E454900BC5BF1 /* recommend.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = recommend.xib; sourceTree = "<group>"; };
+		A1C4D3461B607F5E00FE4A35 /* login.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = login.xib; sourceTree = "<group>"; };
+		A1C4D3481B60824100FE4A35 /* personInformation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = personInformation.xib; sourceTree = "<group>"; };
 		A1CB48A81B578DBC00BB2489 /* ad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CB48AC1B578DBC00BB2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CB48AD1B578DBC00BB2489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 		A189FB2E1B5F74D40002AAA5 /* 个人中心 */ = {
 			isa = PBXGroup;
 			children = (
+				A1C4D34A1B6098FF00FE4A35 /* model */,
 				A189FB301B5F74F30002AAA5 /* views */,
 				A189FB2F1B5F74EB0002AAA5 /* controller */,
 			);
@@ -193,6 +198,8 @@
 		A189FB301B5F74F30002AAA5 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				A1C4D3461B607F5E00FE4A35 /* login.xib */,
+				A1C4D3481B60824100FE4A35 /* personInformation.xib */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -287,6 +294,13 @@
 				A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		A1C4D34A1B6098FF00FE4A35 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		A1CB489F1B578DBC00BB2489 = {
@@ -443,8 +457,10 @@
 				A189FBB31B5F8ECE0002AAA5 /* UMSocialLocalizable.strings in Resources */,
 				A189FBBB1B5F8ECE0002AAA5 /* UMSnsAccountViewController.xib in Resources */,
 				A189FBBD1B5F8ECE0002AAA5 /* UMSocialSDKResourcesNew.bundle in Resources */,
+				A1C4D3491B60824100FE4A35 /* personInformation.xib in Resources */,
 				A18C3AC01B5E454900BC5BF1 /* recommend.xib in Resources */,
 				A189FBBA1B5F8ECE0002AAA5 /* UMSLoginViewController.xib in Resources */,
+				A1C4D3471B607F5E00FE4A35 /* login.xib in Resources */,
 				F00A177D1B5FBBCE00763096 /* LaunchScreen.xib in Resources */,
 				A189FBB71B5F8ECE0002AAA5 /* UMSCommentInputControlleriPad.xib in Resources */,
 				A1770A571B5C8A6E00C272E9 /* MyTabBar.xib in Resources */,
