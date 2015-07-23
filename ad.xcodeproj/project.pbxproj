@@ -35,6 +35,7 @@
 		A18C3AC01B5E454900BC5BF1 /* recommend.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18C3ABF1B5E454900BC5BF1 /* recommend.xib */; };
 		A1C4D3471B607F5E00FE4A35 /* login.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C4D3461B607F5E00FE4A35 /* login.xib */; };
 		A1C4D3491B60824100FE4A35 /* personInformation.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C4D3481B60824100FE4A35 /* personInformation.xib */; };
+		A1C4D34D1B60BA0D00FE4A35 /* dengluViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C4D34C1B60BA0D00FE4A35 /* dengluViewController.m */; };
 		A1CB48AE1B578DBC00BB2489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48AD1B578DBC00BB2489 /* main.m */; };
 		A1CB48B11B578DBC00BB2489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48B01B578DBC00BB2489 /* AppDelegate.m */; };
 		A1CB48B91B578DBC00BB2489 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CB48B81B578DBC00BB2489 /* Images.xcassets */; };
@@ -106,6 +107,8 @@
 		A18C3ABF1B5E454900BC5BF1 /* recommend.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = recommend.xib; sourceTree = "<group>"; };
 		A1C4D3461B607F5E00FE4A35 /* login.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = login.xib; sourceTree = "<group>"; };
 		A1C4D3481B60824100FE4A35 /* personInformation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = personInformation.xib; sourceTree = "<group>"; };
+		A1C4D34B1B60BA0D00FE4A35 /* dengluViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dengluViewController.h; sourceTree = "<group>"; };
+		A1C4D34C1B60BA0D00FE4A35 /* dengluViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dengluViewController.m; sourceTree = "<group>"; };
 		A1CB48A81B578DBC00BB2489 /* ad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CB48AC1B578DBC00BB2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CB48AD1B578DBC00BB2489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 			children = (
 				A189FB311B5F75F70002AAA5 /* loginViewController.h */,
 				A189FB321B5F75F70002AAA5 /* loginViewController.m */,
+				A1C4D34B1B60BA0D00FE4A35 /* dengluViewController.h */,
+				A1C4D34C1B60BA0D00FE4A35 /* dengluViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -495,6 +500,7 @@
 				A189FB331B5F75F70002AAA5 /* loginViewController.m in Sources */,
 				A18C3A981B5E29AF00BC5BF1 /* pictureView.m in Sources */,
 				A18C3ABE1B5E453800BC5BF1 /* recommendView.m in Sources */,
+				A1C4D34D1B60BA0D00FE4A35 /* dengluViewController.m in Sources */,
 				A18C3A9B1B5E2CFD00BC5BF1 /* INSSearchBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

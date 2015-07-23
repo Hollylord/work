@@ -159,15 +159,15 @@
                 <mask key="constraints">
                     <exclude reference="fWF-s7-7Fd"/>
                     <exclude reference="pOC-bl-Zfp"/>
+                    <exclude reference="H5G-5j-tuL"/>
+                    <exclude reference="eyN-qY-7dT"/>
+                    <exclude reference="ePE-eZ-e2P"/>
+                    <exclude reference="zrI-rw-tjG"/>
+                    <exclude reference="j0U-Df-kjk"/>
+                    <exclude reference="oiy-jI-r9a"/>
                     <exclude reference="Rnh-sl-PEw"/>
                     <exclude reference="hBD-hh-eSG"/>
                     <exclude reference="svy-3H-2eq"/>
-                    <exclude reference="j0U-Df-kjk"/>
-                    <exclude reference="oiy-jI-r9a"/>
-                    <exclude reference="ePE-eZ-e2P"/>
-                    <exclude reference="zrI-rw-tjG"/>
-                    <exclude reference="H5G-5j-tuL"/>
-                    <exclude reference="eyN-qY-7dT"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -181,15 +181,15 @@
                 <mask key="constraints">
                     <include reference="fWF-s7-7Fd"/>
                     <include reference="pOC-bl-Zfp"/>
+                    <include reference="H5G-5j-tuL"/>
+                    <include reference="eyN-qY-7dT"/>
+                    <include reference="ePE-eZ-e2P"/>
+                    <include reference="zrI-rw-tjG"/>
+                    <include reference="j0U-Df-kjk"/>
+                    <include reference="oiy-jI-r9a"/>
                     <include reference="Rnh-sl-PEw"/>
                     <include reference="hBD-hh-eSG"/>
                     <include reference="svy-3H-2eq"/>
-                    <include reference="j0U-Df-kjk"/>
-                    <include reference="oiy-jI-r9a"/>
-                    <include reference="ePE-eZ-e2P"/>
-                    <include reference="zrI-rw-tjG"/>
-                    <include reference="H5G-5j-tuL"/>
-                    <include reference="eyN-qY-7dT"/>
                 </mask>
             </variation>
             <connections>

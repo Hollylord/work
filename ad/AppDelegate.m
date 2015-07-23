@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "UMSocial.h"
+#import "advertViewController.h"
+#import "tabViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +20,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [UMSocialData setAppKey:@"55af41d967e58e3f30005565"];
+NSString *version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"];
+    
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"version"] == nil) {
+        [[NSUserDefaults standardUserDefaults] setValue:version forKey:@"version"];
+    }
+    else if (![[[NSUserDefaults standardUserDefaults] valueForKey:@"version"] isEqualToString:version])
+    {
+        self.window.rootViewController = [[advertViewController alloc] init];
+        
+    }
+    else {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabbar"];
+    }
+    
+    
     return YES;
 }
 

@@ -45,12 +45,13 @@
         [self.scrollView addSubview:imageView];
         
         if (i == 2) {
+            //创建第三个广告页的button
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
             UIImage *buttonImage = [UIImage imageNamed:@"advertButton"];
 //            [button setBackgroundImage:buttonImage forState:UIControlStateNormal];
             [button setImage:buttonImage forState:UIControlStateNormal];
 
-            button.frame = CGRectMake(imageView.frame.origin.x + 50, imageFrame.size.height - 150, 200, 100);
+            button.frame = CGRectMake((imageView.frame.size.width - 200)/2 + imageView.frame.size.width * 2, imageFrame.size.height - 150, 200, 100);
             self.advertButton = button;
             [button addTarget:self action:@selector(turnToHomeViewController) forControlEvents:UIControlEventTouchUpInside];
             //一定要把按钮添加到scrollview上面

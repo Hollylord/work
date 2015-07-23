@@ -12,6 +12,8 @@
 @interface loginViewController () <UMSocialUIDelegate,UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong,nonatomic) NSArray *items;
+- (IBAction)loginBtn:(UIButton *)sender;
+- (IBAction)zhuceBtn:(UIButton *)sender;
 
 @end
 
@@ -51,6 +53,9 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -58,6 +63,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - 按钮事件
 
+- (IBAction)loginBtn:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"person2login" sender:nil];
+}
 
+- (IBAction)zhuceBtn:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"login2zhuce" sender:nil];
+}
 @end
