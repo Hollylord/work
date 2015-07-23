@@ -7,11 +7,14 @@
 //
 
 #import "dengluViewController.h"
+#import "UMSocial_Sdk_4.2.3/Header/UMSocial.h"
 
 @interface dengluViewController ()
 
 
 - (IBAction)weiboBtn:(id)sender;
+- (IBAction)weixinBtn:(UIButton *)sender;
+- (IBAction)qqBtn:(UIButton *)sender;
 
 @end
 
@@ -36,6 +39,32 @@
 }
 
 - (IBAction)weiboBtn:(id)sender {
+    UMSocialSnsPlatform *snsPlatform = [UMSocialSnsPlatformManager getSocialPlatformWithName:UMShareToSina];
+    
+    snsPlatform.loginClickHandler(self,[UMSocialControllerService defaultControllerService],YES,^(UMSocialResponseEntity *response){
+        
+        //          获取微博用户名、uid、token等
+        
+        if (response.responseCode == UMSResponseCodeSuccess) {
+            
+            UMSocialAccountEntity *snsAccount = [[UMSocialAccountManager socialAccountDictionary] valueForKey:UMShareToSina];
+            
+            NSLog(@"username is %@, uid is %@, token is %@ url is %@",snsAccount.userName,snsAccount.usid,snsAccount.accessToken,snsAccount.iconURL);
+            
+        }});
+    
+    [[UMSocialDataService defaultDataService] requestSnsInformation:UMShareToSina  completion:^(UMSocialResponseEntity *response){
+        NSLog(@"SnsInformation is %@",response.data);
+    }];
+    
+}
+
+- (IBAction)weixinBtn:(UIButton *)sender {
+    
+    
+}
+
+- (IBAction)qqBtn:(UIButton *)sender {
     
 }
 @end

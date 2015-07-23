@@ -248,6 +248,9 @@
                                         <include reference="Wb9-NT-E4W"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="weixinBtn:" destination="edh-cC-Hde" eventType="touchUpInside" id="Eme-LS-Nyn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH7-iX-btG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -264,6 +267,9 @@
                                 <state key="normal" backgroundImage="qq">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="qqBtn:" destination="edh-cC-Hde" eventType="touchUpInside" id="Gwx-E6-4de"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GqD-JN-4GE">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
