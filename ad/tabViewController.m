@@ -97,12 +97,12 @@
 
 - (IBAction)BBSBtn:(id)sender {
     self.rainBowView.hidden = YES;
-    self.selectedIndex = 3;
+    self.selectedIndex = 2;
 }
 
 - (IBAction)personCenterBtn:(id)sender {
     self.rainBowView.hidden = YES;
-    self.selectedIndex =4;
+    self.selectedIndex =3;
 }
 - (IBAction)neighbor:(id)sender {
     
