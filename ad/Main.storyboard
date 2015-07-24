@@ -4,6 +4,42 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
+        <!--语音留言-->
+        <scene sceneID="E5F-uu-M3r">
+            <objects>
+                <viewController title="语音留言" id="VYn-qA-4l2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jsk-Kq-xAU"/>
+                        <viewControllerLayoutGuide type="bottom" id="fxl-7C-C3f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eOo-uY-cnG">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="f2Y-DE-42n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tjj-5w-ytv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2106" y="1884.75"/>
+        </scene>
+        <!--活动-->
+        <scene sceneID="B52-Yu-SYs">
+            <objects>
+                <viewController title="活动" id="Z8C-fI-B9i" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EVU-An-0Wf"/>
+                        <viewControllerLayoutGuide type="bottom" id="NgX-Lc-dRG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2q9-yF-URm">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="JUa-aQ-qaj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ei6-sS-Xwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2874" y="1878.75"/>
+        </scene>
         <!--选项卡栏-->
         <scene sceneID="SRf-QJ-OMD">
             <objects>
@@ -20,11 +56,14 @@
                         <segue destination="VIm-aK-A7b" kind="relationship" relationship="viewControllers" id="G1D-hf-E3W"/>
                         <segue destination="xOS-M8-vAC" kind="relationship" relationship="viewControllers" id="0uT-L9-A7V"/>
                         <segue destination="c4J-bi-Gte" kind="relationship" relationship="viewControllers" id="9Wm-nK-DwC"/>
+                        <segue destination="luz-5S-rFq" kind="relationship" relationship="viewControllers" id="PNJ-zZ-ii6"/>
+                        <segue destination="VYn-qA-4l2" kind="relationship" relationship="viewControllers" id="Ubs-Kf-ZoY"/>
+                        <segue destination="Z8C-fI-B9i" kind="relationship" relationship="viewControllers" id="pzB-yL-Mu1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrD-8m-5PJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-529.5" y="1155"/>
+            <point key="canvasLocation" x="-721.5" y="1140"/>
         </scene>
         <!--首页-->
         <scene sceneID="dhK-7P-DCv">
@@ -453,6 +492,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1xg-I8-6SK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3nT-e1-Mby">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-dI-tcd">
@@ -537,17 +577,17 @@
                                 <exclude reference="tZM-Ol-UO6"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="N7D-ab-BS8"/>
+                                <exclude reference="4g7-9H-gf4"/>
+                                <exclude reference="ed8-kt-pSN"/>
+                                <exclude reference="Wux-Ah-IVm"/>
+                                <exclude reference="Zjm-fj-ELx"/>
                                 <exclude reference="7DW-7K-PlL"/>
                                 <exclude reference="W4M-bS-6fg"/>
                                 <exclude reference="jCA-b6-qIK"/>
-                                <exclude reference="Wux-Ah-IVm"/>
-                                <exclude reference="Zjm-fj-ELx"/>
                                 <exclude reference="jMn-V6-XVk"/>
                                 <exclude reference="kD3-b6-c4Y"/>
                                 <exclude reference="qsk-Z3-zK4"/>
-                                <exclude reference="4g7-9H-gf4"/>
-                                <exclude reference="ed8-kt-pSN"/>
-                                <exclude reference="N7D-ab-BS8"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -558,17 +598,17 @@
                                 <include reference="tZM-Ol-UO6"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="N7D-ab-BS8"/>
+                                <include reference="4g7-9H-gf4"/>
+                                <include reference="ed8-kt-pSN"/>
+                                <include reference="Wux-Ah-IVm"/>
+                                <include reference="Zjm-fj-ELx"/>
                                 <include reference="7DW-7K-PlL"/>
                                 <include reference="W4M-bS-6fg"/>
                                 <include reference="jCA-b6-qIK"/>
-                                <include reference="Wux-Ah-IVm"/>
-                                <include reference="Zjm-fj-ELx"/>
                                 <include reference="jMn-V6-XVk"/>
                                 <include reference="kD3-b6-c4Y"/>
                                 <include reference="qsk-Z3-zK4"/>
-                                <include reference="4g7-9H-gf4"/>
-                                <include reference="ed8-kt-pSN"/>
-                                <include reference="N7D-ab-BS8"/>
                             </mask>
                         </variation>
                     </view>
@@ -615,7 +655,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TqD-R3-99e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1239" y="1155"/>
+            <point key="canvasLocation" x="-3723" y="1194"/>
         </scene>
         <!--未注册个人中心-->
         <scene sceneID="orq-IS-RCW">
@@ -642,6 +682,24 @@
             </objects>
             <point key="canvasLocation" x="372" y="1664.25"/>
         </scene>
+        <!--路演-->
+        <scene sceneID="Fiq-Cd-1YX">
+            <objects>
+                <viewController title="路演" id="luz-5S-rFq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vW6-7J-AmI"/>
+                        <viewControllerLayoutGuide type="bottom" id="4KB-sD-82s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TCE-ON-Yqn">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.88321738189999999" blue="0.2418502434" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="UsM-I1-JNi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m5u-X5-OpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1350" y="1878.75"/>
+        </scene>
         <!--附近的人-->
         <scene sceneID="MSN-ot-0P7">
             <objects>
@@ -651,6 +709,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Ywi-tp-ZLI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="n3K-NX-RWs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -658,7 +717,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07L-Qc-izt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-537" y="1896.75"/>
+            <point key="canvasLocation" x="-511.5" y="1878.75"/>
         </scene>
         <!--注册-->
         <scene sceneID="PeD-Ig-9Qk">

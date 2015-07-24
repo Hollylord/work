@@ -269,6 +269,8 @@
 		A14C4E1E1B61D1840045D442 /* 路演 */ = {
 			isa = PBXGroup;
 			children = (
+				A14C4E461B6207BE0045D442 /* views */,
+				A14C4E451B6207B20045D442 /* controller */,
 			);
 			name = "路演";
 			sourceTree = "<group>";
@@ -280,6 +282,20 @@
 				A14C4E3D1B61D7A50045D442 /* neighborViewController.m */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		A14C4E451B6207B20045D442 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		A14C4E461B6207BE0045D442 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 		A1770A501B5C887100C272E9 /* Main */ = {

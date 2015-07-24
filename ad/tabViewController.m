@@ -55,7 +55,8 @@
 //    testViewcontroller.view.backgroundColor = [UIColor redColor];
     
 //    NSLog(@"%@",self.viewControllers);
-  
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -149,15 +150,47 @@
         }];
         
     }
+    
     self.selectedIndex = 4;
+    self.moreNavigationController.navigationBarHidden = YES;
 }
 
 - (IBAction)message:(UIButton *)sender {
+    if (self.rainBowView.hidden == NO) {
+        [UIView animateWithDuration:1.5 animations:^{
+            self.rainBowView.transform = CGAffineTransformMakeRotation(M_PI);
+        }completion:^(BOOL finished) {
+            //取消彩虹桥
+            self.rainBowView.hidden = YES;
+        }];
+        
+    }
+    self.selectedIndex = 6;
 }
 
 - (IBAction)activity:(UIButton *)sender {
+    if (self.rainBowView.hidden == NO) {
+        [UIView animateWithDuration:1.5 animations:^{
+            self.rainBowView.transform = CGAffineTransformMakeRotation(M_PI);
+        }completion:^(BOOL finished) {
+            //取消彩虹桥
+            self.rainBowView.hidden = YES;
+        }];
+        
+    }
+    self.selectedIndex = 7;
 }
 
 - (IBAction)speech:(UIButton *)sender {
+    if (self.rainBowView.hidden == NO) {
+        [UIView animateWithDuration:1.5 animations:^{
+            self.rainBowView.transform = CGAffineTransformMakeRotation(M_PI);
+        }completion:^(BOOL finished) {
+            //取消彩虹桥
+            self.rainBowView.hidden = YES;
+        }];
+        
+    }
+    self.selectedIndex = 5;
 }
 @end
