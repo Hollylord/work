@@ -11,6 +11,7 @@
 #import "advertViewController.h"
 #import "tabViewController.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -20,6 +21,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [UMSocialData setAppKey:@"55af41d967e58e3f30005565"];
+    
+    
 NSString *version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"];
     
     if ([[NSUserDefaults standardUserDefaults] valueForKey:@"version"] == nil) {

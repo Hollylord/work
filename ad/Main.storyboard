@@ -513,7 +513,7 @@
         <!--附近的人-->
         <scene sceneID="MSN-ot-0P7">
             <objects>
-                <viewController title="附近的人" id="c4J-bi-Gte" sceneMemberID="viewController">
+                <viewController title="附近的人" id="c4J-bi-Gte" customClass="neighborViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F2B-CT-vRC"/>
                         <viewControllerLayoutGuide type="bottom" id="Ywi-tp-ZLI"/>
@@ -526,7 +526,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07L-Qc-izt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="381" y="2321.25"/>
+            <point key="canvasLocation" x="414" y="2340.75"/>
         </scene>
         <!--注册-->
         <scene sceneID="PeD-Ig-9Qk">

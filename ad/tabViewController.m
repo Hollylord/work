@@ -140,7 +140,16 @@
     self.selectedIndex =3;
 }
 - (IBAction)neighbor:(id)sender {
-    
+    if (self.rainBowView.hidden == NO) {
+        [UIView animateWithDuration:1.5 animations:^{
+            self.rainBowView.transform = CGAffineTransformMakeRotation(M_PI);
+        }completion:^(BOOL finished) {
+            //取消彩虹桥
+            self.rainBowView.hidden = YES;
+        }];
+        
+    }
+    self.selectedIndex = 4;
 }
 
 - (IBAction)message:(UIButton *)sender {
