@@ -23,6 +23,7 @@
 		A14C4E391B61D72D0045D442 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E371B61D72D0045D442 /* AMapSearchKit.framework */; };
 		A14C4E3A1B61D72D0045D442 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E381B61D72D0045D442 /* MAMapKit.framework */; };
 		A14C4E3E1B61D7A50045D442 /* neighborViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C4E3D1B61D7A50045D442 /* neighborViewController.m */; };
+		A14C4E441B61ECF60045D442 /* alreadyloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C4E431B61ECF60045D442 /* alreadyloginViewController.m */; };
 		A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461731B5F2E51004CA48D /* ASPopUpView.m */; };
 		A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */; };
 		A1770A551B5C8A4F00C272E9 /* MyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1770A541B5C8A4F00C272E9 /* MyTabBar.m */; };
@@ -95,6 +96,8 @@
 		A14C4E381B61D72D0045D442 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../Downloads/MAMapKit.framework; sourceTree = "<group>"; };
 		A14C4E3C1B61D7A50045D442 /* neighborViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neighborViewController.h; sourceTree = "<group>"; };
 		A14C4E3D1B61D7A50045D442 /* neighborViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = neighborViewController.m; sourceTree = "<group>"; };
+		A14C4E421B61ECF60045D442 /* alreadyloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alreadyloginViewController.h; sourceTree = "<group>"; };
+		A14C4E431B61ECF60045D442 /* alreadyloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = alreadyloginViewController.m; sourceTree = "<group>"; };
 		A15461721B5F2E51004CA48D /* ASPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPopUpView.h; sourceTree = "<group>"; };
 		A15461731B5F2E51004CA48D /* ASPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopUpView.m; sourceTree = "<group>"; };
 		A15461741B5F2E51004CA48D /* ASProgressPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProgressPopUpView.h; sourceTree = "<group>"; };
@@ -329,6 +332,8 @@
 				A189FB321B5F75F70002AAA5 /* loginViewController.m */,
 				A1C4D34B1B60BA0D00FE4A35 /* dengluViewController.h */,
 				A1C4D34C1B60BA0D00FE4A35 /* dengluViewController.m */,
+				A14C4E421B61ECF60045D442 /* alreadyloginViewController.h */,
+				A14C4E431B61ECF60045D442 /* alreadyloginViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -683,6 +688,7 @@
 				A1CB48AE1B578DBC00BB2489 /* main.m in Sources */,
 				A18C3AB91B5E398500BC5BF1 /* segmentView.m in Sources */,
 				A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */,
+				A14C4E441B61ECF60045D442 /* alreadyloginViewController.m in Sources */,
 				A18C3A891B5DF98000BC5BF1 /* programViewController.m in Sources */,
 				A189FB331B5F75F70002AAA5 /* loginViewController.m in Sources */,
 				A14C4E1A1B61D0550045D442 /* newsViewController.m in Sources */,
