@@ -685,16 +685,52 @@
         <!--路演-->
         <scene sceneID="Fiq-Cd-1YX">
             <objects>
-                <viewController title="路演" id="luz-5S-rFq" sceneMemberID="viewController">
+                <viewController title="路演" id="luz-5S-rFq" customClass="speechViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vW6-7J-AmI"/>
                         <viewControllerLayoutGuide type="bottom" id="4KB-sD-82s"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TCE-ON-Yqn">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.88321738189999999" blue="0.2418502434" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PqA-fu-VMu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PqA-fu-VMu" firstAttribute="leading" secondItem="TCE-ON-Yqn" secondAttribute="leading" id="EPy-hs-VZD"/>
+                            <constraint firstAttribute="trailing" secondItem="PqA-fu-VMu" secondAttribute="trailing" id="KCq-ry-geq"/>
+                            <constraint firstItem="4KB-sD-82s" firstAttribute="top" secondItem="PqA-fu-VMu" secondAttribute="bottom" id="uRw-sz-TjG"/>
+                            <constraint firstItem="PqA-fu-VMu" firstAttribute="top" secondItem="TCE-ON-Yqn" secondAttribute="top" id="zzB-y3-GPW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PqA-fu-VMu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="EPy-hs-VZD"/>
+                                <exclude reference="KCq-ry-geq"/>
+                                <exclude reference="zzB-y3-GPW"/>
+                                <exclude reference="uRw-sz-TjG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="PqA-fu-VMu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="EPy-hs-VZD"/>
+                                <include reference="KCq-ry-geq"/>
+                                <include reference="zzB-y3-GPW"/>
+                                <include reference="uRw-sz-TjG"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="UsM-I1-JNi"/>
+                    <connections>
+                        <outlet property="browser" destination="PqA-fu-VMu" id="tt1-ZZ-daq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5u-X5-OpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -882,7 +918,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8c-wF-5dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3547.5" y="2375.25"/>
+            <point key="canvasLocation" x="1192.5" y="2363.25"/>
         </scene>
         <!--填写验证码-->
         <scene sceneID="GNe-wx-IWB">
@@ -1039,7 +1075,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UB-nv-KPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4296" y="2375.25"/>
+            <point key="canvasLocation" x="2016" y="2375.25"/>
         </scene>
     </scenes>
     <resources>

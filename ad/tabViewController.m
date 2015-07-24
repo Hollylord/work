@@ -166,6 +166,7 @@
         
     }
     self.selectedIndex = 6;
+    self.moreNavigationController.navigationBarHidden = YES;
 }
 
 - (IBAction)activity:(UIButton *)sender {
@@ -179,6 +180,7 @@
         
     }
     self.selectedIndex = 7;
+    self.moreNavigationController.navigationBarHidden = YES;
 }
 
 - (IBAction)speech:(UIButton *)sender {
@@ -192,5 +194,6 @@
         
     }
     self.selectedIndex = 5;
+    self.moreNavigationController.navigationBarHidden = YES;
 }
 @end
