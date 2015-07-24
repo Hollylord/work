@@ -65,6 +65,9 @@
                             <include reference="Klb-A6-plD"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="message:" destination="-1" eventType="touchUpInside" id="pff-tQ-zYc"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Op-FD-Rnl">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -88,6 +91,9 @@
                             <include reference="lTO-Ha-QCb"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="activity:" destination="-1" eventType="touchUpInside" id="iin-5h-ipj"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbr-Iq-9NX">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -111,6 +117,9 @@
                             <include reference="mkX-QY-C72"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="speech:" destination="-1" eventType="touchUpInside" id="Fkp-4e-q8T"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>

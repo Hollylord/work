@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A14C4E061B61CC140045D442 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E051B61CC140045D442 /* Security.framework */; };
+		A14C4E081B61CC210045D442 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E071B61CC210045D442 /* libiconv.dylib */; };
+		A14C4E0A1B61CC350045D442 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E091B61CC350045D442 /* CoreGraphics.framework */; };
+		A14C4E0C1B61CC3F0045D442 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E0B1B61CC3F0045D442 /* libsqlite3.dylib */; };
+		A14C4E0E1B61CC480045D442 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E0D1B61CC480045D442 /* CoreTelephony.framework */; };
+		A14C4E101B61CC520045D442 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E0F1B61CC520045D442 /* libstdc++.dylib */; };
+		A14C4E121B61CC5A0045D442 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E111B61CC5A0045D442 /* libz.dylib */; };
+		A14C4E1A1B61D0550045D442 /* newsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C4E191B61D0550045D442 /* newsViewController.m */; };
 		A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461731B5F2E51004CA48D /* ASPopUpView.m */; };
 		A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */; };
 		A1770A551B5C8A4F00C272E9 /* MyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1770A541B5C8A4F00C272E9 /* MyTabBar.m */; };
@@ -61,6 +69,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A14C4E051B61CC140045D442 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A14C4E071B61CC210045D442 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		A14C4E091B61CC350045D442 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A14C4E0B1B61CC3F0045D442 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A14C4E0D1B61CC480045D442 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A14C4E0F1B61CC520045D442 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		A14C4E111B61CC5A0045D442 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A14C4E181B61D0550045D442 /* newsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newsViewController.h; sourceTree = "<group>"; };
+		A14C4E191B61D0550045D442 /* newsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newsViewController.m; sourceTree = "<group>"; };
 		A15461721B5F2E51004CA48D /* ASPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPopUpView.h; sourceTree = "<group>"; };
 		A15461731B5F2E51004CA48D /* ASPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopUpView.m; sourceTree = "<group>"; };
 		A15461741B5F2E51004CA48D /* ASProgressPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProgressPopUpView.h; sourceTree = "<group>"; };
@@ -143,6 +160,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14C4E121B61CC5A0045D442 /* libz.dylib in Frameworks */,
+				A14C4E101B61CC520045D442 /* libstdc++.dylib in Frameworks */,
+				A14C4E0E1B61CC480045D442 /* CoreTelephony.framework in Frameworks */,
+				A14C4E0C1B61CC3F0045D442 /* libsqlite3.dylib in Frameworks */,
+				A14C4E0A1B61CC350045D442 /* CoreGraphics.framework in Frameworks */,
+				A14C4E081B61CC210045D442 /* libiconv.dylib in Frameworks */,
+				A14C4E061B61CC140045D442 /* Security.framework in Frameworks */,
 				A1C4D35A1B60EED000FE4A35 /* libSocialQQ.a in Frameworks */,
 				A1C4D35D1B60EED000FE4A35 /* libSocialWechat.a in Frameworks */,
 				A1C4D35E1B60EED000FE4A35 /* libWeChatSDK.a in Frameworks */,
@@ -162,6 +186,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A14C4E141B61CFF60045D442 /* 新闻 */ = {
+			isa = PBXGroup;
+			children = (
+				A14C4E171B61D03A0045D442 /* view */,
+				A14C4E161B61D0320045D442 /* controller */,
+			);
+			name = "新闻";
+			sourceTree = "<group>";
+		};
+		A14C4E151B61D00F0045D442 /* 社群 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "社群";
+			sourceTree = "<group>";
+		};
+		A14C4E161B61D0320045D442 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A14C4E181B61D0550045D442 /* newsViewController.h */,
+				A14C4E191B61D0550045D442 /* newsViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		A14C4E171B61D03A0045D442 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		A14C4E1B1B61D15C0045D442 /* 附近的人 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "附近的人";
+			sourceTree = "<group>";
+		};
+		A14C4E1C1B61D1770045D442 /* 语音留言 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "语音留言";
+			sourceTree = "<group>";
+		};
+		A14C4E1D1B61D17F0045D442 /* 活动 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "活动";
+			sourceTree = "<group>";
+		};
+		A14C4E1E1B61D1840045D442 /* 路演 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "路演";
+			sourceTree = "<group>";
+		};
 		A1770A501B5C887100C272E9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,7 +444,6 @@
 		A1CB489F1B578DBC00BB2489 = {
 			isa = PBXGroup;
 			children = (
-				A189FB961B5F8D410002AAA5 /* SystemConfiguration.framework */,
 				A1CB48AA1B578DBC00BB2489 /* ad */,
 				A1CB48C41B578DBC00BB2489 /* adTests */,
 				A1CB48A91B578DBC00BB2489 /* Products */,
@@ -385,8 +468,14 @@
 				F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */,
 				F00A177C1B5FBBCE00763096 /* Main.storyboard */,
 				A189FB341B5F7E580002AAA5 /* library */,
+				A14C4E1E1B61D1840045D442 /* 路演 */,
+				A14C4E1D1B61D17F0045D442 /* 活动 */,
+				A14C4E1C1B61D1770045D442 /* 语音留言 */,
+				A14C4E1B1B61D15C0045D442 /* 附近的人 */,
 				A1770A501B5C887100C272E9 /* Main */,
 				A18C3A841B5DF93500BC5BF1 /* 首页 */,
+				A14C4E141B61CFF60045D442 /* 新闻 */,
+				A14C4E151B61D00F0045D442 /* 社群 */,
 				A189FB2E1B5F74D40002AAA5 /* 个人中心 */,
 				A1CB48AB1B578DBC00BB2489 /* Supporting Files */,
 			);
@@ -396,6 +485,14 @@
 		A1CB48AB1B578DBC00BB2489 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A14C4E111B61CC5A0045D442 /* libz.dylib */,
+				A14C4E0F1B61CC520045D442 /* libstdc++.dylib */,
+				A14C4E0D1B61CC480045D442 /* CoreTelephony.framework */,
+				A14C4E0B1B61CC3F0045D442 /* libsqlite3.dylib */,
+				A14C4E091B61CC350045D442 /* CoreGraphics.framework */,
+				A14C4E071B61CC210045D442 /* libiconv.dylib */,
+				A14C4E051B61CC140045D442 /* Security.framework */,
+				A189FB961B5F8D410002AAA5 /* SystemConfiguration.framework */,
 				A1CB48AC1B578DBC00BB2489 /* Info.plist */,
 				A1CB48AD1B578DBC00BB2489 /* main.m */,
 			);
@@ -547,6 +644,7 @@
 				A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */,
 				A18C3A891B5DF98000BC5BF1 /* programViewController.m in Sources */,
 				A189FB331B5F75F70002AAA5 /* loginViewController.m in Sources */,
+				A14C4E1A1B61D0550045D442 /* newsViewController.m in Sources */,
 				A18C3A981B5E29AF00BC5BF1 /* pictureView.m in Sources */,
 				A18C3ABE1B5E453800BC5BF1 /* recommendView.m in Sources */,
 				A1C4D34D1B60BA0D00FE4A35 /* dengluViewController.m in Sources */,

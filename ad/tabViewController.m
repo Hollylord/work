@@ -18,6 +18,9 @@
 - (IBAction)personCenterBtn:(id)sender;
 @property (strong, nonatomic) IBOutlet RainBow *rainBowView;
 - (IBAction)neighbor:(id)sender;
+- (IBAction)message:(UIButton *)sender;
+- (IBAction)activity:(UIButton *)sender;
+- (IBAction)speech:(UIButton *)sender;
 
 @end
 
@@ -63,15 +66,31 @@
 
 #pragma mark - 菜单按钮点击
 - (IBAction)programBtn:(id)sender {
-    //取消彩虹桥
-    self.rainBowView.hidden = YES;
+    if (self.rainBowView.hidden == NO) {
+        [UIView animateWithDuration:1.5 animations:^{
+            self.rainBowView.transform = CGAffineTransformMakeRotation(M_PI);
+        }completion:^(BOOL finished) {
+            //取消彩虹桥
+            self.rainBowView.hidden = YES;
+        }];
+        
+    }
+    
     //切换控制器
     self.selectedIndex = 0;
     
 }
 
 - (IBAction)newsBtn:(id)sender {
-    self.rainBowView.hidden = YES;
+    if (self.rainBowView.hidden == NO) {
+        [UIView animateWithDuration:1.5 animations:^{
+            self.rainBowView.transform = CGAffineTransformMakeRotation(M_PI);
+        }completion:^(BOOL finished) {
+            //取消彩虹桥
+            self.rainBowView.hidden = YES;
+        }];
+        
+    }
     self.selectedIndex = 1;
 }
 
@@ -96,15 +115,40 @@
 }
 
 - (IBAction)BBSBtn:(id)sender {
-    self.rainBowView.hidden = YES;
+    if (self.rainBowView.hidden == NO) {
+        [UIView animateWithDuration:1.5 animations:^{
+            self.rainBowView.transform = CGAffineTransformMakeRotation(M_PI);
+        }completion:^(BOOL finished) {
+            //取消彩虹桥
+            self.rainBowView.hidden = YES;
+        }];
+        
+    }
     self.selectedIndex = 2;
 }
 
 - (IBAction)personCenterBtn:(id)sender {
-    self.rainBowView.hidden = YES;
+    if (self.rainBowView.hidden == NO) {
+        [UIView animateWithDuration:1.5 animations:^{
+            self.rainBowView.transform = CGAffineTransformMakeRotation(M_PI);
+        }completion:^(BOOL finished) {
+            //取消彩虹桥
+            self.rainBowView.hidden = YES;
+        }];
+        
+    }
     self.selectedIndex =3;
 }
 - (IBAction)neighbor:(id)sender {
     
+}
+
+- (IBAction)message:(UIButton *)sender {
+}
+
+- (IBAction)activity:(UIButton *)sender {
+}
+
+- (IBAction)speech:(UIButton *)sender {
 }
 @end

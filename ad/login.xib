@@ -65,17 +65,17 @@
                     <exclude reference="v4q-rM-Ms4"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="GXR-Ub-QK3"/>
+                    <exclude reference="ZQF-60-odo"/>
+                    <exclude reference="rJz-hV-w03"/>
+                    <exclude reference="Dn6-qJ-2gF"/>
+                    <exclude reference="GRO-FX-AUq"/>
+                    <exclude reference="504-WB-1j8"/>
+                    <exclude reference="Hob-g8-lq7"/>
                     <exclude reference="Ovu-cZ-qpJ"/>
                     <exclude reference="f2g-3m-aEF"/>
                     <exclude reference="pBa-je-ZzR"/>
                     <exclude reference="uJ9-74-jjv"/>
-                    <exclude reference="Dn6-qJ-2gF"/>
-                    <exclude reference="GRO-FX-AUq"/>
-                    <exclude reference="GXR-Ub-QK3"/>
-                    <exclude reference="ZQF-60-odo"/>
-                    <exclude reference="rJz-hV-w03"/>
-                    <exclude reference="504-WB-1j8"/>
-                    <exclude reference="Hob-g8-lq7"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -86,20 +86,20 @@
                     <include reference="v4q-rM-Ms4"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="GXR-Ub-QK3"/>
+                    <include reference="ZQF-60-odo"/>
+                    <include reference="rJz-hV-w03"/>
+                    <include reference="Dn6-qJ-2gF"/>
+                    <include reference="GRO-FX-AUq"/>
+                    <include reference="504-WB-1j8"/>
+                    <include reference="Hob-g8-lq7"/>
                     <include reference="Ovu-cZ-qpJ"/>
                     <include reference="f2g-3m-aEF"/>
                     <include reference="pBa-je-ZzR"/>
                     <include reference="uJ9-74-jjv"/>
-                    <include reference="Dn6-qJ-2gF"/>
-                    <include reference="GRO-FX-AUq"/>
-                    <include reference="GXR-Ub-QK3"/>
-                    <include reference="ZQF-60-odo"/>
-                    <include reference="rJz-hV-w03"/>
-                    <include reference="504-WB-1j8"/>
-                    <include reference="Hob-g8-lq7"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="311.5" y="335"/>
+            <point key="canvasLocation" x="311" y="320.5"/>
         </view>
     </objects>
     <resources>
