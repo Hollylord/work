@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fxl-7C-C3f"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eOo-uY-cnG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -31,6 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="NgX-Lc-dRG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2q9-yF-URm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -483,10 +485,10 @@
             </objects>
             <point key="canvasLocation" x="2001" y="1658.25"/>
         </scene>
-        <!--已登录个人中心-->
+        <!--个人中心-->
         <scene sceneID="g8W-u3-NXZ">
             <objects>
-                <viewController title="已登录个人中心" id="G8X-Ig-uhw" customClass="alreadyloginViewController" sceneMemberID="viewController">
+                <viewController id="G8X-Ig-uhw" customClass="alreadyloginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Lr-FC-lX9"/>
                         <viewControllerLayoutGuide type="bottom" id="1xg-I8-6SK"/>
@@ -612,13 +614,42 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="个人中心" id="dbF-fQ-J1M">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="qUy-At-F6Y"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="7Oq-UD-ULf" id="3P7-Gy-al4"/>
+                        <segue destination="IAT-ZZ-Dva" kind="show" identifier="person2guanzhu" id="2Ke-FW-CXC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaV-zS-4KV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2784" y="1664.25"/>
+            <point key="canvasLocation" x="2802" y="1664.25"/>
+        </scene>
+        <!--我关注的项目-->
+        <scene sceneID="BWv-kg-gDw">
+            <objects>
+                <tableViewController title="我关注的项目" id="IAT-ZZ-Dva" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="22" sectionFooterHeight="22" id="wWB-iL-1xb">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="xiangmu" rowHeight="94" id="cte-IU-QvZ">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cte-IU-QvZ" id="wWo-XB-om4">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IAT-ZZ-Dva" id="3nU-pt-aZy"/>
+                            <outlet property="delegate" destination="IAT-ZZ-Dva" id="SeJ-W5-sIv"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hj-Hg-Fkq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3561" y="1668.75"/>
         </scene>
         <!--社群-->
         <scene sceneID="7WI-H9-Xa3">
@@ -691,6 +722,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4KB-sD-82s"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TCE-ON-Yqn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PqA-fu-VMu">
@@ -709,10 +741,10 @@
                                 <exclude reference="PqA-fu-VMu"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="uRw-sz-TjG"/>
                                 <exclude reference="EPy-hs-VZD"/>
                                 <exclude reference="KCq-ry-geq"/>
                                 <exclude reference="zzB-y3-GPW"/>
-                                <exclude reference="uRw-sz-TjG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -720,10 +752,10 @@
                                 <include reference="PqA-fu-VMu"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="uRw-sz-TjG"/>
                                 <include reference="EPy-hs-VZD"/>
                                 <include reference="KCq-ry-geq"/>
                                 <include reference="zzB-y3-GPW"/>
-                                <include reference="uRw-sz-TjG"/>
                             </mask>
                         </variation>
                     </view>

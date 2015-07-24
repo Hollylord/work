@@ -51,7 +51,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.row == 5) {
+        [self performSegueWithIdentifier:@"person2guanzhu" sender:nil];
+    }
 }
+
+
 
 
 @end
