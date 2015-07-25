@@ -10,7 +10,7 @@
 #import "UMSocial.h"
 #import "advertViewController.h"
 #import "tabViewController.h"
-
+#import "UMSocialWechatHandler.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +20,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //设置友盟的appKey
     [UMSocialData setAppKey:@"55af41d967e58e3f30005565"];
     
+
+    //设置微信AppId、appSecret，分享url
+    [UMSocialWechatHandler setWXAppId:@"wx43b8499d08842d8a" appSecret:@"80e470d7cc365cea2e677a87fb84e2bb" url:@"http://www.umeng.com/social"];
     
 NSString *version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"];
     
@@ -40,6 +44,18 @@ NSString *version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBund
     
     
     return YES;
+}
+//微信分享
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return  [UMSocialSnsService handleOpenURL:url];
+}
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return  [UMSocialSnsService handleOpenURL:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
