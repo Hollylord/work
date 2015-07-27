@@ -84,6 +84,7 @@
 		A1CB48C81B578DBC00BB2489 /* adTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48C71B578DBC00BB2489 /* adTests.m */; };
 		A1CB48D31B578E6600BB2489 /* advertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48D21B578E6600BB2489 /* advertViewController.m */; };
 		A1CB48D91B57A80800BB2489 /* tabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48D81B57A80800BB2489 /* tabViewController.m */; };
+		A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */; };
 		F00A177D1B5FBBCE00763096 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */; };
 		F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A177C1B5FBBCE00763096 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -234,6 +235,8 @@
 		A1CB48D21B578E6600BB2489 /* advertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = advertViewController.m; sourceTree = "<group>"; };
 		A1CB48D71B57A80800BB2489 /* tabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabViewController.h; sourceTree = "<group>"; };
 		A1CB48D81B57A80800BB2489 /* tabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabViewController.m; sourceTree = "<group>"; };
+		A1DB59221B65E34900FAD6C4 /* personInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personInformationViewController.h; sourceTree = "<group>"; };
+		A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personInformationViewController.m; sourceTree = "<group>"; };
 		DE12D6506F96786A2FADEB22 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F00A177C1B5FBBCE00763096 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -496,6 +499,8 @@
 				A1C4D34C1B60BA0D00FE4A35 /* dengluViewController.m */,
 				A14C4E421B61ECF60045D442 /* alreadyloginViewController.h */,
 				A14C4E431B61ECF60045D442 /* alreadyloginViewController.m */,
+				A1DB59221B65E34900FAD6C4 /* personInformationViewController.h */,
+				A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -904,6 +909,7 @@
 				A14C4E441B61ECF60045D442 /* alreadyloginViewController.m in Sources */,
 				A14C4E741B6221F30045D442 /* AFHTTPRequestOperationManager.m in Sources */,
 				A14C4E851B6221F30045D442 /* UIWebView+AFNetworking.m in Sources */,
+				A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */,
 				A18C3A891B5DF98000BC5BF1 /* programViewController.m in Sources */,
 				A14C4E731B6221F30045D442 /* AFHTTPRequestOperation.m in Sources */,
 				A14C4E7B1B6221F30045D442 /* AFURLSessionManager.m in Sources */,
