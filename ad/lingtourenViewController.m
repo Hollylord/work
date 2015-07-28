@@ -9,6 +9,8 @@
 #import "lingtourenViewController.h"
 
 @interface lingtourenViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *dagouBtn;
+- (IBAction)dagou:(UIButton *)sender;
 
 @end
 
@@ -16,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +37,14 @@
 }
 */
 
+#pragma mark - 点击按钮
+- (IBAction)dagou:(UIButton *)sender {
+    if (self.dagouBtn.selected == NO) {
+        self.dagouBtn.selected = YES;
+    }
+    else {
+    self.dagouBtn.selected = NO;
+    }
+    
+}
 @end
