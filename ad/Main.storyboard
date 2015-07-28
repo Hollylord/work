@@ -219,13 +219,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oTz-rY-VYc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oTz-rY-VYc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <sections/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="oTz-rY-VYc" firstAttribute="leading" secondItem="Ssx-xp-Ubl" secondAttribute="leading" id="14O-2F-SYM"/>
                             <constraint firstItem="oTz-rY-VYc" firstAttribute="top" secondItem="wEE-pu-zl0" secondAttribute="bottom" constant="152" id="FT3-ww-YyT">
@@ -1225,7 +1224,7 @@
                                 </variation>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="RbO-Y0-U71" firstAttribute="leading" secondItem="0VD-nR-aEg" secondAttribute="leading" id="0Da-AE-uos"/>
                             <constraint firstItem="RbO-Y0-U71" firstAttribute="leading" secondItem="0VD-nR-aEg" secondAttribute="leading" id="H2a-IV-VE2"/>
@@ -1288,10 +1287,11 @@
         <scene sceneID="cMe-tU-S78">
             <objects>
                 <tableViewController title="我关注的投资人" id="6FP-dj-LFh" customClass="sponsorTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" id="45h-MC-igY">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="1" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" id="45h-MC-igY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="20" reuseIdentifier="sponsor" rowHeight="125" id="dxB-oB-XGZ">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -1377,11 +1377,11 @@
                                             <exclude reference="V9h-wC-7VH"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="clL-iX-DaI"/>
                                             <exclude reference="6E3-1D-eoT"/>
                                             <exclude reference="BWb-44-Oxm"/>
                                             <exclude reference="nUP-nn-2oT"/>
                                             <exclude reference="q8Q-ie-AB1"/>
+                                            <exclude reference="clL-iX-DaI"/>
                                             <exclude reference="abE-WV-WOU"/>
                                             <exclude reference="hSS-wH-oLk"/>
                                             <exclude reference="nH0-KC-tI9"/>
@@ -1394,11 +1394,11 @@
                                             <include reference="V9h-wC-7VH"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="clL-iX-DaI"/>
                                             <include reference="6E3-1D-eoT"/>
                                             <include reference="BWb-44-Oxm"/>
                                             <include reference="nUP-nn-2oT"/>
                                             <include reference="q8Q-ie-AB1"/>
+                                            <include reference="clL-iX-DaI"/>
                                             <include reference="abE-WV-WOU"/>
                                             <include reference="hSS-wH-oLk"/>
                                             <include reference="nH0-KC-tI9"/>
@@ -1677,7 +1677,7 @@
                                 </variation>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="DCy-7C-B4W" firstAttribute="leading" secondItem="Gws-sC-TIj" secondAttribute="leading" id="0mr-NE-Uo0"/>
                             <constraint firstItem="DCy-7C-B4W" firstAttribute="top" secondItem="Gws-sC-TIj" secondAttribute="top" constant="64" id="cRF-aL-Gjy"/>
@@ -1748,7 +1748,8 @@
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7Oq-UD-ULf">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ayK-1m-IM2">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -1786,7 +1787,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="ayK-1m-IM2" secondAttribute="centerX" id="4g7-9H-gf4"/>
                             <constraint firstItem="PIg-dI-tcd" firstAttribute="leading" secondItem="3nT-e1-Mby" secondAttribute="leading" id="7DW-7K-PlL"/>
@@ -1872,6 +1873,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="xiangmu" rowHeight="130" id="cte-IU-QvZ">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -2093,6 +2095,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="care" rowHeight="150" id="SJX-82-wPy">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -2488,7 +2491,7 @@
                                 </variation>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="E9e-R3-zwe" firstAttribute="centerY" secondItem="0gv-mN-hHq" secondAttribute="centerY" id="0c5-st-9bW"/>
                             <constraint firstItem="E9e-R3-zwe" firstAttribute="height" secondItem="VTh-rQ-CIo" secondAttribute="height" id="1KC-Hg-SdI"/>
@@ -2687,7 +2690,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdc-IX-ZSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5281.5" y="2694"/>
+            <point key="canvasLocation" x="4996.5" y="2694"/>
         </scene>
         <!--社群-->
         <scene sceneID="7WI-H9-Xa3">

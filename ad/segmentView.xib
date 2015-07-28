@@ -78,10 +78,14 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="zbg-Jx-rVY" secondAttribute="bottom" constant="12.5" id="1lg-GR-xmF"/>
+                <constraint firstAttribute="bottom" secondItem="zbg-Jx-rVY" secondAttribute="bottom" constant="12.5" id="1lg-GR-xmF">
+                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                </constraint>
                 <constraint firstItem="1RF-VO-7e1" firstAttribute="top" secondItem="2oy-P1-Xqh" secondAttribute="top" id="MZv-fs-eBz"/>
                 <constraint firstAttribute="trailing" secondItem="1RF-VO-7e1" secondAttribute="trailing" id="bkf-uZ-R5o"/>
-                <constraint firstAttribute="bottom" secondItem="0tZ-dz-phN" secondAttribute="bottom" constant="12.5" id="nl7-Gz-f92"/>
+                <constraint firstAttribute="bottom" secondItem="0tZ-dz-phN" secondAttribute="bottom" constant="12.5" id="nl7-Gz-f92">
+                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                </constraint>
                 <constraint firstAttribute="trailing" secondItem="0tZ-dz-phN" secondAttribute="trailing" constant="89" id="sgI-6Z-Ka6"/>
                 <constraint firstItem="zbg-Jx-rVY" firstAttribute="leading" secondItem="2oy-P1-Xqh" secondAttribute="leading" constant="89" id="vQ2-Xn-fYL"/>
                 <constraint firstAttribute="bottom" secondItem="1RF-VO-7e1" secondAttribute="bottom" id="xuf-2H-oDy"/>
@@ -125,7 +129,7 @@
             <connections>
                 <outlet property="backgroundImage" destination="1RF-VO-7e1" id="XyH-1A-JVL"/>
             </connections>
-            <point key="canvasLocation" x="310" y="-56"/>
+            <point key="canvasLocation" x="354.5" y="-69.5"/>
         </view>
     </objects>
     <resources>

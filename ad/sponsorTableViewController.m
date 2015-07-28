@@ -34,13 +34,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
     //绝对不能返回为0 
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return 2;
+    return 1;
 }
 
 
@@ -52,10 +52,16 @@
     return cell;
 }
 
-#pragma mark - 测试方法
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 20;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self.refreshControl endRefreshing];
 }
+
+
 
 /*
 // Override to support conditional editing of the table view.

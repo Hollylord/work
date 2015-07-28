@@ -32,6 +32,8 @@
     self.items = @[@"个人信息",@"申请成为领投人",@"我关注的投资人",@"发布项目",@"我发起的项目",@"我投资的项目",@"我关注的项目"];
     
     
+    
+    
 
 }
 #pragma mark - tableView方法
@@ -45,11 +47,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] init];
+    cell.backgroundColor = [UIColor clearColor];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(30, 0, cell.frame.size.width - 30, cell.frame.size.height)];
     label.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
     label.text = self.items[indexPath.row];
     //把东西加载contentView上面 不能直接设置字了！
-    [cell.contentView addSubview:label] ;
+    [cell.contentView addSubview:label];
     return cell;
 }
 
