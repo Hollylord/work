@@ -29,7 +29,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpc-X7-SeW">
-                    <rect key="frame" x="34" y="42" width="309" height="100"/>
+                    <rect key="frame" x="120" y="42" width="223" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="Tpj-g2-x4p"/>
                     </constraints>
@@ -38,7 +38,7 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mUr-sO-t9u" customClass="ASProgressPopUpView">
-                    <rect key="frame" x="34" y="170" width="309" height="2"/>
+                    <rect key="frame" x="34" y="187" width="309" height="2"/>
                 </progressView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,14 +47,14 @@
                 <constraint firstAttribute="bottom" secondItem="QAk-Kv-Qvn" secondAttribute="bottom" id="8Yg-xH-9yI"/>
                 <constraint firstAttribute="trailing" secondItem="mUr-sO-t9u" secondAttribute="trailing" constant="19" id="GDY-MZ-e2f"/>
                 <constraint firstItem="tpc-X7-SeW" firstAttribute="trailing" secondItem="aAi-V5-cNC" secondAttribute="trailing" id="HoR-oT-jEW"/>
-                <constraint firstItem="mUr-sO-t9u" firstAttribute="top" secondItem="tpc-X7-SeW" secondAttribute="bottom" constant="28" id="Sci-Vi-Ha5"/>
+                <constraint firstItem="mUr-sO-t9u" firstAttribute="top" secondItem="tpc-X7-SeW" secondAttribute="bottom" constant="45" id="Sci-Vi-Ha5"/>
                 <constraint firstItem="tpc-X7-SeW" firstAttribute="top" secondItem="aAi-V5-cNC" secondAttribute="bottom" constant="13" id="adN-92-ki7"/>
                 <constraint firstAttribute="trailing" secondItem="QAk-Kv-Qvn" secondAttribute="trailing" id="cjj-Jq-PyL"/>
                 <constraint firstItem="aAi-V5-cNC" firstAttribute="top" secondItem="QF1-7V-lXT" secondAttribute="top" constant="8" id="dTD-lm-hKG"/>
                 <constraint firstItem="QAk-Kv-Qvn" firstAttribute="leading" secondItem="QF1-7V-lXT" secondAttribute="leading" id="l0r-DP-tFo"/>
                 <constraint firstItem="QAk-Kv-Qvn" firstAttribute="top" secondItem="QF1-7V-lXT" secondAttribute="top" id="tUl-C6-vKP"/>
                 <constraint firstItem="mUr-sO-t9u" firstAttribute="leading" secondItem="QF1-7V-lXT" secondAttribute="leading" constant="34" id="uOv-jl-YcW"/>
-                <constraint firstItem="tpc-X7-SeW" firstAttribute="leading" secondItem="QF1-7V-lXT" secondAttribute="leading" constant="34" id="x1x-8L-Ljt"/>
+                <constraint firstItem="tpc-X7-SeW" firstAttribute="leading" secondItem="QF1-7V-lXT" secondAttribute="leading" constant="120" id="x1x-8L-Ljt"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
@@ -63,7 +63,7 @@
             <connections>
                 <outlet property="backgroundImage" destination="QAk-Kv-Qvn" id="JZj-hy-PFO"/>
             </connections>
-            <point key="canvasLocation" x="310" y="56"/>
+            <point key="canvasLocation" x="223" y="237"/>
         </view>
     </objects>
     <resources>
