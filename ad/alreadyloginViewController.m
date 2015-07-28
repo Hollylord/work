@@ -56,6 +56,12 @@
         
         [self performSegueWithIdentifier:@"already2personinformation" sender:nil];
     }
+    
+    if (indexPath.row == 1) {
+        
+        [self performSegueWithIdentifier:@"already2lingtouren" sender:nil];
+    }
+    
     if (indexPath.row == 2) {
         
         [self performSegueWithIdentifier:@"already2sponsor" sender:nil];

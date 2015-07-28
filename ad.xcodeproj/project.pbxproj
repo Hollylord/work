@@ -88,6 +88,7 @@
 		A1D77EDA1B67161F008847FE /* myProgramTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77ED91B67161F008847FE /* myProgramTableViewController.m */; };
 		A1D77EDD1B672C3C008847FE /* careProgramTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77EDC1B672C3C008847FE /* careProgramTableViewController.m */; };
 		A1D77EE01B672FB3008847FE /* publishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77EDF1B672FB3008847FE /* publishViewController.m */; };
+		A1D77EE31B6757ED008847FE /* lingtourenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77EE21B6757ED008847FE /* lingtourenViewController.m */; };
 		A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */; };
 		F00A177D1B5FBBCE00763096 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */; };
 		F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A177C1B5FBBCE00763096 /* Main.storyboard */; };
@@ -247,6 +248,8 @@
 		A1D77EDC1B672C3C008847FE /* careProgramTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = careProgramTableViewController.m; sourceTree = "<group>"; };
 		A1D77EDE1B672FB3008847FE /* publishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = publishViewController.h; sourceTree = "<group>"; };
 		A1D77EDF1B672FB3008847FE /* publishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = publishViewController.m; sourceTree = "<group>"; };
+		A1D77EE11B6757ED008847FE /* lingtourenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lingtourenViewController.h; sourceTree = "<group>"; };
+		A1D77EE21B6757ED008847FE /* lingtourenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lingtourenViewController.m; sourceTree = "<group>"; };
 		A1DB59221B65E34900FAD6C4 /* personInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personInformationViewController.h; sourceTree = "<group>"; };
 		A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personInformationViewController.m; sourceTree = "<group>"; };
 		DE12D6506F96786A2FADEB22 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -513,6 +516,8 @@
 				A14C4E431B61ECF60045D442 /* alreadyloginViewController.m */,
 				A1DB59221B65E34900FAD6C4 /* personInformationViewController.h */,
 				A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */,
+				A1D77EE11B6757ED008847FE /* lingtourenViewController.h */,
+				A1D77EE21B6757ED008847FE /* lingtourenViewController.m */,
 				A1D77EDE1B672FB3008847FE /* publishViewController.h */,
 				A1D77EDF1B672FB3008847FE /* publishViewController.m */,
 				A13BCBD11B663A190094E473 /* sponsorTableViewController.h */,
@@ -943,6 +948,7 @@
 				A14C4E1A1B61D0550045D442 /* newsViewController.m in Sources */,
 				A18C3A981B5E29AF00BC5BF1 /* pictureView.m in Sources */,
 				A14C4E3E1B61D7A50045D442 /* neighborViewController.m in Sources */,
+				A1D77EE31B6757ED008847FE /* lingtourenViewController.m in Sources */,
 				A18C3ABE1B5E453800BC5BF1 /* recommendView.m in Sources */,
 				A1C4D34D1B60BA0D00FE4A35 /* dengluViewController.m in Sources */,
 				A1D77EDA1B67161F008847FE /* myProgramTableViewController.m in Sources */,
