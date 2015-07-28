@@ -29,10 +29,10 @@
     
     //创建scrlloview
     UIScrollView *scrollView = [[UIScrollView alloc] init];
-    scrollView.frame = CGRectMake(0, 0, 400, 152);
+    scrollView.frame = CGRectMake(0, 0, 375, 152);
     self.scrollView = scrollView;
     scrollView.pagingEnabled = YES;
-    scrollView.contentSize = CGSizeMake(400 * images, 152);
+    scrollView.contentSize = CGSizeMake(375 * images, 152);
     scrollView.backgroundColor = [UIColor redColor];
 
     [self addSubview:scrollView];
@@ -44,20 +44,22 @@
     pageControl.frame = CGRectMake(200, 130, 100, 20);
     pageControl.userInteractionEnabled = YES;
     pageControl.numberOfPages = images ;
-    pageControl.pageIndicatorTintColor = [UIColor blackColor];
+    pageControl.pageIndicatorTintColor = [UIColor grayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:5 green:140 blue:108 alpha:1];
     pageControl.currentPage = 0;
-    pageControl.backgroundColor = [UIColor greenColor];
+    
     [self addSubview:pageControl];
     
     //创建imageView
     
     for (i = 0; i < images; i ++) {
         
-        CGRect imageFrame = CGRectMake(0,0,400 * (i + 1),152);
+        CGRect imageFrame = CGRectMake(375 * i,0,375,152);
         
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:imageFrame];
+        NSString *imageName = [NSString stringWithFormat:@"picture%d",i + 1];
         
-        imageView.backgroundColor = [UIColor colorWithRed:(CGFloat)(i*100/256) green:(CGFloat)i*70/255 blue:(CGFloat)i*50/255 alpha:0.5];
+        imageView.image = [UIImage imageNamed:imageName];
         
         [self.scrollView addSubview:imageView];
         
@@ -65,12 +67,14 @@
     //设定定时器，自动滚动
     [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(pictureViewScroll) userInfo:nil repeats:YES];
     
+    
     return self;
     
 }
 
 - (void)pictureViewScroll{
     NSInteger pageNum = self.pageControl.currentPage ;
+    
     if (pageNum == 4) {
         self.pageControl.currentPage = 0;
         self.scrollView.contentOffset = CGPointMake(0, 0);
@@ -78,7 +82,7 @@
     else
     {
         self.pageControl.currentPage = pageNum + 1;
-        self.scrollView.contentOffset = CGPointMake(400 * pageNum, 0);
+        self.scrollView.contentOffset = CGPointMake(375 * (pageNum + 1), 0);
     }
     
     

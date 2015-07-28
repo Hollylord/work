@@ -87,8 +87,41 @@
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FUA-f1-hEF" customClass="pictureView">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="152" id="l5d-IT-E14"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="l5d-IT-E14"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="152"/>
+                                            <mask key="constraints">
+                                                <exclude reference="l5d-IT-E14"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="FUA-f1-hEF" firstAttribute="leading" secondItem="z1a-gG-eFD" secondAttribute="leading" id="f1n-q1-HOQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="FUA-f1-hEF" secondAttribute="trailing" id="gwq-LL-ZIm"/>
+                                    <constraint firstItem="FUA-f1-hEF" firstAttribute="top" secondItem="z1a-gG-eFD" secondAttribute="top" id="hB3-I0-RpI"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="f1n-q1-HOQ"/>
+                                        <exclude reference="gwq-LL-ZIm"/>
+                                        <exclude reference="hB3-I0-RpI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="f1n-q1-HOQ"/>
+                                        <exclude reference="gwq-LL-ZIm"/>
+                                        <exclude reference="hB3-I0-RpI"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchBar" translatesAutoresizingMaskIntoConstraints="NO" id="7eW-lI-hbw" userLabel="searchBar">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
@@ -104,6 +137,11 @@
                             <constraint firstItem="M0t-59-QMk" firstAttribute="top" secondItem="z1a-gG-eFD" secondAttribute="bottom" id="gPE-pI-f9O"/>
                             <constraint firstAttribute="trailing" secondItem="7eW-lI-hbw" secondAttribute="trailing" id="xVz-Li-Cod"/>
                         </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Fzs-K3-JFt"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="aiM-4B-nei"/>
                     <connections>
