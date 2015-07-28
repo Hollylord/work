@@ -85,6 +85,9 @@
 		A1CB48C81B578DBC00BB2489 /* adTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48C71B578DBC00BB2489 /* adTests.m */; };
 		A1CB48D31B578E6600BB2489 /* advertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48D21B578E6600BB2489 /* advertViewController.m */; };
 		A1CB48D91B57A80800BB2489 /* tabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48D81B57A80800BB2489 /* tabViewController.m */; };
+		A1D77EDA1B67161F008847FE /* myProgramTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77ED91B67161F008847FE /* myProgramTableViewController.m */; };
+		A1D77EDD1B672C3C008847FE /* careProgramTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77EDC1B672C3C008847FE /* careProgramTableViewController.m */; };
+		A1D77EE01B672FB3008847FE /* publishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77EDF1B672FB3008847FE /* publishViewController.m */; };
 		A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */; };
 		F00A177D1B5FBBCE00763096 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */; };
 		F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A177C1B5FBBCE00763096 /* Main.storyboard */; };
@@ -238,6 +241,12 @@
 		A1CB48D21B578E6600BB2489 /* advertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = advertViewController.m; sourceTree = "<group>"; };
 		A1CB48D71B57A80800BB2489 /* tabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabViewController.h; sourceTree = "<group>"; };
 		A1CB48D81B57A80800BB2489 /* tabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabViewController.m; sourceTree = "<group>"; };
+		A1D77ED81B67161F008847FE /* myProgramTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myProgramTableViewController.h; sourceTree = "<group>"; };
+		A1D77ED91B67161F008847FE /* myProgramTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myProgramTableViewController.m; sourceTree = "<group>"; };
+		A1D77EDB1B672C3C008847FE /* careProgramTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = careProgramTableViewController.h; sourceTree = "<group>"; };
+		A1D77EDC1B672C3C008847FE /* careProgramTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = careProgramTableViewController.m; sourceTree = "<group>"; };
+		A1D77EDE1B672FB3008847FE /* publishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = publishViewController.h; sourceTree = "<group>"; };
+		A1D77EDF1B672FB3008847FE /* publishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = publishViewController.m; sourceTree = "<group>"; };
 		A1DB59221B65E34900FAD6C4 /* personInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personInformationViewController.h; sourceTree = "<group>"; };
 		A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personInformationViewController.m; sourceTree = "<group>"; };
 		DE12D6506F96786A2FADEB22 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -504,8 +513,14 @@
 				A14C4E431B61ECF60045D442 /* alreadyloginViewController.m */,
 				A1DB59221B65E34900FAD6C4 /* personInformationViewController.h */,
 				A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */,
+				A1D77EDE1B672FB3008847FE /* publishViewController.h */,
+				A1D77EDF1B672FB3008847FE /* publishViewController.m */,
 				A13BCBD11B663A190094E473 /* sponsorTableViewController.h */,
 				A13BCBD21B663A190094E473 /* sponsorTableViewController.m */,
+				A1D77ED81B67161F008847FE /* myProgramTableViewController.h */,
+				A1D77ED91B67161F008847FE /* myProgramTableViewController.m */,
+				A1D77EDB1B672C3C008847FE /* careProgramTableViewController.h */,
+				A1D77EDC1B672C3C008847FE /* careProgramTableViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -896,6 +911,7 @@
 				A1CB48D91B57A80800BB2489 /* tabViewController.m in Sources */,
 				A14C4E7F1B6221F30045D442 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				A1770A551B5C8A4F00C272E9 /* MyTabBar.m in Sources */,
+				A1D77EE01B672FB3008847FE /* publishViewController.m in Sources */,
 				A14C4E811B6221F30045D442 /* UIButton+AFNetworking.m in Sources */,
 				A1770A5A1B5CE0F400C272E9 /* RainBow.m in Sources */,
 				A14C4E781B6221F30045D442 /* AFURLConnectionOperation.m in Sources */,
@@ -913,6 +929,7 @@
 				A14C4E7E1B6221F30045D442 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				A14C4E441B61ECF60045D442 /* alreadyloginViewController.m in Sources */,
 				A14C4E741B6221F30045D442 /* AFHTTPRequestOperationManager.m in Sources */,
+				A1D77EDD1B672C3C008847FE /* careProgramTableViewController.m in Sources */,
 				A14C4E851B6221F30045D442 /* UIWebView+AFNetworking.m in Sources */,
 				A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */,
 				A18C3A891B5DF98000BC5BF1 /* programViewController.m in Sources */,
@@ -928,6 +945,7 @@
 				A14C4E3E1B61D7A50045D442 /* neighborViewController.m in Sources */,
 				A18C3ABE1B5E453800BC5BF1 /* recommendView.m in Sources */,
 				A1C4D34D1B60BA0D00FE4A35 /* dengluViewController.m in Sources */,
+				A1D77EDA1B67161F008847FE /* myProgramTableViewController.m in Sources */,
 				A18C3A9B1B5E2CFD00BC5BF1 /* INSSearchBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1005,6 +1023,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Debug;
 		};
@@ -1044,6 +1063,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 			};
 			name = Release;
 		};
@@ -1071,7 +1091,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7 armv7s  arm64 ";
+				VALID_ARCHS = "armv7 armv7s  arm64 i386";
 			};
 			name = Debug;
 		};
@@ -1099,7 +1119,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7 armv7s  arm64 ";
+				VALID_ARCHS = "armv7 armv7s  arm64 i386";
 			};
 			name = Release;
 		};

@@ -56,9 +56,23 @@
         
         [self performSegueWithIdentifier:@"already2personinformation" sender:nil];
     }
-    if (indexPath.row == 5) {
-        [self performSegueWithIdentifier:@"person2guanzhu" sender:nil];
+    if (indexPath.row == 2) {
+        
+        [self performSegueWithIdentifier:@"already2sponsor" sender:nil];
     }
+    if (indexPath.row == 3) {
+        
+        [self performSegueWithIdentifier:@"already2publish" sender:nil];
+    }
+    
+    if (indexPath.row == 5) {
+        [self performSegueWithIdentifier:@"person2myprogram" sender:nil];
+    }
+    
+    if (indexPath.row == 6) {
+        [self performSegueWithIdentifier:@"already2guanzhuprogram" sender:nil];
+    }
+    
 }
 
 
