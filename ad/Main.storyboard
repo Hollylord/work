@@ -162,6 +162,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yFf-7V-Eqz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="p5T-ds-eN3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JL-SP-Pvi">
@@ -255,178 +256,37 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsv-Fx-DhU">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Igy-3l-nqB">
-                                        <rect key="frame" x="-61" y="-14" width="123" height="29"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="356" id="JSo-qn-ZkC"/>
-                                        </constraints>
-                                        <segments>
-                                            <segment title="项目摘要"/>
-                                            <segment title="投资建议"/>
-                                            <segment title="众筹方案"/>
-                                            <segment title="投资人列表"/>
-                                            <segment title="项目路演"/>
-                                        </segments>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="JSo-qn-ZkC"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="JSo-qn-ZkC"/>
-                                            </mask>
-                                        </variation>
-                                    </segmentedControl>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOC-gx-YKI">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="356" id="luQ-Am-ZF8">
-                                                <variation key="heightClass=regular-widthClass=compact" constant="355"/>
-                                            </constraint>
-                                            <constraint firstAttribute="height" constant="397" id="xQY-92-ANA"/>
-                                        </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="luQ-Am-ZF8"/>
-                                                <exclude reference="xQY-92-ANA"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="luQ-Am-ZF8"/>
-                                                <include reference="xQY-92-ANA"/>
-                                            </mask>
-                                        </variation>
-                                    </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N17-JX-1ra">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="152" id="rYI-Wv-QNJ">
-                                                <variation key="heightClass=regular-widthClass=compact" constant="190"/>
-                                            </constraint>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="rYI-Wv-QNJ"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="rYI-Wv-QNJ"/>
-                                            </mask>
-                                        </variation>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="cOC-gx-YKI" firstAttribute="top" secondItem="Igy-3l-nqB" secondAttribute="bottom" constant="18" id="9Az-nZ-cfO"/>
-                                    <constraint firstAttribute="centerX" secondItem="Igy-3l-nqB" secondAttribute="centerX" id="JF6-GS-GLI"/>
-                                    <constraint firstAttribute="trailing" secondItem="cOC-gx-YKI" secondAttribute="trailing" constant="22" id="Mau-4r-Lo3">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="10"/>
-                                    </constraint>
-                                    <constraint firstItem="N17-JX-1ra" firstAttribute="leading" secondItem="Dsv-Fx-DhU" secondAttribute="leading" id="SEm-Jv-WU8"/>
-                                    <constraint firstItem="N17-JX-1ra" firstAttribute="top" secondItem="Dsv-Fx-DhU" secondAttribute="top" id="XAb-5H-2Uh"/>
-                                    <constraint firstAttribute="bottom" secondItem="cOC-gx-YKI" secondAttribute="bottom" constant="200" id="ZTV-zy-FHg"/>
-                                    <constraint firstAttribute="trailing" secondItem="N17-JX-1ra" secondAttribute="trailing" id="kMh-oq-ld9"/>
-                                    <constraint firstItem="Igy-3l-nqB" firstAttribute="top" secondItem="N17-JX-1ra" secondAttribute="bottom" constant="10" id="lPV-0m-RkH"/>
-                                    <constraint firstItem="cOC-gx-YKI" firstAttribute="leading" secondItem="Dsv-Fx-DhU" secondAttribute="leading" constant="22" id="xMI-ho-6Ux">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="10"/>
-                                    </constraint>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="Igy-3l-nqB"/>
-                                        <exclude reference="cOC-gx-YKI"/>
-                                        <exclude reference="N17-JX-1ra"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <exclude reference="SEm-Jv-WU8"/>
-                                        <exclude reference="XAb-5H-2Uh"/>
-                                        <exclude reference="kMh-oq-ld9"/>
-                                        <exclude reference="JF6-GS-GLI"/>
-                                        <exclude reference="lPV-0m-RkH"/>
-                                        <exclude reference="9Az-nZ-cfO"/>
-                                        <exclude reference="Mau-4r-Lo3"/>
-                                        <exclude reference="ZTV-zy-FHg"/>
-                                        <exclude reference="xMI-ho-6Ux"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="Igy-3l-nqB"/>
-                                        <include reference="cOC-gx-YKI"/>
-                                        <include reference="N17-JX-1ra"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="SEm-Jv-WU8"/>
-                                        <include reference="XAb-5H-2Uh"/>
-                                        <include reference="kMh-oq-ld9"/>
-                                        <include reference="JF6-GS-GLI"/>
-                                        <include reference="lPV-0m-RkH"/>
-                                        <include reference="9Az-nZ-cfO"/>
-                                        <include reference="Mau-4r-Lo3"/>
-                                        <include reference="ZTV-zy-FHg"/>
-                                        <include reference="xMI-ho-6Ux"/>
-                                    </mask>
-                                </variation>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Dsv-Fx-DhU" firstAttribute="top" secondItem="5WK-jb-H23" secondAttribute="bottom" id="N9O-tR-qvZ"/>
                             <constraint firstAttribute="trailing" secondItem="3JL-SP-Pvi" secondAttribute="trailing" id="NKb-kD-ALb"/>
                             <constraint firstItem="3JL-SP-Pvi" firstAttribute="leading" secondItem="p5T-ds-eN3" secondAttribute="leading" id="ORA-lF-a6R"/>
-                            <constraint firstItem="Dsv-Fx-DhU" firstAttribute="leading" secondItem="p5T-ds-eN3" secondAttribute="leading" id="Omr-qK-c1X"/>
                             <constraint firstAttribute="bottom" secondItem="3JL-SP-Pvi" secondAttribute="bottom" id="fCv-fF-fGK"/>
-                            <constraint firstAttribute="trailing" secondItem="Dsv-Fx-DhU" secondAttribute="trailing" id="hTx-wK-bbP"/>
-                            <constraint firstItem="yFf-7V-Eqz" firstAttribute="top" secondItem="Dsv-Fx-DhU" secondAttribute="bottom" id="m9h-CM-UPJ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3JL-SP-Pvi"/>
-                                <exclude reference="Dsv-Fx-DhU"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="N9O-tR-qvZ"/>
-                                <exclude reference="Omr-qK-c1X"/>
-                                <exclude reference="hTx-wK-bbP"/>
                                 <exclude reference="NKb-kD-ALb"/>
                                 <exclude reference="ORA-lF-a6R"/>
                                 <exclude reference="fCv-fF-fGK"/>
-                                <exclude reference="m9h-CM-UPJ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="3JL-SP-Pvi"/>
-                                <include reference="Dsv-Fx-DhU"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="N9O-tR-qvZ"/>
-                                <include reference="Omr-qK-c1X"/>
-                                <include reference="hTx-wK-bbP"/>
                                 <include reference="NKb-kD-ALb"/>
                                 <include reference="ORA-lF-a6R"/>
                                 <include reference="fCv-fF-fGK"/>
-                                <include reference="m9h-CM-UPJ"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="众筹中" id="9kL-jC-ngg">
                         <barButtonItem key="backBarButtonItem" title="返回" id="qKW-b9-7o5"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="chooseSegment" destination="Igy-3l-nqB" id="WGK-jp-RJZ"/>
-                        <outlet property="scrollView" destination="Dsv-Fx-DhU" id="5Pt-FE-rf7"/>
-                        <outlet property="textInformation" destination="cOC-gx-YKI" id="WoR-Jx-Soh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oiZ-My-kNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
