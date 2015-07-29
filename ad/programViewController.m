@@ -84,9 +84,9 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    self.navigationController.navigationBarHidden = YES;
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     tabViewController *myTabBarController = (tabViewController *)self.tabBarController;
-    myTabBarController.customTabBar.hidden = NO;
+    [myTabBarController.customTabBar setHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning {

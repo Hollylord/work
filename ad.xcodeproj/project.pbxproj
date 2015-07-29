@@ -49,6 +49,7 @@
 		A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461731B5F2E51004CA48D /* ASPopUpView.m */; };
 		A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */; };
 		A17603651B686901002583BC /* zhongchouzhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17603641B686901002583BC /* zhongchouzhongViewController.m */; };
+		A17603671B688145002583BC /* sponsorsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17603661B688145002583BC /* sponsorsList.xib */; };
 		A1770A551B5C8A4F00C272E9 /* MyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1770A541B5C8A4F00C272E9 /* MyTabBar.m */; };
 		A1770A571B5C8A6E00C272E9 /* MyTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1770A561B5C8A6E00C272E9 /* MyTabBar.xib */; };
 		A1770A5A1B5CE0F400C272E9 /* RainBow.m in Sources */ = {isa = PBXBuildFile; fileRef = A1770A591B5CE0F400C272E9 /* RainBow.m */; };
@@ -176,6 +177,7 @@
 		A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASProgressPopUpView.m; sourceTree = "<group>"; };
 		A17603631B686901002583BC /* zhongchouzhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhongchouzhongViewController.h; sourceTree = "<group>"; };
 		A17603641B686901002583BC /* zhongchouzhongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhongchouzhongViewController.m; sourceTree = "<group>"; };
+		A17603661B688145002583BC /* sponsorsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = sponsorsList.xib; sourceTree = "<group>"; };
 		A1770A531B5C8A4F00C272E9 /* MyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBar.h; sourceTree = "<group>"; };
 		A1770A541B5C8A4F00C272E9 /* MyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBar.m; sourceTree = "<group>"; };
 		A1770A561B5C8A6E00C272E9 /* MyTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTabBar.xib; sourceTree = "<group>"; };
@@ -633,6 +635,7 @@
 				A15461731B5F2E51004CA48D /* ASPopUpView.m */,
 				A15461741B5F2E51004CA48D /* ASProgressPopUpView.h */,
 				A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */,
+				A17603661B688145002583BC /* sponsorsList.xib */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -856,6 +859,7 @@
 				A189FBB31B5F8ECE0002AAA5 /* UMSocialLocalizable.strings in Resources */,
 				A189FBBB1B5F8ECE0002AAA5 /* UMSnsAccountViewController.xib in Resources */,
 				A14C4E241B61D4270045D442 /* AMap.bundle in Resources */,
+				A17603671B688145002583BC /* sponsorsList.xib in Resources */,
 				A1C4D35C1B60EED000FE4A35 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				A189FBBD1B5F8ECE0002AAA5 /* UMSocialSDKResourcesNew.bundle in Resources */,
 				A18C3AC01B5E454900BC5BF1 /* recommend.xib in Resources */,
