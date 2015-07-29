@@ -62,9 +62,16 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="backgroundImage" destination="QAk-Kv-Qvn" id="JZj-hy-PFO"/>
+                <outletCollection property="gestureRecognizers" destination="UcM-KF-y0N" appends="YES" id="cgf-dH-fG2"/>
             </connections>
             <point key="canvasLocation" x="223" y="237"/>
         </view>
+        <tapGestureRecognizer id="UcM-KF-y0N">
+            <connections>
+                <action selector="tapProgram:" destination="-1" id="I9g-ja-6iA"/>
+                <outlet property="delegate" destination="-1" id="vuq-kw-A4y"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="recommendBackground" width="362" height="212"/>

@@ -22,6 +22,8 @@
     
     NSURL *url = [NSURL URLWithString:@"http://www.touwho.com/topic_66.htm"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    //网页大小自适应功能
+    self.browser.scalesPageToFit = YES;
     [self.browser loadRequest:request ];
     
     
@@ -35,11 +37,12 @@
     
     
     [manager GET:@"http://www.touwho.com/topic_66.htm" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"%@",[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
+        
 //        NSLog(@"%@",[NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil]);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 //        NSLog(@"%@",[error localizedDescription]);
     }];
+    
 
 }
 

@@ -29,6 +29,7 @@
 
 
 
+
 - (IBAction)onGoingBtn:(id)sender;
 - (IBAction)prepareBtn:(id)sender;
 
@@ -39,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    
+    self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = [UIColor blackColor];
     //这种方式设置imageview 默认大小和图片一样
     UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"dabeijing"]];
@@ -79,6 +80,10 @@
     
     
     
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -148,6 +153,11 @@
     }
 }
 
+
+- (IBAction)tapProgram:(UITapGestureRecognizer *)sender {
+    [self performSegueWithIdentifier:@"program2zhongchouzhong" sender:nil];
+}
+
 #pragma mark - 进行中/预热中
 - (IBAction)onGoingBtn:(id)sender {
     
@@ -168,4 +178,7 @@
     self.segmentView.backgroundImage.image = [UIImage imageNamed:@"segmentBackground2"];
     self.recommendView.backgroundImage.image = [UIImage imageNamed:@"yurezhongBackground"];
 }
+
+
+
 @end

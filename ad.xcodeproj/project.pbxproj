@@ -48,6 +48,7 @@
 		A14C4E851B6221F30045D442 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C4E721B6221F30045D442 /* UIWebView+AFNetworking.m */; };
 		A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461731B5F2E51004CA48D /* ASPopUpView.m */; };
 		A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */; };
+		A17603651B686901002583BC /* zhongchouzhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17603641B686901002583BC /* zhongchouzhongViewController.m */; };
 		A1770A551B5C8A4F00C272E9 /* MyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1770A541B5C8A4F00C272E9 /* MyTabBar.m */; };
 		A1770A571B5C8A6E00C272E9 /* MyTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1770A561B5C8A6E00C272E9 /* MyTabBar.xib */; };
 		A1770A5A1B5CE0F400C272E9 /* RainBow.m in Sources */ = {isa = PBXBuildFile; fileRef = A1770A591B5CE0F400C272E9 /* RainBow.m */; };
@@ -173,6 +174,8 @@
 		A15461731B5F2E51004CA48D /* ASPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopUpView.m; sourceTree = "<group>"; };
 		A15461741B5F2E51004CA48D /* ASProgressPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProgressPopUpView.h; sourceTree = "<group>"; };
 		A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASProgressPopUpView.m; sourceTree = "<group>"; };
+		A17603631B686901002583BC /* zhongchouzhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhongchouzhongViewController.h; sourceTree = "<group>"; };
+		A17603641B686901002583BC /* zhongchouzhongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhongchouzhongViewController.m; sourceTree = "<group>"; };
 		A1770A531B5C8A4F00C272E9 /* MyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBar.h; sourceTree = "<group>"; };
 		A1770A541B5C8A4F00C272E9 /* MyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBar.m; sourceTree = "<group>"; };
 		A1770A561B5C8A6E00C272E9 /* MyTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTabBar.xib; sourceTree = "<group>"; };
@@ -607,6 +610,8 @@
 			children = (
 				A18C3A871B5DF98000BC5BF1 /* programViewController.h */,
 				A18C3A881B5DF98000BC5BF1 /* programViewController.m */,
+				A17603631B686901002583BC /* zhongchouzhongViewController.h */,
+				A17603641B686901002583BC /* zhongchouzhongViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -929,6 +934,7 @@
 				A14C4E831B6221F30045D442 /* UIProgressView+AFNetworking.m in Sources */,
 				A1CB48AE1B578DBC00BB2489 /* main.m in Sources */,
 				A18C3AB91B5E398500BC5BF1 /* segmentView.m in Sources */,
+				A17603651B686901002583BC /* zhongchouzhongViewController.m in Sources */,
 				A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */,
 				A14C4E7D1B6221F30045D442 /* README.md in Sources */,
 				A14C4E7E1B6221F30045D442 /* AFNetworkActivityIndicatorManager.m in Sources */,
