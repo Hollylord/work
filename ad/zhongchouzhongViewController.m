@@ -10,6 +10,9 @@
 #import "tabViewController.h"
 
 @interface zhongchouzhongViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstViewHeight;
+- (IBAction)firstExtention:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *firstBtn;
 
 
 
@@ -37,5 +40,24 @@
 }
 
 
-
+#pragma mark - 展开按钮
+- (IBAction)firstExtention:(UIButton *)sender {
+    if (self.firstBtn.selected == NO) {
+        [self.firstBtn setSelected:YES];
+        self.firstViewHeight.constant = 200;
+        [UIView animateWithDuration:1.0 animations:^{
+            [self.view layoutIfNeeded];
+        }];
+    }
+    else {
+        [self.firstBtn setSelected:NO];
+        self.firstViewHeight.constant = 130;
+        [UIView animateWithDuration:1.0 animations:^{
+            [self.view layoutIfNeeded];
+        }];
+        
+    }
+    
+    
+}
 @end
