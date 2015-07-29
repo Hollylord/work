@@ -7,6 +7,7 @@
 //
 
 #import "zhongchouzhongViewController.h"
+#import "tabViewController.h"
 
 @interface zhongchouzhongViewController ()
 
@@ -18,12 +19,17 @@
     [super viewDidLoad];
     
     self.navigationController.navigationBarHidden = NO;
+    
 }
-
+- (void)viewWillAppear:(BOOL)animated {
+    tabViewController *myTabBarController = (tabViewController *)self.tabBarController;
+    myTabBarController.customTabBar.hidden = YES;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

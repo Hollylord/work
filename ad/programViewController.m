@@ -11,6 +11,7 @@
 #import "ASProgressPopUpView.h"
 #import "recommendView.h"
 #import "segmentView.h"
+#import "tabViewController.h"
 
 
 @interface programViewController () <INSSearchBarDelegate,ASProgressPopUpViewDataSource>
@@ -84,6 +85,8 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBarHidden = YES;
+    tabViewController *myTabBarController = (tabViewController *)self.tabBarController;
+    myTabBarController.customTabBar.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {

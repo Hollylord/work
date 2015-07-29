@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyTabBar.h"
 
 @interface tabViewController : UITabBarController
+@property (strong, nonatomic) IBOutlet MyTabBar *customTabBar;
 
 @end
