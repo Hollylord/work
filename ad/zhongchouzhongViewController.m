@@ -9,13 +9,15 @@
 #import "zhongchouzhongViewController.h"
 #import "tabViewController.h"
 #import "sponsorsList.h"
+#import "ASProgressPopUpView.h"
 
-@interface zhongchouzhongViewController ()
+@interface zhongchouzhongViewController () <ASProgressPopUpViewDataSource>
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstViewHeight;
 - (IBAction)firstExtention:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *firstBtn;
 @property (weak, nonatomic) IBOutlet sponsorsList *view4;
+@property (weak, nonatomic) IBOutlet ASProgressPopUpView *progressView;
 
 
 
@@ -32,11 +34,14 @@
     
     self.navigationController.navigationBarHidden = NO;
     
-//    self.view4.tableView.delegate = self;
-//    self.view4.tableView.dataSource = self;
-    
-//    UINib *sponsorsCell = [UINib nibWithNibName:@"sponsorCell" bundle:nil];
-//    [self.sponsorsTableview registerNib:sponsorsCell forCellReuseIdentifier:@"sponsors"];
+    //配置progressView 进度条
+    self.progressView.popUpViewCornerRadius = 8.0;
+    self.progressView.popUpViewColor = [UIColor grayColor];
+    self.progressView.font = [UIFont fontWithName:@"Futura-CondensedExtraBold" size:20];
+    [self.progressView showPopUpViewAnimated:YES];
+    self.progressView.progress = 0.0;
+    self.progressView.dataSource = self;
+    [self progress];
     
 
     
@@ -74,6 +79,35 @@
     }
     
     
+}
+#pragma mark - 进度条
+- (void)progress
+{
+    float progress = self.progressView.progress;
+    
+    //0.9用来设置进度条的最终进度
+    if (self.progressView.progress < 0.9 ) {
+        
+        progress += 0.005;
+        
+        [self.progressView setProgress:progress animated:YES];
+        
+        [NSTimer scheduledTimerWithTimeInterval:0.1
+                                         target:self
+                                       selector:@selector(progress)
+                                       userInfo:nil
+                                        repeats:NO];
+    }
+}
+
+- (BOOL)progressViewShouldPreCalculatePopUpViewSize:(ASProgressPopUpView *)progressView;
+{
+    return NO;
+}
+
+- (NSString *)progressView:(ASProgressPopUpView *)progressView stringForProgress:(float)progress{
+    //默认是数字
+    return nil;
 }
 
 @end

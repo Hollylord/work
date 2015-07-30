@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASProgressPopUpView.h"
 
-@interface recommendView : UIView
-@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+@protocol recommendViewDelegate <NSObject>
+
+- (void)tapProgram;
 
 @end
+
+@interface recommendView : UIView <ASProgressPopUpViewDataSource>
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (weak, nonatomic) IBOutlet ASProgressPopUpView *progressView;
+@property (weak,nonatomic) id <recommendViewDelegate>delegate;
+
+@end
+

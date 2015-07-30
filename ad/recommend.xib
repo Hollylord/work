@@ -4,12 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="programViewController">
-            <connections>
-                <outlet property="progressView" destination="mUr-sO-t9u" id="2DG-9h-uOX"/>
-                <outlet property="recommendView" destination="QF1-7V-lXT" id="qf3-sv-Gtz"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="programViewController"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view autoresizesSubviews="NO" contentMode="scaleToFill" id="QF1-7V-lXT" customClass="recommendView">
             <rect key="frame" x="0.0" y="0.0" width="362" height="212"/>
@@ -62,13 +57,14 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="backgroundImage" destination="QAk-Kv-Qvn" id="JZj-hy-PFO"/>
+                <outlet property="progressView" destination="mUr-sO-t9u" id="BdR-Vk-hfy"/>
                 <outletCollection property="gestureRecognizers" destination="UcM-KF-y0N" appends="YES" id="cgf-dH-fG2"/>
             </connections>
-            <point key="canvasLocation" x="223" y="237"/>
+            <point key="canvasLocation" x="319" y="231"/>
         </view>
         <tapGestureRecognizer id="UcM-KF-y0N">
             <connections>
-                <action selector="tapProgram:" destination="-1" id="I9g-ja-6iA"/>
+                <action selector="tapProgram:" destination="QF1-7V-lXT" id="FTz-6B-nOf"/>
                 <outlet property="delegate" destination="-1" id="vuq-kw-A4y"/>
             </connections>
         </tapGestureRecognizer>
