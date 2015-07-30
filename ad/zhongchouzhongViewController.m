@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstViewHeight;
 - (IBAction)firstExtention:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *firstBtn;
-@property (weak, nonatomic) IBOutlet UITableView *sponsorsTableView;
+
 @property (weak, nonatomic) IBOutlet UIView *sponsorsView;
 
 
@@ -26,9 +26,9 @@
     [super viewDidLoad];
     
     self.navigationController.navigationBarHidden = NO;
-    UINib *sponsorsCell = [UINib nibWithNibName:@"sponsorCell" bundle:nil];
+//    UINib *sponsorsCell = [UINib nibWithNibName:@"sponsorCell" bundle:nil];
     
-    [self.sponsorsTableView registerNib:sponsorsCell forCellReuseIdentifier:@"sponsors"];
+//    [self.sponsorsTableView registerNib:sponsorsCell forCellReuseIdentifier:@"sponsors"];
 #warning 关联xib的崩溃位置
 //   UIView *sponsors = [[[NSBundle mainBundle] loadNibNamed:@"sponsorsList" owner:self options:nil] firstObject];
 //    [self.view addSubview:sponsors];
