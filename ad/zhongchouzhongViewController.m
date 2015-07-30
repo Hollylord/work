@@ -10,7 +10,7 @@
 #import "tabViewController.h"
 #import "sponsorsList.h"
 
-@interface zhongchouzhongViewController () <UITableViewDataSource,UITableViewDelegate>
+@interface zhongchouzhongViewController ()
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstViewHeight;
 - (IBAction)firstExtention:(UIButton *)sender;
@@ -38,9 +38,7 @@
 //    UINib *sponsorsCell = [UINib nibWithNibName:@"sponsorCell" bundle:nil];
 //    [self.sponsorsTableview registerNib:sponsorsCell forCellReuseIdentifier:@"sponsors"];
     
-#warning 关联xib的崩溃位置
-//   UIView *sponsors = [[[NSBundle mainBundle] loadNibNamed:@"sponsorsList" owner:self options:nil] firstObject];
-//    [self.view addSubview:sponsors];
+
     
     
   
