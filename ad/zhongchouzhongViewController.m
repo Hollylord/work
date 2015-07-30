@@ -8,7 +8,7 @@
 
 #import "zhongchouzhongViewController.h"
 #import "tabViewController.h"
-#import "sponsorsList.h"
+
 #import "ASProgressPopUpView.h"
 
 @interface zhongchouzhongViewController () <ASProgressPopUpViewDataSource>
@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstViewHeight;
 - (IBAction)firstExtention:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *firstBtn;
-@property (weak, nonatomic) IBOutlet sponsorsList *view4;
+
 @property (weak, nonatomic) IBOutlet ASProgressPopUpView *progressView;
 
 
@@ -86,7 +86,7 @@
     float progress = self.progressView.progress;
     
     //0.9用来设置进度条的最终进度
-    if (self.progressView.progress < 0.9 ) {
+    if (self.progressView.progress < 0.9 && self.isOnGoing) {
         
         progress += 0.005;
         

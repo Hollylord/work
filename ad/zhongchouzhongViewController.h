@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "sponsorsList.h"
 
 @interface zhongchouzhongViewController : UIViewController
+@property (assign,nonatomic) BOOL isOnGoing;
+
+
+
+
+
 
 @end

@@ -1026,7 +1026,6 @@
                         <outlet property="firstBtn" destination="jS2-NM-P8R" id="7V0-yb-E11"/>
                         <outlet property="firstViewHeight" destination="bV8-3m-u6d" id="NjK-fh-Qui"/>
                         <outlet property="progressView" destination="imo-pX-qfQ" id="INC-W3-WrR"/>
-                        <outlet property="view4" destination="hdg-QB-nbx" id="QBb-iP-Ikg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oiZ-My-kNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
