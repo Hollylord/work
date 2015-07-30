@@ -86,7 +86,7 @@
     float progress = self.progressView.progress;
     
     //0.9用来设置进度条的最终进度
-    if (self.progressView.progress < 0.9 && self.isOnGoing) {
+    if (self.progressView.progress < 0.9 ) {
         
         progress += 0.005;
         

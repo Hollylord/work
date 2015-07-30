@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7757BCADF5A94223696B08C5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EAA7DE7524D176D822A4D /* libPods.a */; };
 		A119BA041B69BA7100D44698 /* sponsorsList.m in Sources */ = {isa = PBXBuildFile; fileRef = A119BA031B69BA7100D44698 /* sponsorsList.m */; };
+		A119BA071B6A271E00D44698 /* yurezhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A119BA061B6A271E00D44698 /* yurezhongViewController.m */; };
 		A13BCBD31B663A190094E473 /* sponsorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13BCBD21B663A190094E473 /* sponsorTableViewController.m */; };
 		A14C4E061B61CC140045D442 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E051B61CC140045D442 /* Security.framework */; };
 		A14C4E081B61CC210045D442 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E071B61CC210045D442 /* libiconv.dylib */; };
@@ -113,6 +114,8 @@
 		049EAA7DE7524D176D822A4D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A119BA021B69BA7100D44698 /* sponsorsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorsList.h; sourceTree = "<group>"; };
 		A119BA031B69BA7100D44698 /* sponsorsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorsList.m; sourceTree = "<group>"; };
+		A119BA051B6A271E00D44698 /* yurezhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yurezhongViewController.h; sourceTree = "<group>"; };
+		A119BA061B6A271E00D44698 /* yurezhongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yurezhongViewController.m; sourceTree = "<group>"; };
 		A13BCBD11B663A190094E473 /* sponsorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorTableViewController.h; sourceTree = "<group>"; };
 		A13BCBD21B663A190094E473 /* sponsorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorTableViewController.m; sourceTree = "<group>"; };
 		A14C4E051B61CC140045D442 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -619,6 +622,8 @@
 				A18C3A881B5DF98000BC5BF1 /* programViewController.m */,
 				A17603631B686901002583BC /* zhongchouzhongViewController.h */,
 				A17603641B686901002583BC /* zhongchouzhongViewController.m */,
+				A119BA051B6A271E00D44698 /* yurezhongViewController.h */,
+				A119BA061B6A271E00D44698 /* yurezhongViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -960,6 +965,7 @@
 				A18C3A891B5DF98000BC5BF1 /* programViewController.m in Sources */,
 				A14C4E731B6221F30045D442 /* AFHTTPRequestOperation.m in Sources */,
 				A14C4E7B1B6221F30045D442 /* AFURLSessionManager.m in Sources */,
+				A119BA071B6A271E00D44698 /* yurezhongViewController.m in Sources */,
 				A189FB331B5F75F70002AAA5 /* loginViewController.m in Sources */,
 				A14C4E761B6221F30045D442 /* AFNetworkReachabilityManager.m in Sources */,
 				A14C4E7A1B6221F30045D442 /* AFURLResponseSerialization.m in Sources */,

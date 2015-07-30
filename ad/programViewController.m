@@ -130,22 +130,18 @@
 
 #pragma mark - 点击项目
 - (void)tapProgram {
-    
+    if (self.onGoingBtn.selected) {
         [self performSegueWithIdentifier:@"program2zhongchouzhong" sender:nil];
+    }
+    else
+    {
+        [self performSegueWithIdentifier:@"program2yurezhong" sender:nil];
+    }
+    
    
     
 }
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    programViewController *source = segue.sourceViewController;
-    zhongchouzhongViewController *destination = segue.destinationViewController;
-    if (source.prepareBtn.selected == YES) {
-        destination.isOnGoing = NO;
-        
-    }
-    else {
-        destination.isOnGoing = YES;
-    }
-}
+
 
 #pragma mark - 点击进行中/预热中
 - (IBAction)onGoingBtn:(id)sender {
