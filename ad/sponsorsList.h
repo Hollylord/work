@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface sponsorsList : UIView
+@interface sponsorsList : UIView <UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+
 
 @end

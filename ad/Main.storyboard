@@ -156,7 +156,7 @@
         <!--众筹中-->
         <scene sceneID="2ih-VD-XQK">
             <objects>
-                <viewController title="众筹中" id="qyG-bv-P4G" customClass="zhongchouzhongViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="zhongchouzhong" title="众筹中" id="qyG-bv-P4G" customClass="zhongchouzhongViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5WK-jb-H23"/>
                         <viewControllerLayoutGuide type="bottom" id="yFf-7V-Eqz"/>
@@ -547,7 +547,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="130" id="Ui6-XK-e8c"/>
+                                            <constraint firstAttribute="height" constant="130" id="Ui6-XK-e8c">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                            </constraint>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -852,7 +854,7 @@
                     <connections>
                         <outlet property="firstBtn" destination="jS2-NM-P8R" id="7V0-yb-E11"/>
                         <outlet property="firstViewHeight" destination="bV8-3m-u6d" id="NjK-fh-Qui"/>
-                        <outlet property="sponsorsView" destination="hdg-QB-nbx" id="Ioh-oN-uxP"/>
+                        <outlet property="view4" destination="hdg-QB-nbx" id="QBb-iP-Ikg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oiZ-My-kNh" userLabel="First Responder" sceneMemberID="firstResponder"/>

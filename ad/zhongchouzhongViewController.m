@@ -8,13 +8,17 @@
 
 #import "zhongchouzhongViewController.h"
 #import "tabViewController.h"
+#import "sponsorsList.h"
 
 @interface zhongchouzhongViewController () <UITableViewDataSource,UITableViewDelegate>
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstViewHeight;
 - (IBAction)firstExtention:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *firstBtn;
+@property (weak, nonatomic) IBOutlet sponsorsList *view4;
 
-@property (weak, nonatomic) IBOutlet UIView *sponsorsView;
+
+
 
 
 
@@ -22,13 +26,18 @@
 
 @implementation zhongchouzhongViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.navigationController.navigationBarHidden = NO;
-//    UINib *sponsorsCell = [UINib nibWithNibName:@"sponsorCell" bundle:nil];
     
-//    [self.sponsorsTableView registerNib:sponsorsCell forCellReuseIdentifier:@"sponsors"];
+//    self.view4.tableView.delegate = self;
+//    self.view4.tableView.dataSource = self;
+    
+//    UINib *sponsorsCell = [UINib nibWithNibName:@"sponsorCell" bundle:nil];
+//    [self.sponsorsTableview registerNib:sponsorsCell forCellReuseIdentifier:@"sponsors"];
+    
 #warning 关联xib的崩溃位置
 //   UIView *sponsors = [[[NSBundle mainBundle] loadNibNamed:@"sponsorsList" owner:self options:nil] firstObject];
 //    [self.view addSubview:sponsors];
@@ -68,19 +77,5 @@
     
     
 }
-#pragma mark - tableview 代理
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"sponsors"];
-    
-    return cell;
-}
 @end

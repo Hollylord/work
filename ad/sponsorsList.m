@@ -7,25 +7,53 @@
 //
 
 #import "sponsorsList.h"
+#import "zhongchouzhongViewController.h"
+
 
 @implementation sponsorsList
 
-//用这个方法让storybord 调用xib
-- (id)awakeAfterUsingCoder:(NSCoder *)aDecoder{
-    BOOL theThingThatGotLoadedWasJustAPlaceholder = ([[self subviews] count] == 0);
-    if (theThingThatGotLoadedWasJustAPlaceholder) {
-        UIView* theRealThing = [[[NSBundle mainBundle] loadNibNamed:@"sponsorsList" owner:nil options:nil] firstObject];
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+       UIView *view = [[[NSBundle mainBundle] loadNibNamed:@"sponsorsList" owner:self options:nil] firstObject];
+        [self addSubview:view];
+        view.translatesAutoresizingMaskIntoConstraints = NO;
+        NSLayoutConstraint *leading = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
+        NSLayoutConstraint *top = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0];
+        NSLayoutConstraint *trailing = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
+        NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+        [self addConstraint:leading];
+        [self addConstraint:trailing];
+        [self addConstraint:top];
+        [self addConstraint:bottom];
+        self.tableView.delegate = self;
+        self.tableView.dataSource = self;
         
-        // pass properties through
-        //        [self copyUIPropertiesTo:theRealThing];
-        
-        //auto layout
-        //        self.translatesAutoresizingMaskIntoConstraints = NO;
-        theRealThing.translatesAutoresizingMaskIntoConstraints = NO;
-        
-        return theRealThing;
+            UINib *sponsorsCell = [UINib nibWithNibName:@"sponsorCell" bundle:nil];
+            [self.tableView registerNib:sponsorsCell forCellReuseIdentifier:@"sponsors"];
     }
     return self;
 }
+#pragma mark - tableview 代理
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"sponsors"];
+    
+    return cell;
+}
+
+
+
 
 @end
