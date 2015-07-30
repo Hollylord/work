@@ -71,10 +71,10 @@
                     <exclude reference="CcG-In-h7p"/>
                     <exclude reference="PCc-NB-EDc"/>
                     <exclude reference="jUt-D0-qDG"/>
+                    <exclude reference="R1c-eT-17q"/>
                     <exclude reference="9lk-1R-cDA"/>
                     <exclude reference="Wr3-3N-Jmz"/>
                     <exclude reference="wpf-5I-82Z"/>
-                    <exclude reference="R1c-eT-17q"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -87,13 +87,13 @@
                     <include reference="CcG-In-h7p"/>
                     <include reference="PCc-NB-EDc"/>
                     <include reference="jUt-D0-qDG"/>
+                    <include reference="R1c-eT-17q"/>
                     <include reference="9lk-1R-cDA"/>
                     <include reference="Wr3-3N-Jmz"/>
                     <include reference="wpf-5I-82Z"/>
-                    <include reference="R1c-eT-17q"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="538" y="141"/>
+            <point key="canvasLocation" x="538.5" y="141"/>
         </view>
     </objects>
 </document>

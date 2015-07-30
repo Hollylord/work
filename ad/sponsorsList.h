@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface sponsorsList : UIView 
+@interface sponsorsList : UIView
 
 @end
