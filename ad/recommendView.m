@@ -31,7 +31,7 @@
 
 #pragma mark - 进度条
 
-//子控件创建完了，可以对于子控件的配置写在这里
+//子控件创建完了，可以对于子控件的配置写在这里.只做配置，不要添加动态的东西，比如timer。
 - (void)awakeFromNib{
     //配置progressView 进度条
     [self.progressView showPopUpViewAnimated:YES];
@@ -41,8 +41,8 @@
     //    self.progressView.popUpViewColor = [UIColor grayColor];
     self.progressView.font = [UIFont fontWithName:@"Futura-CondensedExtraBold" size:20];
     self.progressView.dataSource = self;
-    self.progressView.popUpViewColor = [UIColor redColor];
-    [self progress];
+    self.progressView.popUpViewColor = [UIColor grayColor];
+    
 }
 
 - (BOOL)progressViewShouldPreCalculatePopUpViewSize:(ASProgressPopUpView *)progressView;
@@ -56,22 +56,6 @@
     
 }
 
-- (void)progress
-{
-    
-    float progress = self.progressView.progress;
-    if (progress < 1.0 ) {
-        
-        progress += 0.005;
-        
-        [self.progressView setProgress:progress animated:YES];
-        
-        [NSTimer scheduledTimerWithTimeInterval:0.1
-                                         target:self
-                                       selector:@selector(progress)
-                                       userInfo:nil
-                                        repeats:NO];
-    }
-}
+
 
 @end

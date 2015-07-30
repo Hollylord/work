@@ -14,7 +14,7 @@
 #import "tabViewController.h"
 
 
-@interface programViewController () <INSSearchBarDelegate,ASProgressPopUpViewDataSource,recommendViewDelegate>
+@interface programViewController () <INSSearchBarDelegate,recommendViewDelegate>
 @property (strong, nonatomic) IBOutlet segmentView *segmentView;
 
 
@@ -73,9 +73,10 @@
     
     recommendView.frame = CGRectMake(6.5, segmentView.frame.origin.y + segmentView.frame.size.height, 362, 212);
     [self.scrollView addSubview:recommendView];
+    //负责传递点击recommendView事件
     recommendView.delegate = self;
     
-   
+    [self progress];
  
     
     
@@ -139,38 +140,66 @@
     
     self.onGoingBtn.selected = YES;
     self.prepareBtn.selected = NO;
-//    self.progressView.popUpViewColor = [UIColor grayColor];
-//    [self progress];
+    for (recommendView *view in self.programs) {
+        view.progressView.popUpViewColor = [UIColor grayColor];
+            view.backgroundImage.image = [UIImage imageNamed:@"recommendBackground"];
+    }
+
+    [self progress];
     self.segmentView.backgroundImage.image = [UIImage imageNamed:@"segmentBackground1"];
-//    self.recommendView.backgroundImage.image = [UIImage imageNamed:@"recommendBackground"];
+    
+    recommendView *view = self.programs[1];
+    [view removeFromSuperview];
+    [self.programs removeObjectAtIndex:1];
+    
+
 }
 
 - (IBAction)prepareBtn:(id)sender {
-//    CGFloat y = self.recommendView.frame.origin.y;
-//    NSLog(@"%f",y);
     
     self.prepareBtn.selected = YES;
     self.onGoingBtn.selected = NO;
-//    [self.progressView setProgress:0.0 animated:YES];
-//    self.progressView.popUpViewColor = [UIColor redColor];
-    
-    recommendView *recommendView = [[[NSBundle mainBundle] loadNibNamed:@"recommend" owner:self options:nil] firstObject];
-    
+
+
+    recommendView *View2 = [[[NSBundle mainBundle] loadNibNamed:@"recommend" owner:self options:nil] firstObject];
     UIView *view = self.programs[0];
     CGFloat y = view.frame.origin.y;
     CGFloat height = view.frame.size.height;
-    NSLog(@"%f",y);
+    View2.frame = CGRectMake(6.5, y + height +20 , 362, 212);
+    [self.programs addObject:View2];
+    [self.scrollView addSubview:View2];
     
-    recommendView.frame = CGRectMake(6.5, y + height +20 , 362, 212);
-    [self.programs addObject:recommendView];
-    NSLog(@"%@",self.programs);
-    [self.scrollView addSubview:recommendView];
+    for (recommendView *view in self.programs) {
+        [view.progressView setProgress:0 animated:YES];
+        view.progressView.popUpViewColor = [UIColor redColor];
+         view.backgroundImage.image = [UIImage imageNamed:@"yurezhongBackground"];
+    }
+
+    
     
     
     self.segmentView.backgroundImage.image = [UIImage imageNamed:@"segmentBackground2"];
-//    self.recommendView.backgroundImage.image = [UIImage imageNamed:@"yurezhongBackground"];
+   
 }
 
+#pragma mark - 进度条
+- (void)progress
+{
+    recommendView *view1 = self.programs[0];
+    float progress = view1.progressView.progress;
+    if (progress < 1.0 && self.prepareBtn.selected == NO) {
+        
+        progress += 0.005;
+        
+        [view1.progressView setProgress:progress animated:YES];
+        
+        [NSTimer scheduledTimerWithTimeInterval:0.1
+                                         target:self
+                                       selector:@selector(progress)
+                                       userInfo:nil
+                                        repeats:NO];
+    }
+}
 
 
 @end
