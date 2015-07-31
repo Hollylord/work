@@ -72,6 +72,15 @@
     
 }
 
+//footer高度设置
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    if (section == 0) {
+        return 20;
+    }
+    else {
+        return 0;
+    }
+}
 
 
 //cell内容设置
@@ -111,11 +120,12 @@
         cell.backgroundColor = [UIColor clearColor];
         return cell;
     }
-    
-
-    
-    
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+//设置cell的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section != 0) {
         //热门观点高度

@@ -1036,7 +1036,7 @@
         <!--新闻-->
         <scene sceneID="FeH-jf-0Cm">
             <objects>
-                <viewController title="新闻" id="0AN-y2-tdP" customClass="newsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="news" title="新闻" id="0AN-y2-tdP" customClass="newsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Lj-9Q-izb"/>
                         <viewControllerLayoutGuide type="bottom" id="law-vs-trv"/>
@@ -4820,7 +4820,7 @@
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBv-f4-Vde">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                            <state key="normal" title="👍"/>
+                                            <state key="normal" backgroundImage="zan"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw0-Oq-v9F">
                                             <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -4828,9 +4828,9 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIQ-ZL-9pY">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIQ-ZL-9pY">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                            <state key="normal" title="评论">
+                                            <state key="normal" image="pinglun">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
@@ -4949,6 +4949,7 @@
         <image name="denglubeijing" width="375" height="667"/>
         <image name="denglujianNormal" width="250" height="39"/>
         <image name="login" width="375" height="152"/>
+        <image name="pinglun" width="27" height="20"/>
         <image name="play" width="54" height="35"/>
         <image name="playBackground" width="319" height="162"/>
         <image name="qq" width="50" height="50"/>
@@ -4959,6 +4960,7 @@
         <image name="wx" width="50" height="50"/>
         <image name="yixianggentou" width="95" height="28"/>
         <image name="yixianglingtou" width="95" height="28"/>
+        <image name="zan" width="27" height="20"/>
         <image name="zhongchouzhongBeijing" width="375" height="192"/>
     </resources>
 </document>
