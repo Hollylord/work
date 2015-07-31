@@ -165,7 +165,7 @@
         }];
         
     }
-    self.selectedIndex = 6;
+    self.selectedIndex = 7;
     self.moreNavigationController.navigationBarHidden = YES;
 }
 
@@ -179,7 +179,7 @@
         }];
         
     }
-    self.selectedIndex = 7;
+    self.selectedIndex = 6;
     self.moreNavigationController.navigationBarHidden = YES;
 }
 

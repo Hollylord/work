@@ -6,25 +6,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--语音留言-->
-        <scene sceneID="E5F-uu-M3r">
-            <objects>
-                <viewController title="语音留言" id="VYn-qA-4l2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jsk-Kq-xAU"/>
-                        <viewControllerLayoutGuide type="bottom" id="fxl-7C-C3f"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eOo-uY-cnG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="f2Y-DE-42n"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tjj-5w-ytv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2106" y="1884.75"/>
-        </scene>
         <!--活动-->
         <scene sceneID="B52-Yu-SYs">
             <objects>
@@ -42,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ei6-sS-Xwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2874" y="1878.75"/>
+            <point key="canvasLocation" x="-2868" y="1896.75"/>
         </scene>
         <!--选项卡栏-->
         <scene sceneID="SRf-QJ-OMD">
@@ -61,8 +42,8 @@
                         <segue destination="xOS-M8-vAC" kind="relationship" relationship="viewControllers" id="0uT-L9-A7V"/>
                         <segue destination="c4J-bi-Gte" kind="relationship" relationship="viewControllers" id="9Wm-nK-DwC"/>
                         <segue destination="luz-5S-rFq" kind="relationship" relationship="viewControllers" id="PNJ-zZ-ii6"/>
-                        <segue destination="VYn-qA-4l2" kind="relationship" relationship="viewControllers" id="Ubs-Kf-ZoY"/>
                         <segue destination="Z8C-fI-B9i" kind="relationship" relationship="viewControllers" id="pzB-yL-Mu1"/>
+                        <segue destination="vzh-w3-AwG" kind="relationship" relationship="viewControllers" id="XGo-Im-cas"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrD-8m-5PJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3615,6 +3596,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iik-IU-0bG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="372" y="1664.25"/>
+        </scene>
+        <!--语音留言-->
+        <scene sceneID="5Qa-Gt-dq5">
+            <objects>
+                <tableViewController title="语音留言" id="vzh-w3-AwG" customClass="yuyinTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9QZ-oH-dxx">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="j7B-u3-Qtu">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j7B-u3-Qtu" id="7QC-bV-Pst">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vzh-w3-AwG" id="aDx-dE-cO5"/>
+                            <outlet property="delegate" destination="vzh-w3-AwG" id="8C5-Id-DZl"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="5nq-5F-9dh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdI-TL-kFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2110.5" y="1878.75"/>
         </scene>
         <!--路演-->
         <scene sceneID="Fiq-Cd-1YX">

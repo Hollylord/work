@@ -9,6 +9,22 @@
 /* Begin PBXBuildFile section */
 		7757BCADF5A94223696B08C5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EAA7DE7524D176D822A4D /* libPods.a */; };
 		A107CF931B6B1BCE002DFC58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A107CF921B6B1BCE002DFC58 /* Images.xcassets */; };
+		A107CF951B6B3091002DFC58 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF941B6B3091002DFC58 /* CFNetwork.framework */; };
+		A107CF971B6B30AB002DFC58 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF961B6B30AB002DFC58 /* OpenGLES.framework */; };
+		A107CF991B6B30BD002DFC58 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF981B6B30BD002DFC58 /* GLKit.framework */; };
+		A107CF9B1B6B30C7002DFC58 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF9A1B6B30C7002DFC58 /* CoreText.framework */; };
+		A107CF9D1B6B30DB002DFC58 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF9C1B6B30DB002DFC58 /* libz.1.dylib */; };
+		A107CF9F1B6B30E6002DFC58 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF9E1B6B30E6002DFC58 /* AudioToolbox.framework */; };
+		A107CFA11B6B30F1002DFC58 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CFA01B6B30F1002DFC58 /* AVFoundation.framework */; };
+		A107CFBE1B6B31F8002DFC58 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A107CFB11B6B31F8002DFC58 /* CADebugMacros.cpp */; };
+		A107CFBF1B6B31F8002DFC58 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A107CFB41B6B31F8002DFC58 /* CAStreamBasicDescription.cpp */; };
+		A107CFC01B6B31F8002DFC58 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A107CFB61B6B31F8002DFC58 /* CAXException.cpp */; };
+		A107CFC11B6B31F8002DFC58 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A107CFBA1B6B31F8002DFC58 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A107CFC21B6B31F8002DFC58 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A107CFBD1B6B31F8002DFC58 /* TTTAttributedLabel.m */; };
+		A107CFC41B6B322E002DFC58 /* BDVoiceRecognitionClientResources in Resources */ = {isa = PBXBuildFile; fileRef = A107CFC31B6B322E002DFC58 /* BDVoiceRecognitionClientResources */; };
+		A107CFCB1B6B4717002DFC58 /* yuyinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A107CFCA1B6B4717002DFC58 /* yuyinTableViewController.m */; };
+		A107CFCE1B6B4A1D002DFC58 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CFCD1B6B4A1D002DFC58 /* libz.1.2.5.dylib */; };
+		A107D0451B6B6CCD002DFC58 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A107D0441B6B6CCD002DFC58 /* libBDVoiceRecognitionClient.a */; };
 		A119BA041B69BA7100D44698 /* sponsorsList.m in Sources */ = {isa = PBXBuildFile; fileRef = A119BA031B69BA7100D44698 /* sponsorsList.m */; };
 		A119BA071B6A271E00D44698 /* yurezhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A119BA061B6A271E00D44698 /* yurezhongViewController.m */; };
 		A11FA42A1B6B0B2D00E4DE79 /* shequnTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11FA4291B6B0B2D00E4DE79 /* shequnTableViewController.m */; };
@@ -114,6 +130,37 @@
 		0109AF12ACFB05CCF50B74B8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		049EAA7DE7524D176D822A4D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A107CF921B6B1BCE002DFC58 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A107CF941B6B3091002DFC58 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A107CF961B6B30AB002DFC58 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A107CF981B6B30BD002DFC58 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A107CF9A1B6B30C7002DFC58 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		A107CF9C1B6B30DB002DFC58 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = usr/lib/libz.1.dylib; sourceTree = SDKROOT; };
+		A107CF9E1B6B30E6002DFC58 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A107CFA01B6B30F1002DFC58 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A107CFA51B6B316B002DFC58 /* BDRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewController.h; sourceTree = "<group>"; };
+		A107CFA61B6B316B002DFC58 /* BDRecognizerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewDelegate.h; sourceTree = "<group>"; };
+		A107CFA71B6B316B002DFC58 /* BDRecognizerViewParamsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewParamsObject.h; sourceTree = "<group>"; };
+		A107CFA81B6B316B002DFC58 /* BDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDTheme.h; sourceTree = "<group>"; };
+		A107CFA91B6B316B002DFC58 /* BDVoiceRecognitionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVoiceRecognitionClient.h; sourceTree = "<group>"; };
+		A107CFAA1B6B316B002DFC58 /* BDVRFileRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRFileRecognizer.h; sourceTree = "<group>"; };
+		A107CFAB1B6B316B002DFC58 /* BDVRRawDataRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRRawDataRecognizer.h; sourceTree = "<group>"; };
+		A107CFAC1B6B316B002DFC58 /* BDVRUIPromptTextCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRUIPromptTextCustom.h; sourceTree = "<group>"; };
+		A107CFB11B6B31F8002DFC58 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		A107CFB21B6B31F8002DFC58 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		A107CFB31B6B31F8002DFC58 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		A107CFB41B6B31F8002DFC58 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		A107CFB51B6B31F8002DFC58 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		A107CFB61B6B31F8002DFC58 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		A107CFB71B6B31F8002DFC58 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		A107CFB91B6B31F8002DFC58 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		A107CFBA1B6B31F8002DFC58 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		A107CFBC1B6B31F8002DFC58 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		A107CFBD1B6B31F8002DFC58 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		A107CFC31B6B322E002DFC58 /* BDVoiceRecognitionClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BDVoiceRecognitionClientResources; sourceTree = "<group>"; };
+		A107CFC91B6B4717002DFC58 /* yuyinTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyinTableViewController.h; sourceTree = "<group>"; };
+		A107CFCA1B6B4717002DFC58 /* yuyinTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyinTableViewController.m; sourceTree = "<group>"; };
+		A107CFCD1B6B4A1D002DFC58 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		A107D0441B6B6CCD002DFC58 /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBDVoiceRecognitionClient.a; path = "../../Downloads/Baidu-Voice-SDK-iOS-1.6.1/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient/libBDVoiceRecognitionClient.a"; sourceTree = "<group>"; };
 		A119BA021B69BA7100D44698 /* sponsorsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorsList.h; sourceTree = "<group>"; };
 		A119BA031B69BA7100D44698 /* sponsorsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorsList.m; sourceTree = "<group>"; };
 		A119BA051B6A271E00D44698 /* yurezhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yurezhongViewController.h; sourceTree = "<group>"; };
@@ -278,6 +325,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A107D0451B6B6CCD002DFC58 /* libBDVoiceRecognitionClient.a in Frameworks */,
+				A107CFCE1B6B4A1D002DFC58 /* libz.1.2.5.dylib in Frameworks */,
+				A14C4E101B61CC520045D442 /* libstdc++.dylib in Frameworks */,
+				A107CFA11B6B30F1002DFC58 /* AVFoundation.framework in Frameworks */,
+				A107CF9F1B6B30E6002DFC58 /* AudioToolbox.framework in Frameworks */,
+				A107CF9D1B6B30DB002DFC58 /* libz.1.dylib in Frameworks */,
+				A107CF9B1B6B30C7002DFC58 /* CoreText.framework in Frameworks */,
+				A107CF991B6B30BD002DFC58 /* GLKit.framework in Frameworks */,
+				A107CF971B6B30AB002DFC58 /* OpenGLES.framework in Frameworks */,
+				A107CF951B6B3091002DFC58 /* CFNetwork.framework in Frameworks */,
 				A14C4E391B61D72D0045D442 /* AMapSearchKit.framework in Frameworks */,
 				A14C4E3A1B61D72D0045D442 /* MAMapKit.framework in Frameworks */,
 				A14C4E2C1B61D4A10045D442 /* libstdc++.6.0.9.dylib in Frameworks */,
@@ -285,7 +342,6 @@
 				A14C4E2A1B61D46D0045D442 /* CoreLocation.framework in Frameworks */,
 				A14C4E281B61D4600045D442 /* QuartzCore.framework in Frameworks */,
 				A14C4E261B61D4490045D442 /* UIKit.framework in Frameworks */,
-				A14C4E101B61CC520045D442 /* libstdc++.dylib in Frameworks */,
 				A14C4E0E1B61CC480045D442 /* CoreTelephony.framework in Frameworks */,
 				A14C4E0C1B61CC3F0045D442 /* libsqlite3.dylib in Frameworks */,
 				A14C4E0A1B61CC350045D442 /* CoreGraphics.framework in Frameworks */,
@@ -323,9 +379,85 @@
 		9F698B40384B11C53D41C3E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A107D0441B6B6CCD002DFC58 /* libBDVoiceRecognitionClient.a */,
+				A107CFCD1B6B4A1D002DFC58 /* libz.1.2.5.dylib */,
+				A107CFA01B6B30F1002DFC58 /* AVFoundation.framework */,
+				A107CF9E1B6B30E6002DFC58 /* AudioToolbox.framework */,
+				A107CF9C1B6B30DB002DFC58 /* libz.1.dylib */,
+				A107CF9A1B6B30C7002DFC58 /* CoreText.framework */,
+				A107CF981B6B30BD002DFC58 /* GLKit.framework */,
+				A107CF961B6B30AB002DFC58 /* OpenGLES.framework */,
+				A107CF941B6B3091002DFC58 /* CFNetwork.framework */,
 				049EAA7DE7524D176D822A4D /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A107CFA31B6B3156002DFC58 /* 百度语音 */ = {
+			isa = PBXGroup;
+			children = (
+				A107CFC31B6B322E002DFC58 /* BDVoiceRecognitionClientResources */,
+				A107CFAF1B6B31F8002DFC58 /* Third-party */,
+				A107CFA41B6B316B002DFC58 /* Headers */,
+			);
+			name = "百度语音";
+			sourceTree = "<group>";
+		};
+		A107CFA41B6B316B002DFC58 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A107CFA51B6B316B002DFC58 /* BDRecognizerViewController.h */,
+				A107CFA61B6B316B002DFC58 /* BDRecognizerViewDelegate.h */,
+				A107CFA71B6B316B002DFC58 /* BDRecognizerViewParamsObject.h */,
+				A107CFA81B6B316B002DFC58 /* BDTheme.h */,
+				A107CFA91B6B316B002DFC58 /* BDVoiceRecognitionClient.h */,
+				A107CFAA1B6B316B002DFC58 /* BDVRFileRecognizer.h */,
+				A107CFAB1B6B316B002DFC58 /* BDVRRawDataRecognizer.h */,
+				A107CFAC1B6B316B002DFC58 /* BDVRUIPromptTextCustom.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		A107CFAF1B6B31F8002DFC58 /* Third-party */ = {
+			isa = PBXGroup;
+			children = (
+				A107CFB01B6B31F8002DFC58 /* CoreAudioUtility */,
+				A107CFB81B6B31F8002DFC58 /* JSONKit-master */,
+				A107CFBB1B6B31F8002DFC58 /* TTTAttributedLabel */,
+			);
+			path = "Third-party";
+			sourceTree = "<group>";
+		};
+		A107CFB01B6B31F8002DFC58 /* CoreAudioUtility */ = {
+			isa = PBXGroup;
+			children = (
+				A107CFB11B6B31F8002DFC58 /* CADebugMacros.cpp */,
+				A107CFB21B6B31F8002DFC58 /* CADebugMacros.h */,
+				A107CFB31B6B31F8002DFC58 /* CAMath.h */,
+				A107CFB41B6B31F8002DFC58 /* CAStreamBasicDescription.cpp */,
+				A107CFB51B6B31F8002DFC58 /* CAStreamBasicDescription.h */,
+				A107CFB61B6B31F8002DFC58 /* CAXException.cpp */,
+				A107CFB71B6B31F8002DFC58 /* CAXException.h */,
+			);
+			path = CoreAudioUtility;
+			sourceTree = "<group>";
+		};
+		A107CFB81B6B31F8002DFC58 /* JSONKit-master */ = {
+			isa = PBXGroup;
+			children = (
+				A107CFB91B6B31F8002DFC58 /* JSONKit.h */,
+				A107CFBA1B6B31F8002DFC58 /* JSONKit.m */,
+			);
+			path = "JSONKit-master";
+			sourceTree = "<group>";
+		};
+		A107CFBB1B6B31F8002DFC58 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				A107CFBC1B6B31F8002DFC58 /* TTTAttributedLabel.h */,
+				A107CFBD1B6B31F8002DFC58 /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
 		A11FA4261B6B0B0C00E4DE79 /* controller */ = {
@@ -389,6 +521,8 @@
 		A14C4E1C1B61D1770045D442 /* 语音留言 */ = {
 			isa = PBXGroup;
 			children = (
+				A107CFC91B6B4717002DFC58 /* yuyinTableViewController.h */,
+				A107CFCA1B6B4717002DFC58 /* yuyinTableViewController.m */,
 			);
 			name = "语音留言";
 			sourceTree = "<group>";
@@ -575,6 +709,7 @@
 		A189FB341B5F7E580002AAA5 /* library */ = {
 			isa = PBXGroup;
 			children = (
+				A107CFA31B6B3156002DFC58 /* 百度语音 */,
 				A14C4E4A1B6221F30045D442 /* AFNetworking */,
 				A1C4D34E1B60EED000FE4A35 /* UMSocial_Sdk_Extra_Frameworks */,
 				A189FB981B5F8ECE0002AAA5 /* UMSocial_Sdk_4.2.3 */,
@@ -897,6 +1032,7 @@
 				A176036B1B68CAE1002583BC /* sponsorsList.xib in Resources */,
 				A1C4D35C1B60EED000FE4A35 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				A189FBBD1B5F8ECE0002AAA5 /* UMSocialSDKResourcesNew.bundle in Resources */,
+				A107CFC41B6B322E002DFC58 /* BDVoiceRecognitionClientResources in Resources */,
 				A18C3AC01B5E454900BC5BF1 /* recommend.xib in Resources */,
 				A189FBBA1B5F8ECE0002AAA5 /* UMSLoginViewController.xib in Resources */,
 				A1C4D3471B607F5E00FE4A35 /* login.xib in Resources */,
@@ -964,6 +1100,7 @@
 				A14C4E811B6221F30045D442 /* UIButton+AFNetworking.m in Sources */,
 				A1770A5A1B5CE0F400C272E9 /* RainBow.m in Sources */,
 				A14C4E781B6221F30045D442 /* AFURLConnectionOperation.m in Sources */,
+				A107CFC01B6B31F8002DFC58 /* CAXException.cpp in Sources */,
 				A119BA041B69BA7100D44698 /* sponsorsList.m in Sources */,
 				A14C4E771B6221F30045D442 /* AFSecurityPolicy.m in Sources */,
 				A1CB48B11B578DBC00BB2489 /* AppDelegate.m in Sources */,
@@ -981,6 +1118,7 @@
 				A14C4E441B61ECF60045D442 /* alreadyloginViewController.m in Sources */,
 				A14C4E741B6221F30045D442 /* AFHTTPRequestOperationManager.m in Sources */,
 				A1D77EDD1B672C3C008847FE /* careProgramTableViewController.m in Sources */,
+				A107CFBF1B6B31F8002DFC58 /* CAStreamBasicDescription.cpp in Sources */,
 				A14C4E851B6221F30045D442 /* UIWebView+AFNetworking.m in Sources */,
 				A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */,
 				A18C3A891B5DF98000BC5BF1 /* programViewController.m in Sources */,
@@ -988,7 +1126,10 @@
 				A14C4E7B1B6221F30045D442 /* AFURLSessionManager.m in Sources */,
 				A119BA071B6A271E00D44698 /* yurezhongViewController.m in Sources */,
 				A189FB331B5F75F70002AAA5 /* loginViewController.m in Sources */,
+				A107CFBE1B6B31F8002DFC58 /* CADebugMacros.cpp in Sources */,
 				A14C4E761B6221F30045D442 /* AFNetworkReachabilityManager.m in Sources */,
+				A107CFC11B6B31F8002DFC58 /* JSONKit.m in Sources */,
+				A107CFCB1B6B4717002DFC58 /* yuyinTableViewController.m in Sources */,
 				A14C4E7A1B6221F30045D442 /* AFURLResponseSerialization.m in Sources */,
 				A13BCBD31B663A190094E473 /* sponsorTableViewController.m in Sources */,
 				A14C4E791B6221F30045D442 /* AFURLRequestSerialization.m in Sources */,
@@ -1001,6 +1142,7 @@
 				A1C4D34D1B60BA0D00FE4A35 /* dengluViewController.m in Sources */,
 				A1D77EDA1B67161F008847FE /* myProgramTableViewController.m in Sources */,
 				A18C3A9B1B5E2CFD00BC5BF1 /* INSSearchBar.m in Sources */,
+				A107CFC21B6B31F8002DFC58 /* TTTAttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1077,7 +1219,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				VALID_ARCHS = "arm64 armv7 armv7s ";
 			};
 			name = Debug;
 		};
@@ -1117,7 +1259,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				VALID_ARCHS = "arm64 armv7 armv7s ";
 			};
 			name = Release;
 		};
@@ -1127,6 +1269,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					/Users/inc/Downloads,
@@ -1141,11 +1284,15 @@
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/Wechat",
+					"$(PROJECT_DIR)/ad/Headers",
+					/Users/inc/Downloads/Baidu_Voice_Combine_SDK_iOS/Baidu_Voice_Combine_SDK_iOS/libBDVoiceRecognitionClient,
+					/Users/inc/Downloads/Baidu_Voice_Combine_SDK_iOS,
+					"/Users/inc/Downloads/Baidu-Voice-SDK-iOS-1.6.1/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7 armv7s  arm64 i386";
+				VALID_ARCHS = "armv7 armv7s  arm64";
 			};
 			name = Debug;
 		};
@@ -1155,6 +1302,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					/Users/inc/Downloads,
@@ -1169,11 +1317,15 @@
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/Wechat",
+					"$(PROJECT_DIR)/ad/Headers",
+					/Users/inc/Downloads/Baidu_Voice_Combine_SDK_iOS/Baidu_Voice_Combine_SDK_iOS/libBDVoiceRecognitionClient,
+					/Users/inc/Downloads/Baidu_Voice_Combine_SDK_iOS,
+					"/Users/inc/Downloads/Baidu-Voice-SDK-iOS-1.6.1/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7 armv7s  arm64 i386";
+				VALID_ARCHS = "armv7 armv7s  arm64";
 			};
 			name = Release;
 		};
