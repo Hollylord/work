@@ -89,7 +89,7 @@
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"shequn" forIndexPath:indexPath];
         cell.backgroundColor = [UIColor clearColor];
         
-        //设置label
+        //设置主标题
        UILabel *fenLei = (UILabel *)[cell viewWithTag:1];
         if (indexPath.row == 0){
             fenLei.text = @"行业讨论";
@@ -112,6 +112,26 @@
         else if (indexPath.row == 3)
         {
             icon.image = [UIImage imageNamed:@"niurenguandian"];
+        }
+        else if (indexPath.row == 0)
+        {
+            icon.image = [UIImage imageNamed:@"hangyetaolun"];
+        }
+        
+        UILabel *label2 = (UILabel *)[cell viewWithTag:3];
+        if (indexPath.row == 0) {
+            label2.text = @"最专业、最齐全的行业信息讨论";
+        }
+        else if (indexPath.row == 1)
+        {
+            label2.text = @"权威机构带你投资";
+        }
+        else if (indexPath.row == 2)
+        {
+            label2.text = @"项目经理一对一为你解答";
+        }
+        else {
+            label2.text = @"在这里你也可以是权威";
         }
         return cell;
     }

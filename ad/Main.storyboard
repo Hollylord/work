@@ -4659,6 +4659,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.13725490200000001" green="0.63137254899999995" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
@@ -4699,7 +4700,7 @@
                                             </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3R-Y8-nxI">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3R-Y8-nxI">
                                             <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="最专业、最齐全的行业信息">
@@ -4737,9 +4738,13 @@
                                             <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                                         </constraint>
                                         <constraint firstItem="BGZ-tU-xhT" firstAttribute="top" secondItem="HoN-eM-JiP" secondAttribute="top" constant="8" id="CKP-ew-KRM"/>
+                                        <constraint firstItem="uep-0L-ily" firstAttribute="top" secondItem="HoN-eM-JiP" secondAttribute="top" constant="13" id="DBT-to-iEa"/>
                                         <constraint firstAttribute="bottom" secondItem="BGZ-tU-xhT" secondAttribute="bottom" constant="8" id="EWa-dU-fhc"/>
                                         <constraint firstItem="BGZ-tU-xhT" firstAttribute="top" secondItem="uep-0L-ily" secondAttribute="top" id="HJY-dt-XMg"/>
                                         <constraint firstItem="P3R-Y8-nxI" firstAttribute="leading" secondItem="uep-0L-ily" secondAttribute="leading" id="I97-hO-dZN"/>
+                                        <constraint firstItem="P3R-Y8-nxI" firstAttribute="top" secondItem="uep-0L-ily" secondAttribute="bottom" constant="25" id="bHa-Xu-ELK">
+                                            <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                                        </constraint>
                                         <constraint firstItem="BGZ-tU-xhT" firstAttribute="leading" secondItem="HoN-eM-JiP" secondAttribute="leading" constant="8" id="o5p-MT-n0k">
                                             <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                                         </constraint>
@@ -4752,14 +4757,16 @@
                                             <exclude reference="BGZ-tU-xhT"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="I97-hO-dZN"/>
-                                            <exclude reference="60g-uo-RuT"/>
                                             <exclude reference="22h-mg-jYv"/>
                                             <exclude reference="CKP-ew-KRM"/>
                                             <exclude reference="EWa-dU-fhc"/>
                                             <exclude reference="HJY-dt-XMg"/>
                                             <exclude reference="o5p-MT-n0k"/>
                                             <exclude reference="yHW-ij-CgT"/>
+                                            <exclude reference="60g-uo-RuT"/>
+                                            <exclude reference="DBT-to-iEa"/>
+                                            <exclude reference="I97-hO-dZN"/>
+                                            <exclude reference="bHa-Xu-ELK"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -4769,14 +4776,16 @@
                                             <include reference="BGZ-tU-xhT"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="I97-hO-dZN"/>
-                                            <include reference="60g-uo-RuT"/>
                                             <exclude reference="22h-mg-jYv"/>
                                             <include reference="CKP-ew-KRM"/>
                                             <include reference="EWa-dU-fhc"/>
-                                            <include reference="HJY-dt-XMg"/>
+                                            <exclude reference="HJY-dt-XMg"/>
                                             <include reference="o5p-MT-n0k"/>
-                                            <include reference="yHW-ij-CgT"/>
+                                            <exclude reference="yHW-ij-CgT"/>
+                                            <include reference="60g-uo-RuT"/>
+                                            <include reference="DBT-to-iEa"/>
+                                            <include reference="I97-hO-dZN"/>
+                                            <include reference="bHa-Xu-ELK"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
