@@ -23,6 +23,8 @@
                     <state key="normal" image="btn1" backgroundImage="btn1">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" image="btn1High"/>
+                    <state key="highlighted" image="btn1High"/>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="Z2i-Pk-OeE"/>
@@ -39,7 +41,7 @@
                         <action selector="programBtn:" destination="-1" eventType="touchUpInside" id="ZTY-4h-ZW3"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbU-Ga-iCS">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbU-Ga-iCS">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="75" id="NfZ-Ks-f8A"/>
@@ -47,6 +49,8 @@
                     <state key="normal" backgroundImage="btn2">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" image="btn2High"/>
+                    <state key="highlighted" image="btn2High"/>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="NfZ-Ks-f8A"/>
@@ -61,7 +65,7 @@
                         <action selector="newsBtn:" destination="-1" eventType="touchUpInside" id="21D-EO-tSo"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YA8-ep-pox">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YA8-ep-pox">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="49" id="BPv-95-ib7"/>
@@ -70,6 +74,8 @@
                     <state key="normal" backgroundImage="btn4">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" image="btn4High"/>
+                    <state key="highlighted" image="btn4High"/>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="BPv-95-ib7"/>
@@ -86,7 +92,7 @@
                         <action selector="BBSBtn:" destination="-1" eventType="touchUpInside" id="4XR-SP-gDC"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHO-7F-6nB">
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHO-7F-6nB">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="75" id="g62-Xf-MSc"/>
@@ -95,6 +101,8 @@
                     <state key="normal" backgroundImage="btn5">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" image="btn5High"/>
+                    <state key="highlighted" image="btn5High"/>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="g62-Xf-MSc"/>
@@ -111,15 +119,15 @@
                         <action selector="personCenterBtn:" destination="-1" eventType="touchUpInside" id="Hgd-ui-WlZ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgN-Lx-GFQ">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgN-Lx-GFQ">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="75" id="aVi-rF-rN3"/>
                         <constraint firstAttribute="height" constant="61" id="l63-ur-gyV"/>
                     </constraints>
-                    <state key="normal" backgroundImage="btn3">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                    <state key="normal" backgroundImage="btn3"/>
+                    <state key="selected" image="btn3High"/>
+                    <state key="highlighted" image="btn3High"/>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="aVi-rF-rN3"/>
@@ -208,9 +216,14 @@
     </objects>
     <resources>
         <image name="btn1" width="75" height="48"/>
+        <image name="btn1High" width="75" height="49"/>
         <image name="btn2" width="75" height="49"/>
+        <image name="btn2High" width="75" height="49"/>
         <image name="btn3" width="75" height="60"/>
+        <image name="btn3High" width="75" height="60"/>
         <image name="btn4" width="75" height="49"/>
+        <image name="btn4High" width="75" height="49"/>
         <image name="btn5" width="75" height="49"/>
+        <image name="btn5High" width="75" height="49"/>
     </resources>
 </document>

@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7757BCADF5A94223696B08C5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EAA7DE7524D176D822A4D /* libPods.a */; };
+		A107CF931B6B1BCE002DFC58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A107CF921B6B1BCE002DFC58 /* Images.xcassets */; };
 		A119BA041B69BA7100D44698 /* sponsorsList.m in Sources */ = {isa = PBXBuildFile; fileRef = A119BA031B69BA7100D44698 /* sponsorsList.m */; };
 		A119BA071B6A271E00D44698 /* yurezhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A119BA061B6A271E00D44698 /* yurezhongViewController.m */; };
+		A11FA42A1B6B0B2D00E4DE79 /* shequnTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11FA4291B6B0B2D00E4DE79 /* shequnTableViewController.m */; };
 		A13BCBD31B663A190094E473 /* sponsorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13BCBD21B663A190094E473 /* sponsorTableViewController.m */; };
 		A14C4E061B61CC140045D442 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E051B61CC140045D442 /* Security.framework */; };
 		A14C4E081B61CC210045D442 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E071B61CC210045D442 /* libiconv.dylib */; };
@@ -86,7 +88,6 @@
 		A1C4D35E1B60EED000FE4A35 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4D3561B60EED000FE4A35 /* libWeChatSDK.a */; };
 		A1CB48AE1B578DBC00BB2489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48AD1B578DBC00BB2489 /* main.m */; };
 		A1CB48B11B578DBC00BB2489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48B01B578DBC00BB2489 /* AppDelegate.m */; };
-		A1CB48B91B578DBC00BB2489 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CB48B81B578DBC00BB2489 /* Images.xcassets */; };
 		A1CB48C81B578DBC00BB2489 /* adTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48C71B578DBC00BB2489 /* adTests.m */; };
 		A1CB48D31B578E6600BB2489 /* advertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48D21B578E6600BB2489 /* advertViewController.m */; };
 		A1CB48D91B57A80800BB2489 /* tabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB48D81B57A80800BB2489 /* tabViewController.m */; };
@@ -112,10 +113,13 @@
 /* Begin PBXFileReference section */
 		0109AF12ACFB05CCF50B74B8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		049EAA7DE7524D176D822A4D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A107CF921B6B1BCE002DFC58 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A119BA021B69BA7100D44698 /* sponsorsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorsList.h; sourceTree = "<group>"; };
 		A119BA031B69BA7100D44698 /* sponsorsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorsList.m; sourceTree = "<group>"; };
 		A119BA051B6A271E00D44698 /* yurezhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yurezhongViewController.h; sourceTree = "<group>"; };
 		A119BA061B6A271E00D44698 /* yurezhongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yurezhongViewController.m; sourceTree = "<group>"; };
+		A11FA4281B6B0B2D00E4DE79 /* shequnTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shequnTableViewController.h; sourceTree = "<group>"; };
+		A11FA4291B6B0B2D00E4DE79 /* shequnTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shequnTableViewController.m; sourceTree = "<group>"; };
 		A13BCBD11B663A190094E473 /* sponsorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorTableViewController.h; sourceTree = "<group>"; };
 		A13BCBD21B663A190094E473 /* sponsorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorTableViewController.m; sourceTree = "<group>"; };
 		A14C4E051B61CC140045D442 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -247,7 +251,6 @@
 		A1CB48AD1B578DBC00BB2489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1CB48AF1B578DBC00BB2489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1CB48B01B578DBC00BB2489 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A1CB48B81B578DBC00BB2489 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1CB48C11B578DBC00BB2489 /* adTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CB48C61B578DBC00BB2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CB48C71B578DBC00BB2489 /* adTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = adTests.m; sourceTree = "<group>"; };
@@ -325,6 +328,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A11FA4261B6B0B0C00E4DE79 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A11FA4281B6B0B2D00E4DE79 /* shequnTableViewController.h */,
+				A11FA4291B6B0B2D00E4DE79 /* shequnTableViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		A11FA4271B6B0B1300E4DE79 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		A14C4E141B61CFF60045D442 /* 新闻 */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +356,8 @@
 		A14C4E151B61D00F0045D442 /* 社群 */ = {
 			isa = PBXGroup;
 			children = (
+				A11FA4271B6B0B1300E4DE79 /* views */,
+				A11FA4261B6B0B0C00E4DE79 /* controller */,
 			);
 			name = "社群";
 			sourceTree = "<group>";
@@ -725,7 +746,7 @@
 			children = (
 				A1CB48AF1B578DBC00BB2489 /* AppDelegate.h */,
 				A1CB48B01B578DBC00BB2489 /* AppDelegate.m */,
-				A1CB48B81B578DBC00BB2489 /* Images.xcassets */,
+				A107CF921B6B1BCE002DFC58 /* Images.xcassets */,
 				F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */,
 				F00A177C1B5FBBCE00763096 /* Main.storyboard */,
 				A189FB341B5F7E580002AAA5 /* library */,
@@ -861,7 +882,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A18C3ABB1B5E399F00BC5BF1 /* segmentView.xib in Resources */,
-				A1CB48B91B578DBC00BB2489 /* Images.xcassets in Resources */,
+				A107CF931B6B1BCE002DFC58 /* Images.xcassets in Resources */,
 				A189FBB61B5F8ECE0002AAA5 /* UMSCommentInputController.xib in Resources */,
 				A14C4E7C1B6221F30045D442 /* LICENSE in Resources */,
 				A189FBBC1B5F8ECE0002AAA5 /* UMSShareListController.xib in Resources */,
@@ -975,6 +996,7 @@
 				A18C3A981B5E29AF00BC5BF1 /* pictureView.m in Sources */,
 				A14C4E3E1B61D7A50045D442 /* neighborViewController.m in Sources */,
 				A1D77EE31B6757ED008847FE /* lingtourenViewController.m in Sources */,
+				A11FA42A1B6B0B2D00E4DE79 /* shequnTableViewController.m in Sources */,
 				A18C3ABE1B5E453800BC5BF1 /* recommendView.m in Sources */,
 				A1C4D34D1B60BA0D00FE4A35 /* dengluViewController.m in Sources */,
 				A1D77EDA1B67161F008847FE /* myProgramTableViewController.m in Sources */,
