@@ -117,6 +117,10 @@
         {
             icon.image = [UIImage imageNamed:@"hangyetaolun"];
         }
+        else if (indexPath.row == 1)
+        {
+            icon.image = [UIImage imageNamed:@"jigouzhuanti"];
+        }
         
         UILabel *label2 = (UILabel *)[cell viewWithTag:3];
         if (indexPath.row == 0) {

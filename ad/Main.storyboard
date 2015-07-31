@@ -3602,6 +3602,7 @@
             <objects>
                 <tableViewController title="语音留言" id="vzh-w3-AwG" customClass="yuyinTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="9QZ-oH-dxx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -4764,16 +4765,16 @@
                                             <exclude reference="BGZ-tU-xhT"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <exclude reference="I97-hO-dZN"/>
+                                            <exclude reference="bHa-Xu-ELK"/>
+                                            <exclude reference="60g-uo-RuT"/>
+                                            <exclude reference="DBT-to-iEa"/>
                                             <exclude reference="22h-mg-jYv"/>
                                             <exclude reference="CKP-ew-KRM"/>
                                             <exclude reference="EWa-dU-fhc"/>
                                             <exclude reference="HJY-dt-XMg"/>
                                             <exclude reference="o5p-MT-n0k"/>
                                             <exclude reference="yHW-ij-CgT"/>
-                                            <exclude reference="60g-uo-RuT"/>
-                                            <exclude reference="DBT-to-iEa"/>
-                                            <exclude reference="I97-hO-dZN"/>
-                                            <exclude reference="bHa-Xu-ELK"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -4783,16 +4784,16 @@
                                             <include reference="BGZ-tU-xhT"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <include reference="I97-hO-dZN"/>
+                                            <include reference="bHa-Xu-ELK"/>
+                                            <include reference="60g-uo-RuT"/>
+                                            <include reference="DBT-to-iEa"/>
                                             <exclude reference="22h-mg-jYv"/>
                                             <include reference="CKP-ew-KRM"/>
                                             <include reference="EWa-dU-fhc"/>
                                             <exclude reference="HJY-dt-XMg"/>
                                             <include reference="o5p-MT-n0k"/>
                                             <exclude reference="yHW-ij-CgT"/>
-                                            <include reference="60g-uo-RuT"/>
-                                            <include reference="DBT-to-iEa"/>
-                                            <include reference="I97-hO-dZN"/>
-                                            <include reference="bHa-Xu-ELK"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
