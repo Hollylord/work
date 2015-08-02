@@ -114,7 +114,7 @@
 		F00A177D1B5FBBCE00763096 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */; };
 		F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A177C1B5FBBCE00763096 /* Main.storyboard */; };
 		F06F9F8F1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F06F9F8E1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a */; };
-		F0860E1B1B6E208F003DBF17 /* niuRenPointsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0860E1A1B6E208F003DBF17 /* niuRenPointsTableViewController.m */; };
+		F0860E1E1B6E278D003DBF17 /* niuRenGuandianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0860E1D1B6E278D003DBF17 /* niuRenGuandianViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -319,8 +319,8 @@
 		F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F00A177C1B5FBBCE00763096 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F06F9F8E1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBDVoiceRecognitionClient.a; path = "../../Downloads/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient/libBDVoiceRecognitionClient.a"; sourceTree = "<group>"; };
-		F0860E191B6E208F003DBF17 /* niuRenPointsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuRenPointsTableViewController.h; sourceTree = "<group>"; };
-		F0860E1A1B6E208F003DBF17 /* niuRenPointsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuRenPointsTableViewController.m; sourceTree = "<group>"; };
+		F0860E1C1B6E278D003DBF17 /* niuRenGuandianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuRenGuandianViewController.h; sourceTree = "<group>"; };
+		F0860E1D1B6E278D003DBF17 /* niuRenGuandianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuRenGuandianViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,8 +468,8 @@
 			children = (
 				A11FA4281B6B0B2D00E4DE79 /* shequnTableViewController.h */,
 				A11FA4291B6B0B2D00E4DE79 /* shequnTableViewController.m */,
-				F0860E191B6E208F003DBF17 /* niuRenPointsTableViewController.h */,
-				F0860E1A1B6E208F003DBF17 /* niuRenPointsTableViewController.m */,
+				F0860E1C1B6E278D003DBF17 /* niuRenGuandianViewController.h */,
+				F0860E1D1B6E278D003DBF17 /* niuRenGuandianViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -1102,7 +1102,6 @@
 				A14C4E7F1B6221F30045D442 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				A1770A551B5C8A4F00C272E9 /* MyTabBar.m in Sources */,
 				A1D77EE01B672FB3008847FE /* publishViewController.m in Sources */,
-				F0860E1B1B6E208F003DBF17 /* niuRenPointsTableViewController.m in Sources */,
 				A14C4E811B6221F30045D442 /* UIButton+AFNetworking.m in Sources */,
 				A1770A5A1B5CE0F400C272E9 /* RainBow.m in Sources */,
 				A14C4E781B6221F30045D442 /* AFURLConnectionOperation.m in Sources */,
@@ -1124,6 +1123,7 @@
 				A14C4E441B61ECF60045D442 /* alreadyloginViewController.m in Sources */,
 				A14C4E741B6221F30045D442 /* AFHTTPRequestOperationManager.m in Sources */,
 				A1D77EDD1B672C3C008847FE /* careProgramTableViewController.m in Sources */,
+				F0860E1E1B6E278D003DBF17 /* niuRenGuandianViewController.m in Sources */,
 				A107CFBF1B6B31F8002DFC58 /* CAStreamBasicDescription.cpp in Sources */,
 				A14C4E851B6221F30045D442 /* UIWebView+AFNetworking.m in Sources */,
 				A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */,

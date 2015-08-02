@@ -1,5 +1,5 @@
 //
-//  niuRenPointsTableViewController.h
+//  niuRenGuandianViewController.h
 //  ad
 //
 //  Created by hollylord on 15/8/2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface niuRenPointsTableViewController : UITableViewController
+@interface niuRenGuandianViewController : UIViewController
 
 @end

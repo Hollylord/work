@@ -7,6 +7,7 @@
 //
 
 #import "shequnTableViewController.h"
+#import "tabViewController.h"
 
 @interface shequnTableViewController ()
 
@@ -20,7 +21,10 @@
     
     
 }
-
+- (void)viewWillAppear:(BOOL)animated{
+    tabViewController *myTabBarController = (tabViewController *)self.tabBarController;
+    [myTabBarController.customTabBar setHidden:NO];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
