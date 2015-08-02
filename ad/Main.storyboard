@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Chg-Xw-JOh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Chg-Xw-JOh">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -4954,10 +4954,41 @@
                     <navigationItem key="navigationItem" title="社群" id="oqH-hA-o4r">
                         <barButtonItem key="backBarButtonItem" title="返回" id="wOA-I9-HWN"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="485-67-bwN" kind="show" identifier="shequn2points" id="XtW-YT-eE5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8E-de-rZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1063.5" y="973.5"/>
+        </scene>
+        <!--牛人观点-->
+        <scene sceneID="Mpp-Ed-QKF">
+            <objects>
+                <tableViewController title="牛人观点" id="485-67-bwN" customClass="niuRenPointsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ACc-yk-mKp">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jw7-VD-B5X">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jw7-VD-B5X" id="7Ur-vn-kID">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="485-67-bwN" id="e5O-MH-vde"/>
+                            <outlet property="delegate" destination="485-67-bwN" id="qB8-W9-p1Z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="牛人观点" id="E1V-Xu-4hp">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="1Ra-Dj-I5l"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZh-yM-UIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1903.5" y="973.5"/>
         </scene>
     </scenes>
     <resources>

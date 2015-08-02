@@ -147,6 +147,12 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0)
+    {
+        if (indexPath.row == 3) {
+            [self performSegueWithIdentifier:@"shequn2points" sender:nil];
+        }
+    }
 }
 
 //设置cell的高度

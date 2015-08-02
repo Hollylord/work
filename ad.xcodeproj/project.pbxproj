@@ -24,7 +24,6 @@
 		A107CFC41B6B322E002DFC58 /* BDVoiceRecognitionClientResources in Resources */ = {isa = PBXBuildFile; fileRef = A107CFC31B6B322E002DFC58 /* BDVoiceRecognitionClientResources */; };
 		A107CFCB1B6B4717002DFC58 /* yuyinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A107CFCA1B6B4717002DFC58 /* yuyinTableViewController.m */; };
 		A107CFCE1B6B4A1D002DFC58 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CFCD1B6B4A1D002DFC58 /* libz.1.2.5.dylib */; };
-		A107D0451B6B6CCD002DFC58 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A107D0441B6B6CCD002DFC58 /* libBDVoiceRecognitionClient.a */; };
 		A119BA041B69BA7100D44698 /* sponsorsList.m in Sources */ = {isa = PBXBuildFile; fileRef = A119BA031B69BA7100D44698 /* sponsorsList.m */; };
 		A119BA071B6A271E00D44698 /* yurezhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A119BA061B6A271E00D44698 /* yurezhongViewController.m */; };
 		A11FA42A1B6B0B2D00E4DE79 /* shequnTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11FA4291B6B0B2D00E4DE79 /* shequnTableViewController.m */; };
@@ -114,6 +113,8 @@
 		A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */; };
 		F00A177D1B5FBBCE00763096 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */; };
 		F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A177C1B5FBBCE00763096 /* Main.storyboard */; };
+		F06F9F8F1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F06F9F8E1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a */; };
+		F0860E1B1B6E208F003DBF17 /* niuRenPointsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0860E1A1B6E208F003DBF17 /* niuRenPointsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,7 +161,6 @@
 		A107CFC91B6B4717002DFC58 /* yuyinTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyinTableViewController.h; sourceTree = "<group>"; };
 		A107CFCA1B6B4717002DFC58 /* yuyinTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyinTableViewController.m; sourceTree = "<group>"; };
 		A107CFCD1B6B4A1D002DFC58 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		A107D0441B6B6CCD002DFC58 /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBDVoiceRecognitionClient.a; path = "../../Downloads/Baidu-Voice-SDK-iOS-1.6.1/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient/libBDVoiceRecognitionClient.a"; sourceTree = "<group>"; };
 		A119BA021B69BA7100D44698 /* sponsorsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorsList.h; sourceTree = "<group>"; };
 		A119BA031B69BA7100D44698 /* sponsorsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorsList.m; sourceTree = "<group>"; };
 		A119BA051B6A271E00D44698 /* yurezhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yurezhongViewController.h; sourceTree = "<group>"; };
@@ -318,6 +318,9 @@
 		DE12D6506F96786A2FADEB22 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F00A177C1B5FBBCE00763096 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F06F9F8E1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBDVoiceRecognitionClient.a; path = "../../Downloads/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient/libBDVoiceRecognitionClient.a"; sourceTree = "<group>"; };
+		F0860E191B6E208F003DBF17 /* niuRenPointsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuRenPointsTableViewController.h; sourceTree = "<group>"; };
+		F0860E1A1B6E208F003DBF17 /* niuRenPointsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuRenPointsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,7 +328,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A107D0451B6B6CCD002DFC58 /* libBDVoiceRecognitionClient.a in Frameworks */,
+				F06F9F8F1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a in Frameworks */,
 				A107CFCE1B6B4A1D002DFC58 /* libz.1.2.5.dylib in Frameworks */,
 				A14C4E101B61CC520045D442 /* libstdc++.dylib in Frameworks */,
 				A107CFA11B6B30F1002DFC58 /* AVFoundation.framework in Frameworks */,
@@ -379,7 +382,7 @@
 		9F698B40384B11C53D41C3E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A107D0441B6B6CCD002DFC58 /* libBDVoiceRecognitionClient.a */,
+				F06F9F8E1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a */,
 				A107CFCD1B6B4A1D002DFC58 /* libz.1.2.5.dylib */,
 				A107CFA01B6B30F1002DFC58 /* AVFoundation.framework */,
 				A107CF9E1B6B30E6002DFC58 /* AudioToolbox.framework */,
@@ -465,6 +468,8 @@
 			children = (
 				A11FA4281B6B0B2D00E4DE79 /* shequnTableViewController.h */,
 				A11FA4291B6B0B2D00E4DE79 /* shequnTableViewController.m */,
+				F0860E191B6E208F003DBF17 /* niuRenPointsTableViewController.h */,
+				F0860E1A1B6E208F003DBF17 /* niuRenPointsTableViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -1097,6 +1102,7 @@
 				A14C4E7F1B6221F30045D442 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				A1770A551B5C8A4F00C272E9 /* MyTabBar.m in Sources */,
 				A1D77EE01B672FB3008847FE /* publishViewController.m in Sources */,
+				F0860E1B1B6E208F003DBF17 /* niuRenPointsTableViewController.m in Sources */,
 				A14C4E811B6221F30045D442 /* UIButton+AFNetworking.m in Sources */,
 				A1770A5A1B5CE0F400C272E9 /* RainBow.m in Sources */,
 				A14C4E781B6221F30045D442 /* AFURLConnectionOperation.m in Sources */,
@@ -1288,6 +1294,7 @@
 					/Users/inc/Downloads/Baidu_Voice_Combine_SDK_iOS/Baidu_Voice_Combine_SDK_iOS/libBDVoiceRecognitionClient,
 					/Users/inc/Downloads/Baidu_Voice_Combine_SDK_iOS,
 					"/Users/inc/Downloads/Baidu-Voice-SDK-iOS-1.6.1/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient",
+					"/Users/hollylord/Downloads/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1321,6 +1328,7 @@
 					/Users/inc/Downloads/Baidu_Voice_Combine_SDK_iOS/Baidu_Voice_Combine_SDK_iOS/libBDVoiceRecognitionClient,
 					/Users/inc/Downloads/Baidu_Voice_Combine_SDK_iOS,
 					"/Users/inc/Downloads/Baidu-Voice-SDK-iOS-1.6.1/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient",
+					"/Users/hollylord/Downloads/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
