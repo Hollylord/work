@@ -52,7 +52,7 @@
 - (void)keyboardRise:(NSNotification *)aNotification{
     NSDictionary *userInfo = [aNotification userInfo];
     CGRect keyboardRect = [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
-    NSLog(@"%f",keyboardRect.size.height);
+    NSLog(@"123");
 
 //    CGFloat y = 258 + self.yOfInputView.constant ;
     self.yOfInputView.constant = 258;
