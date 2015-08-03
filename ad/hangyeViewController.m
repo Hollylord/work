@@ -9,7 +9,7 @@
 #import "hangyeViewController.h"
 #import "tabViewController.h"
 
-@interface hangyeViewController ()
+@interface hangyeViewController () <UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -33,25 +33,63 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
+    if (section == 0)
+    {
+        return 2;
+    }
+    else {
+        return 10;
+    }
     
-    return 4;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"zhiding" forIndexPath:indexPath];
+    if (indexPath.section == 0)
+    {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"zhiding" forIndexPath:indexPath];
+        return cell;
     
-    // Configure the cell...
+    }
+    else {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"taolun" forIndexPath:indexPath];
+        if (indexPath.row == 0) {
+            UILabel *head = (UILabel *)[cell viewWithTag:4];
+            head.text = @"互联网金融，要么创新，要么死";
+            UILabel *detail = (UILabel *)[cell viewWithTag:5];
+            NSString *article = @"入市谈判的时候，谈判长龙用途最担心的是银行和农业，五年前，最有智慧的金融学家们。。。。。。..........";
+            detail.text = article;
+            //获得自动换行后的UILabel的size
+            NSDictionary *attribute = [NSDictionary dictionaryWithObject:detail.font forKey:NSFontAttributeName];
+            
+            //获得UILabel的size的方法：参数1：讲文字限制在多大的rect中
+            //然后，它通过自动换行后计算出这个rect的实际大小。
+            CGSize textSize = [detail.text boundingRectWithSize:CGSizeMake(350, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
+            NSLog(@"%@",NSStringFromCGSize(textSize));
+            
+           
+            
+            
+            
+        }
+        return cell;
+    }
     
-    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0) {
+        return 30;
+    }
+    else {
+        return 150;
+    }
 }
 @end
