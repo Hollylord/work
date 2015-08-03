@@ -87,6 +87,8 @@
 		A189FBBC1B5F8ECE0002AAA5 /* UMSShareListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A189FBB01B5F8ECE0002AAA5 /* UMSShareListController.xib */; };
 		A189FBBD1B5F8ECE0002AAA5 /* UMSocialSDKResourcesNew.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A189FBB11B5F8ECE0002AAA5 /* UMSocialSDKResourcesNew.bundle */; };
 		A189FBBE1B5F8F520002AAA5 /* libUMSocial_Sdk_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A189FBA71B5F8ECE0002AAA5 /* libUMSocial_Sdk_4.2.3.a */; };
+		A18A26F01B6F0C5F00E23AF7 /* jigouzhuantiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18A26EF1B6F0C5F00E23AF7 /* jigouzhuantiViewController.m */; };
+		A18A26F31B6F13F200E23AF7 /* institutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18A26F21B6F13F200E23AF7 /* institutionViewController.m */; };
 		A18C3A891B5DF98000BC5BF1 /* programViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C3A881B5DF98000BC5BF1 /* programViewController.m */; };
 		A18C3A981B5E29AF00BC5BF1 /* pictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C3A971B5E29AF00BC5BF1 /* pictureView.m */; };
 		A18C3A9B1B5E2CFD00BC5BF1 /* INSSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C3A9A1B5E2CFD00BC5BF1 /* INSSearchBar.m */; };
@@ -269,6 +271,10 @@
 		A189FBB01B5F8ECE0002AAA5 /* UMSShareListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSShareListController.xib; sourceTree = "<group>"; };
 		A189FBB11B5F8ECE0002AAA5 /* UMSocialSDKResourcesNew.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResourcesNew.bundle; sourceTree = "<group>"; };
 		A189FBB21B5F8ECE0002AAA5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/UMSocialLocalizable.strings"; sourceTree = "<group>"; };
+		A18A26EE1B6F0C5E00E23AF7 /* jigouzhuantiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jigouzhuantiViewController.h; sourceTree = "<group>"; };
+		A18A26EF1B6F0C5F00E23AF7 /* jigouzhuantiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jigouzhuantiViewController.m; sourceTree = "<group>"; };
+		A18A26F11B6F13F200E23AF7 /* institutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = institutionViewController.h; sourceTree = "<group>"; };
+		A18A26F21B6F13F200E23AF7 /* institutionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = institutionViewController.m; sourceTree = "<group>"; };
 		A18C3A871B5DF98000BC5BF1 /* programViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programViewController.h; sourceTree = "<group>"; };
 		A18C3A881B5DF98000BC5BF1 /* programViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = programViewController.m; sourceTree = "<group>"; };
 		A18C3A961B5E29AF00BC5BF1 /* pictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pictureView.h; sourceTree = "<group>"; };
@@ -470,6 +476,10 @@
 				A11FA4291B6B0B2D00E4DE79 /* shequnTableViewController.m */,
 				F0860E1C1B6E278D003DBF17 /* niuRenGuandianViewController.h */,
 				F0860E1D1B6E278D003DBF17 /* niuRenGuandianViewController.m */,
+				A18A26EE1B6F0C5E00E23AF7 /* jigouzhuantiViewController.h */,
+				A18A26EF1B6F0C5F00E23AF7 /* jigouzhuantiViewController.m */,
+				A18A26F11B6F13F200E23AF7 /* institutionViewController.h */,
+				A18A26F21B6F13F200E23AF7 /* institutionViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -1095,6 +1105,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18A26F01B6F0C5F00E23AF7 /* jigouzhuantiViewController.m in Sources */,
 				A14C4E801B6221F30045D442 /* UIAlertView+AFNetworking.m in Sources */,
 				A14C4E821B6221F30045D442 /* UIImageView+AFNetworking.m in Sources */,
 				A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */,
@@ -1109,6 +1120,7 @@
 				A119BA041B69BA7100D44698 /* sponsorsList.m in Sources */,
 				A14C4E771B6221F30045D442 /* AFSecurityPolicy.m in Sources */,
 				A1CB48B11B578DBC00BB2489 /* AppDelegate.m in Sources */,
+				A18A26F31B6F13F200E23AF7 /* institutionViewController.m in Sources */,
 				A14C4E751B6221F30045D442 /* AFHTTPSessionManager.m in Sources */,
 				A14C4E491B620F5D0045D442 /* speechViewController.m in Sources */,
 				A1CB48D31B578E6600BB2489 /* advertViewController.m in Sources */,

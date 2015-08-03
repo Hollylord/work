@@ -156,6 +156,10 @@
         if (indexPath.row == 3) {
             [self performSegueWithIdentifier:@"shequn2points" sender:nil];
         }
+        else if (indexPath.row == 1)
+        {
+            [self performSegueWithIdentifier:@"shequn2jigouzhuanti" sender:nil];
+        }
     }
 }
 
