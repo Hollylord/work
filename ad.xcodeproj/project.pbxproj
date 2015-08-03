@@ -22,7 +22,6 @@
 		A107CFC11B6B31F8002DFC58 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A107CFBA1B6B31F8002DFC58 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A107CFC21B6B31F8002DFC58 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A107CFBD1B6B31F8002DFC58 /* TTTAttributedLabel.m */; };
 		A107CFC41B6B322E002DFC58 /* BDVoiceRecognitionClientResources in Resources */ = {isa = PBXBuildFile; fileRef = A107CFC31B6B322E002DFC58 /* BDVoiceRecognitionClientResources */; };
-		A107CFCB1B6B4717002DFC58 /* yuyinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A107CFCA1B6B4717002DFC58 /* yuyinTableViewController.m */; };
 		A107CFCE1B6B4A1D002DFC58 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CFCD1B6B4A1D002DFC58 /* libz.1.2.5.dylib */; };
 		A119BA041B69BA7100D44698 /* sponsorsList.m in Sources */ = {isa = PBXBuildFile; fileRef = A119BA031B69BA7100D44698 /* sponsorsList.m */; };
 		A119BA071B6A271E00D44698 /* yurezhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A119BA061B6A271E00D44698 /* yurezhongViewController.m */; };
@@ -67,6 +66,7 @@
 		A14C4E851B6221F30045D442 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C4E721B6221F30045D442 /* UIWebView+AFNetworking.m */; };
 		A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461731B5F2E51004CA48D /* ASPopUpView.m */; };
 		A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */; };
+		A161A3E21B6F4EA6005FDD79 /* yuyinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A161A3E11B6F4EA6005FDD79 /* yuyinViewController.m */; };
 		A17603651B686901002583BC /* zhongchouzhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17603641B686901002583BC /* zhongchouzhongViewController.m */; };
 		A176036B1B68CAE1002583BC /* sponsorsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = A176036A1B68CAE1002583BC /* sponsorsList.xib */; };
 		A176036D1B68CC47002583BC /* sponsorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A176036C1B68CC47002583BC /* sponsorCell.xib */; };
@@ -161,8 +161,6 @@
 		A107CFBC1B6B31F8002DFC58 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
 		A107CFBD1B6B31F8002DFC58 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		A107CFC31B6B322E002DFC58 /* BDVoiceRecognitionClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BDVoiceRecognitionClientResources; sourceTree = "<group>"; };
-		A107CFC91B6B4717002DFC58 /* yuyinTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyinTableViewController.h; sourceTree = "<group>"; };
-		A107CFCA1B6B4717002DFC58 /* yuyinTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyinTableViewController.m; sourceTree = "<group>"; };
 		A107CFCD1B6B4A1D002DFC58 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		A119BA021B69BA7100D44698 /* sponsorsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorsList.h; sourceTree = "<group>"; };
 		A119BA031B69BA7100D44698 /* sponsorsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorsList.m; sourceTree = "<group>"; };
@@ -236,6 +234,8 @@
 		A15461731B5F2E51004CA48D /* ASPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopUpView.m; sourceTree = "<group>"; };
 		A15461741B5F2E51004CA48D /* ASProgressPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProgressPopUpView.h; sourceTree = "<group>"; };
 		A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASProgressPopUpView.m; sourceTree = "<group>"; };
+		A161A3E01B6F4EA6005FDD79 /* yuyinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyinViewController.h; sourceTree = "<group>"; };
+		A161A3E11B6F4EA6005FDD79 /* yuyinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyinViewController.m; sourceTree = "<group>"; };
 		A17603631B686901002583BC /* zhongchouzhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhongchouzhongViewController.h; sourceTree = "<group>"; };
 		A17603641B686901002583BC /* zhongchouzhongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhongchouzhongViewController.m; sourceTree = "<group>"; };
 		A176036A1B68CAE1002583BC /* sponsorsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = sponsorsList.xib; sourceTree = "<group>"; };
@@ -541,8 +541,7 @@
 		A14C4E1C1B61D1770045D442 /* 语音留言 */ = {
 			isa = PBXGroup;
 			children = (
-				A107CFC91B6B4717002DFC58 /* yuyinTableViewController.h */,
-				A107CFCA1B6B4717002DFC58 /* yuyinTableViewController.m */,
+				A161A3DF1B6F4E89005FDD79 /* controller */,
 			);
 			name = "语音留言";
 			sourceTree = "<group>";
@@ -648,6 +647,15 @@
 				A14C4E721B6221F30045D442 /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		A161A3DF1B6F4E89005FDD79 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A161A3E01B6F4EA6005FDD79 /* yuyinViewController.h */,
+				A161A3E11B6F4EA6005FDD79 /* yuyinViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 		A1770A501B5C887100C272E9 /* Main */ = {
@@ -1153,7 +1161,6 @@
 				A107CFBE1B6B31F8002DFC58 /* CADebugMacros.cpp in Sources */,
 				A14C4E761B6221F30045D442 /* AFNetworkReachabilityManager.m in Sources */,
 				A107CFC11B6B31F8002DFC58 /* JSONKit.m in Sources */,
-				A107CFCB1B6B4717002DFC58 /* yuyinTableViewController.m in Sources */,
 				A14C4E7A1B6221F30045D442 /* AFURLResponseSerialization.m in Sources */,
 				A13BCBD31B663A190094E473 /* sponsorTableViewController.m in Sources */,
 				A14C4E791B6221F30045D442 /* AFURLRequestSerialization.m in Sources */,
@@ -1165,6 +1172,7 @@
 				A18C3ABE1B5E453800BC5BF1 /* recommendView.m in Sources */,
 				A1C4D34D1B60BA0D00FE4A35 /* dengluViewController.m in Sources */,
 				A1D77EDA1B67161F008847FE /* myProgramTableViewController.m in Sources */,
+				A161A3E21B6F4EA6005FDD79 /* yuyinViewController.m in Sources */,
 				A18C3A9B1B5E2CFD00BC5BF1 /* INSSearchBar.m in Sources */,
 				A107CFC21B6B31F8002DFC58 /* TTTAttributedLabel.m in Sources */,
 			);

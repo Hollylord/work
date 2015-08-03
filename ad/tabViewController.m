@@ -36,19 +36,40 @@
     
     //加载自定义的tabbar
     UIView *myTabBar = [[[NSBundle mainBundle] loadNibNamed:@"MyTabBar" owner:self options:nil] firstObject];
-    myTabBar.frame = CGRectMake(0, 1214/2, 750/2, 121/2);
+    
     myTabBar.backgroundColor = [UIColor clearColor];
     [self.view addSubview:myTabBar];
+    NSLayoutConstraint *leadingofTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
+    NSLayoutConstraint *trailingofTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
+    NSLayoutConstraint *bottomofTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+    NSLayoutConstraint *heightOfTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:60];
+    [myTabBar addConstraint:heightOfTabbar];
+    [self.view addConstraints:@[leadingofTabbar,trailingofTabbar,bottomofTabbar]];
     
     
     //加载rainbow
     UIView *rainBow = [[[NSBundle mainBundle] loadNibNamed:@"RainBow" owner:self options:nil] firstObject];
-    rainBow.frame = CGRectMake(0, 489, 375, 129);
     rainBow.hidden = YES;
-
-//    rainBow.center = CGPointMake(375/2, 667-49);
+    rainBow.layer.anchorPoint = CGPointMake(0.5, 1);
+    //    rainBow.center = CGPointMake(375/2, 667-49);
     rainBow.transform = CGAffineTransformMakeRotation(M_PI);
+//    rainBow.backgroundColor = [UIColor redColor];
     [self.view insertSubview:rainBow belowSubview:myTabBar];
+    
+    NSLayoutConstraint *leading = [NSLayoutConstraint constraintWithItem:rainBow attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
+    NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:rainBow attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:20];
+    NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:rainBow attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:1 constant:0];
+    NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:rainBow attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:129];
+    [rainBow addConstraint:height];
+    [self.view addConstraints:@[leading,bottom,width]];
+    
+    self.view.translatesAutoresizingMaskIntoConstraints = NO;
+    rainBow.translatesAutoresizingMaskIntoConstraints = NO;
+    myTabBar.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    
+    
+    
 //    
 //    UIViewController *testViewcontroller = [[UIViewController alloc] init];
 //    

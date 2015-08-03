@@ -13,7 +13,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     
-    self.layer.anchorPoint = CGPointMake(0.5, 1.6);
+    
     return self;
 }
 
