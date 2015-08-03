@@ -1509,7 +1509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kfg-I8-xG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-721.5" y="429.75"/>
+            <point key="canvasLocation" x="-769.5" y="450.75"/>
         </scene>
         <!--个人中心-->
         <scene sceneID="H91-id-sBZ">
@@ -4057,18 +4057,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZz-35-zSl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8R6-8g-4IT">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8R6-8g-4IT" userLabel="键盘">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="键盘">
+                                        <state key="normal" image="jianpan">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="selected" image="jianpanHigh"/>
+                                        <state key="highlighted" image="jianpanHigh"/>
                                         <connections>
                                             <action selector="toggleKey:" destination="NqK-Hw-uV5" eventType="touchUpInside" id="pYY-3b-Q1r"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ooe-YU-PSK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ooe-YU-PSK" userLabel="说话">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="语言">
+                                        <state key="normal" image="yuyin">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -4096,15 +4098,20 @@
                                         </variation>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.97395833330000003" green="0.076032881519999998" blue="0.1137865084" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="fxm-Id-SjX" firstAttribute="top" secondItem="CZz-35-zSl" secondAttribute="top" constant="8" id="1eQ-tK-Xnv"/>
-                                    <constraint firstItem="Ooe-YU-PSK" firstAttribute="top" secondItem="CZz-35-zSl" secondAttribute="top" constant="8" id="8K6-Pf-4eJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ooe-YU-PSK" secondAttribute="trailing" constant="50" id="6Eo-aW-YOK">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                    <constraint firstItem="Ooe-YU-PSK" firstAttribute="top" secondItem="CZz-35-zSl" secondAttribute="top" constant="8" id="8K6-Pf-4eJ">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="4"/>
+                                    </constraint>
                                     <constraint firstItem="Ooe-YU-PSK" firstAttribute="leading" secondItem="8R6-8g-4IT" secondAttribute="trailing" constant="38" id="Qpy-Ns-TAi"/>
+                                    <constraint firstAttribute="trailing" secondItem="fxm-Id-SjX" secondAttribute="trailing" constant="30" id="aVS-va-9JW"/>
                                     <constraint firstItem="8R6-8g-4IT" firstAttribute="leading" secondItem="CZz-35-zSl" secondAttribute="leading" constant="26" id="ehB-ax-ara"/>
                                     <constraint firstItem="8R6-8g-4IT" firstAttribute="top" secondItem="CZz-35-zSl" secondAttribute="top" constant="8" id="fN3-z2-irc"/>
                                     <constraint firstAttribute="height" constant="44" id="md6-Zr-eeP"/>
-                                    <constraint firstItem="fxm-Id-SjX" firstAttribute="leading" secondItem="8R6-8g-4IT" secondAttribute="trailing" constant="38" id="tqV-2F-FJl"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
@@ -4117,7 +4124,8 @@
                                         <exclude reference="ehB-ax-ara"/>
                                         <exclude reference="fN3-z2-irc"/>
                                         <exclude reference="1eQ-tK-Xnv"/>
-                                        <exclude reference="tqV-2F-FJl"/>
+                                        <exclude reference="aVS-va-9JW"/>
+                                        <exclude reference="6Eo-aW-YOK"/>
                                         <exclude reference="8K6-Pf-4eJ"/>
                                         <exclude reference="Qpy-Ns-TAi"/>
                                     </mask>
@@ -4133,9 +4141,10 @@
                                         <include reference="ehB-ax-ara"/>
                                         <include reference="fN3-z2-irc"/>
                                         <include reference="1eQ-tK-Xnv"/>
-                                        <include reference="tqV-2F-FJl"/>
+                                        <include reference="aVS-va-9JW"/>
+                                        <include reference="6Eo-aW-YOK"/>
                                         <include reference="8K6-Pf-4eJ"/>
-                                        <include reference="Qpy-Ns-TAi"/>
+                                        <exclude reference="Qpy-Ns-TAi"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -4219,9 +4228,11 @@
                     <tabBarItem key="tabBarItem" title="Item" id="LPf-4n-dgX"/>
                     <navigationItem key="navigationItem" title="Title" id="4O9-r8-foL"/>
                     <connections>
+                        <outlet property="inputView" destination="CZz-35-zSl" id="JI9-s1-UIL"/>
                         <outlet property="talkBtn" destination="Ooe-YU-PSK" id="ZZN-2O-Obi"/>
                         <outlet property="toggleBtn" destination="8R6-8g-4IT" id="eb0-D9-Is9"/>
-                        <outlet property="typeBtn" destination="fxm-Id-SjX" id="5fe-73-gZQ"/>
+                        <outlet property="typeField" destination="fxm-Id-SjX" id="9kS-Wg-UAR"/>
+                        <outlet property="yOfInputView" destination="ko4-J2-y4h" id="uNm-cm-6XP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNq-Xd-ddA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5674,8 +5685,7 @@
                                                             <exclude reference="meB-3U-efV"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="8" y="84" width="292" height="59"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="meB-3U-efV"/>
                                                         </mask>
@@ -6419,6 +6429,8 @@
         <image name="denglubeijing" width="375" height="667"/>
         <image name="denglujianNormal" width="250" height="39"/>
         <image name="fanhui" width="69" height="23"/>
+        <image name="jianpan" width="30" height="30"/>
+        <image name="jianpanHigh" width="32" height="30"/>
         <image name="login" width="375" height="152"/>
         <image name="pinglun" width="27" height="20"/>
         <image name="play" width="54" height="35"/>
@@ -6431,10 +6443,11 @@
         <image name="wx" width="50" height="50"/>
         <image name="yixianggentou" width="95" height="28"/>
         <image name="yixianglingtou" width="95" height="28"/>
+        <image name="yuyin" width="250" height="35"/>
         <image name="zan" width="27" height="20"/>
         <image name="zhongchouzhongBeijing" width="375" height="192"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="M63-Fy-tnq"/>
+        <segue reference="MRO-cK-kio"/>
     </inferredMetricsTieBreakers>
 </document>

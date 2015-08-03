@@ -178,12 +178,9 @@
 
 - (IBAction)message:(UIButton *)sender {
     if (self.rainBowView.hidden == NO) {
-        [UIView animateWithDuration:1.5 animations:^{
-            self.rainBowView.transform = CGAffineTransformMakeRotation(M_PI);
-        }completion:^(BOOL finished) {
-            //取消彩虹桥
-            self.rainBowView.hidden = YES;
-        }];
+        self.rainBowView.hidden = YES;
+        self.rainBowView.transform = CGAffineTransformMakeRotation(M_PI);
+        
         
     }
     self.selectedIndex = 7;

@@ -9,10 +9,13 @@
 #import "yuyinViewController.h"
 #import "tabViewController.h"
 
-@interface yuyinViewController ()
+@interface yuyinViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *toggleBtn;
 @property (weak, nonatomic) IBOutlet UIButton *talkBtn;
-@property (weak, nonatomic) IBOutlet UITextField *typeBtn;
+@property (weak, nonatomic) IBOutlet UITextField *typeField;
+@property (weak, nonatomic) IBOutlet UIView *inputView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *yOfInputView;
+
 - (IBAction)toggleKey:(UIButton *)sender;
 - (IBAction)talk:(UIButton *)sender;
 
@@ -22,17 +25,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.typeField.delegate = self;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardRise:) name:UIKeyboardWillShowNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardHide:) name:UIKeyboardWillHideNotification object:nil];
 }
-
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.typeField resignFirstResponder];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     tabViewController *myTabBarController = (tabViewController *)self.tabBarController;
     [myTabBarController.customTabBar setHidden:YES];
+    self.yOfInputView.constant = 0;
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self.typeField resignFirstResponder];
+}
+#pragma mark - 键盘响应的通知
+- (void)keyboardRise:(NSNotification *)aNotification{
+    NSDictionary *userInfo = [aNotification userInfo];
+    CGRect keyboardRect = [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    NSLog(@"%f",keyboardRect.size.height);
+
+//    CGFloat y = 258 + self.yOfInputView.constant ;
+    self.yOfInputView.constant = 258;
+    
+    [UIView animateWithDuration:1.0 animations:^{
+        [self.inputView layoutIfNeeded];
+    }];
+    
+    
+}
+
+- (void)keyboardHide:(NSNotification *)aNotification{
+    
+    
+    NSLog(@"%@",self.yOfInputView);
+    
+    self.yOfInputView.constant = 0;
+    [UIView animateWithDuration:1.0 animations:^{
+        [self.inputView layoutIfNeeded];
+    }];
 }
 
 /*
@@ -45,7 +85,20 @@
 }
 */
 
+#pragma mark - 按钮点击
 - (IBAction)toggleKey:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    if (sender.selected == YES) {
+        self.talkBtn.hidden = YES;
+        self.typeField.hidden = NO;
+    }
+    else{
+        self.talkBtn.hidden = NO;
+        self.typeField.hidden = YES;
+    }
+    
+    
+    
 }
 
 - (IBAction)talk:(UIButton *)sender {
