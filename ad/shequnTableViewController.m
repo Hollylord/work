@@ -160,6 +160,10 @@
         {
             [self performSegueWithIdentifier:@"shequn2jigouzhuanti" sender:nil];
         }
+        else if (indexPath.row == 0)
+        {
+            [self performSegueWithIdentifier:@"shequn2hangyetaolun" sender:nil];
+        }
     }
 }
 
