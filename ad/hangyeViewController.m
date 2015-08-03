@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -33,29 +35,51 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return 2;
+    return 10;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     if (section == 0)
     {
+        return 1;
+    }
+    else if (section == 1){
         return 2;
     }
     else {
-        return 10;
+        return 1;
     }
     
 }
-
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if (section == 0) {
+        return 0;
+        
+    }
+    else if (section == 1){
+        return 0;
+    }
+    else {
+        return 20;
+    }
+}
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{
+    [view setHidden:YES];
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0)
     {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"zhiding" forIndexPath:indexPath];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"picture" forIndexPath:indexPath];
         return cell;
     
     }
+    else if (indexPath.section == 1){
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"zhiding" forIndexPath:indexPath];
+        return cell;
+    }
     else {
+        
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"taolun" forIndexPath:indexPath];
         if (indexPath.row == 0) {
             UILabel *head = (UILabel *)[cell viewWithTag:4];
@@ -69,7 +93,7 @@
             //获得UILabel的size的方法：参数1：讲文字限制在多大的rect中
             //然后，它通过自动换行后计算出这个rect的实际大小。
             CGSize textSize = [detail.text boundingRectWithSize:CGSizeMake(350, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
-            NSLog(@"%@",NSStringFromCGSize(textSize));
+//            NSLog(@"%@",NSStringFromCGSize(textSize));
             
            
             
@@ -86,6 +110,10 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
+        return 100;
+    }
+    else if (indexPath.section == 1)
+    {
         return 30;
     }
     else {
