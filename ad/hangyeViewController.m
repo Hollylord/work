@@ -87,6 +87,7 @@
             UILabel *detail = (UILabel *)[cell viewWithTag:5];
             NSString *article = @"入市谈判的时候，谈判长龙用途最担心的是银行和农业，五年前，最有智慧的金融学家们。。。。。。..........";
             detail.text = article;
+            
             //获得自动换行后的UILabel的size
             NSDictionary *attribute = [NSDictionary dictionaryWithObject:detail.font forKey:NSFontAttributeName];
             
