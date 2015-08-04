@@ -4077,7 +4077,7 @@
                                                         </mask>
                                                     </variation>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4xk-PV-4Io" userLabel="liuyan">
+                                                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liuyan1" translatesAutoresizingMaskIntoConstraints="NO" id="4xk-PV-4Io" userLabel="liuyan">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieH-QJ-KUN">
@@ -4152,6 +4152,115 @@
                                                     <include reference="dLb-a8-jdj"/>
                                                     <exclude reference="yTW-Mb-OSh"/>
                                                     <include reference="tiC-HL-B0Q"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yuyin" id="8dK-Ka-uKp">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8dK-Ka-uKp" id="G4k-E7-FoW">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zfa-n9-XcD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="58" id="fzY-G3-MSz"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="fzY-G3-MSz"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="fzY-G3-MSz"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liuyan2" translatesAutoresizingMaskIntoConstraints="NO" id="ndQ-n7-T4C">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="nmg-gA-1FY">
+                                                            <variation key="heightClass=regular-widthClass=compact" constant="260"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="height" constant="47" id="o8t-89-x8z"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="nmg-gA-1FY"/>
+                                                            <exclude reference="o8t-89-x8z"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="nmg-gA-1FY"/>
+                                                            <exclude reference="o8t-89-x8z"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0i4-wS-sXz">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="250" id="YtR-9G-qoL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="YtR-9G-qoL"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="YtR-9G-qoL"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Zfa-n9-XcD" firstAttribute="centerY" secondItem="ndQ-n7-T4C" secondAttribute="centerY" id="5DY-V0-jwL"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zfa-n9-XcD" secondAttribute="trailing" constant="8" id="7Te-gh-RHX"/>
+                                                <constraint firstItem="Zfa-n9-XcD" firstAttribute="leading" secondItem="ndQ-n7-T4C" secondAttribute="trailing" constant="40" id="8il-if-KFU"/>
+                                                <constraint firstItem="Zfa-n9-XcD" firstAttribute="centerY" secondItem="0i4-wS-sXz" secondAttribute="centerY" id="9cw-kB-EVU"/>
+                                                <constraint firstItem="0i4-wS-sXz" firstAttribute="height" secondItem="ndQ-n7-T4C" secondAttribute="height" id="VXz-jm-ge3"/>
+                                                <constraint firstItem="Zfa-n9-XcD" firstAttribute="top" secondItem="G4k-E7-FoW" secondAttribute="top" constant="4" id="lTH-QS-tPx"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zfa-n9-XcD" secondAttribute="bottom" constant="4" id="mxr-ED-Bfl"/>
+                                                <constraint firstItem="Zfa-n9-XcD" firstAttribute="leading" secondItem="0i4-wS-sXz" secondAttribute="trailing" constant="45" id="vIp-tU-r8o"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="Zfa-n9-XcD"/>
+                                                    <exclude reference="ndQ-n7-T4C"/>
+                                                    <exclude reference="0i4-wS-sXz"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="VXz-jm-ge3"/>
+                                                    <exclude reference="5DY-V0-jwL"/>
+                                                    <exclude reference="7Te-gh-RHX"/>
+                                                    <exclude reference="8il-if-KFU"/>
+                                                    <exclude reference="9cw-kB-EVU"/>
+                                                    <exclude reference="lTH-QS-tPx"/>
+                                                    <exclude reference="mxr-ED-Bfl"/>
+                                                    <exclude reference="vIp-tU-r8o"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="Zfa-n9-XcD"/>
+                                                    <include reference="ndQ-n7-T4C"/>
+                                                    <include reference="0i4-wS-sXz"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="VXz-jm-ge3"/>
+                                                    <include reference="5DY-V0-jwL"/>
+                                                    <include reference="7Te-gh-RHX"/>
+                                                    <include reference="8il-if-KFU"/>
+                                                    <include reference="9cw-kB-EVU"/>
+                                                    <include reference="lTH-QS-tPx"/>
+                                                    <include reference="mxr-ED-Bfl"/>
+                                                    <include reference="vIp-tU-r8o"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -6543,6 +6652,8 @@
         <image name="fanhui" width="69" height="23"/>
         <image name="jianpan" width="30" height="30"/>
         <image name="jianpanHigh" width="32" height="30"/>
+        <image name="liuyan1" width="205" height="45"/>
+        <image name="liuyan2" width="205" height="35"/>
         <image name="login" width="375" height="152"/>
         <image name="pinglun" width="27" height="20"/>
         <image name="play" width="54" height="35"/>
