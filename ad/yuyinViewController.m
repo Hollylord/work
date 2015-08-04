@@ -39,6 +39,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardHide:) name:UIKeyboardWillHideNotification object:nil];
     
     self.messages = 1;
+    self.heights = [NSMutableArray arrayWithObject:@50];
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.typeField resignFirstResponder];
@@ -98,11 +99,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
+    NSLog(@"%d",self.messages);
+
     return self.messages;
 }
 
+//每次reload 高度会重新计算
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return [[self.heights objectAtIndex:indexPath.row] floatValue] + 100;
+    NSLog(@"reload %f",[[self.heights objectAtIndex:indexPath.row] floatValue] + 10);
+    return [[self.heights objectAtIndex:indexPath.row] floatValue] + 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -205,6 +210,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [self.typeField endEditing:YES];
+    self.typeField.text = nil;
     return YES;
 }
 
