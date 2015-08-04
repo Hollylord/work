@@ -27,6 +27,7 @@
 		A119BA071B6A271E00D44698 /* yurezhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A119BA061B6A271E00D44698 /* yurezhongViewController.m */; };
 		A11FA42A1B6B0B2D00E4DE79 /* shequnTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11FA4291B6B0B2D00E4DE79 /* shequnTableViewController.m */; };
 		A13BCBD31B663A190094E473 /* sponsorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13BCBD21B663A190094E473 /* sponsorTableViewController.m */; };
+		A14BFCA71B708CE0000CDE06 /* activityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14BFCA61B708CE0000CDE06 /* activityViewController.m */; };
 		A14C4E061B61CC140045D442 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E051B61CC140045D442 /* Security.framework */; };
 		A14C4E081B61CC210045D442 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E071B61CC210045D442 /* libiconv.dylib */; };
 		A14C4E0A1B61CC350045D442 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E091B61CC350045D442 /* CoreGraphics.framework */; };
@@ -170,6 +171,8 @@
 		A11FA4291B6B0B2D00E4DE79 /* shequnTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shequnTableViewController.m; sourceTree = "<group>"; };
 		A13BCBD11B663A190094E473 /* sponsorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorTableViewController.h; sourceTree = "<group>"; };
 		A13BCBD21B663A190094E473 /* sponsorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorTableViewController.m; sourceTree = "<group>"; };
+		A14BFCA51B708CE0000CDE06 /* activityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activityViewController.h; sourceTree = "<group>"; };
+		A14BFCA61B708CE0000CDE06 /* activityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = activityViewController.m; sourceTree = "<group>"; };
 		A14C4E051B61CC140045D442 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A14C4E071B61CC210045D442 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		A14C4E091B61CC350045D442 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -496,6 +499,15 @@
 			name = views;
 			sourceTree = "<group>";
 		};
+		A14BFCA41B708CAA000CDE06 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A14BFCA51B708CE0000CDE06 /* activityViewController.h */,
+				A14BFCA61B708CE0000CDE06 /* activityViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
 		A14C4E141B61CFF60045D442 /* 新闻 */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,6 +561,7 @@
 		A14C4E1D1B61D17F0045D442 /* 活动 */ = {
 			isa = PBXGroup;
 			children = (
+				A14BFCA41B708CAA000CDE06 /* controller */,
 			);
 			name = "活动";
 			sourceTree = "<group>";
@@ -1147,6 +1160,7 @@
 				A14C4E7D1B6221F30045D442 /* README.md in Sources */,
 				A14C4E7E1B6221F30045D442 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				A14C4E441B61ECF60045D442 /* alreadyloginViewController.m in Sources */,
+				A14BFCA71B708CE0000CDE06 /* activityViewController.m in Sources */,
 				A14C4E741B6221F30045D442 /* AFHTTPRequestOperationManager.m in Sources */,
 				A1D77EDD1B672C3C008847FE /* careProgramTableViewController.m in Sources */,
 				F0860E1E1B6E278D003DBF17 /* niuRenGuandianViewController.m in Sources */,
