@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Rsm-kc-Z1O" customClass="popUpView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aKe-RS-CWL">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="bQF-vF-dwL">
+                            <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="bQF-vF-dwL"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="bQF-vF-dwL"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCJ-Hm-cSs">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOB-Hc-gGk">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc3-9Q-JpY">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aKe-RS-CWL" firstAttribute="top" secondItem="Rsm-kc-Z1O" secondAttribute="top" constant="8" id="1q5-M8-1SP"/>
+                <constraint firstItem="QCJ-Hm-cSs" firstAttribute="leading" secondItem="bc3-9Q-JpY" secondAttribute="leading" id="76H-yX-1NM"/>
+                <constraint firstItem="pOB-Hc-gGk" firstAttribute="top" secondItem="QCJ-Hm-cSs" secondAttribute="bottom" constant="10" id="Ikj-Wj-jfp">
+                    <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                </constraint>
+                <constraint firstItem="aKe-RS-CWL" firstAttribute="leading" secondItem="Rsm-kc-Z1O" secondAttribute="leading" constant="8" id="KBQ-Xj-fuG"/>
+                <constraint firstItem="QCJ-Hm-cSs" firstAttribute="leading" secondItem="pOB-Hc-gGk" secondAttribute="leading" id="Ohh-z8-Vq7"/>
+                <constraint firstAttribute="bottom" secondItem="bc3-9Q-JpY" secondAttribute="bottom" constant="8" id="SsI-Qn-0Al"/>
+                <constraint firstItem="bc3-9Q-JpY" firstAttribute="top" secondItem="pOB-Hc-gGk" secondAttribute="bottom" constant="10" id="UUg-2L-Gtj"/>
+                <constraint firstAttribute="bottom" secondItem="aKe-RS-CWL" secondAttribute="bottom" constant="8" id="YdW-AL-tg0"/>
+                <constraint firstItem="bc3-9Q-JpY" firstAttribute="top" secondItem="pOB-Hc-gGk" secondAttribute="bottom" constant="5" id="iR1-9h-0Sb"/>
+                <constraint firstItem="QCJ-Hm-cSs" firstAttribute="top" secondItem="Rsm-kc-Z1O" secondAttribute="top" constant="14" id="pnB-w5-TSO"/>
+                <constraint firstItem="QCJ-Hm-cSs" firstAttribute="leading" secondItem="aKe-RS-CWL" secondAttribute="trailing" constant="29" id="uth-kh-dXJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="aKe-RS-CWL"/>
+                    <exclude reference="QCJ-Hm-cSs"/>
+                    <exclude reference="pOB-Hc-gGk"/>
+                    <exclude reference="bc3-9Q-JpY"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="1q5-M8-1SP"/>
+                    <exclude reference="KBQ-Xj-fuG"/>
+                    <exclude reference="YdW-AL-tg0"/>
+                    <exclude reference="76H-yX-1NM"/>
+                    <exclude reference="Ohh-z8-Vq7"/>
+                    <exclude reference="pnB-w5-TSO"/>
+                    <exclude reference="uth-kh-dXJ"/>
+                    <exclude reference="Ikj-Wj-jfp"/>
+                    <exclude reference="SsI-Qn-0Al"/>
+                    <exclude reference="UUg-2L-Gtj"/>
+                    <exclude reference="iR1-9h-0Sb"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="aKe-RS-CWL"/>
+                    <include reference="QCJ-Hm-cSs"/>
+                    <include reference="pOB-Hc-gGk"/>
+                    <include reference="bc3-9Q-JpY"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="1q5-M8-1SP"/>
+                    <include reference="KBQ-Xj-fuG"/>
+                    <include reference="YdW-AL-tg0"/>
+                    <include reference="76H-yX-1NM"/>
+                    <include reference="Ohh-z8-Vq7"/>
+                    <include reference="pnB-w5-TSO"/>
+                    <include reference="uth-kh-dXJ"/>
+                    <include reference="Ikj-Wj-jfp"/>
+                    <exclude reference="SsI-Qn-0Al"/>
+                    <exclude reference="UUg-2L-Gtj"/>
+                    <include reference="iR1-9h-0Sb"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="252" y="84.5"/>
+        </view>
+    </objects>
+</document>

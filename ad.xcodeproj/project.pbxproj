@@ -28,6 +28,9 @@
 		A11FA42A1B6B0B2D00E4DE79 /* shequnTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11FA4291B6B0B2D00E4DE79 /* shequnTableViewController.m */; };
 		A13BCBD31B663A190094E473 /* sponsorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13BCBD21B663A190094E473 /* sponsorTableViewController.m */; };
 		A14BFCA71B708CE0000CDE06 /* activityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14BFCA61B708CE0000CDE06 /* activityViewController.m */; };
+		A14BFCAB1B709F42000CDE06 /* popUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A14BFCAA1B709F42000CDE06 /* popUpView.m */; };
+		A14BFCAD1B709F55000CDE06 /* popUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14BFCAC1B709F55000CDE06 /* popUpView.xib */; };
+		A14BFCB01B70A029000CDE06 /* customAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A14BFCAF1B70A029000CDE06 /* customAnnotationView.m */; };
 		A14C4E061B61CC140045D442 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E051B61CC140045D442 /* Security.framework */; };
 		A14C4E081B61CC210045D442 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E071B61CC210045D442 /* libiconv.dylib */; };
 		A14C4E0A1B61CC350045D442 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E091B61CC350045D442 /* CoreGraphics.framework */; };
@@ -173,6 +176,11 @@
 		A13BCBD21B663A190094E473 /* sponsorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorTableViewController.m; sourceTree = "<group>"; };
 		A14BFCA51B708CE0000CDE06 /* activityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = activityViewController.h; sourceTree = "<group>"; };
 		A14BFCA61B708CE0000CDE06 /* activityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = activityViewController.m; sourceTree = "<group>"; };
+		A14BFCA91B709F42000CDE06 /* popUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popUpView.h; sourceTree = "<group>"; };
+		A14BFCAA1B709F42000CDE06 /* popUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popUpView.m; sourceTree = "<group>"; };
+		A14BFCAC1B709F55000CDE06 /* popUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popUpView.xib; sourceTree = "<group>"; };
+		A14BFCAE1B70A029000CDE06 /* customAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customAnnotationView.h; sourceTree = "<group>"; };
+		A14BFCAF1B70A029000CDE06 /* customAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customAnnotationView.m; sourceTree = "<group>"; };
 		A14C4E051B61CC140045D442 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A14C4E071B61CC210045D442 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		A14C4E091B61CC350045D442 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -508,6 +516,18 @@
 			name = controller;
 			sourceTree = "<group>";
 		};
+		A14BFCA81B709F27000CDE06 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A14BFCA91B709F42000CDE06 /* popUpView.h */,
+				A14BFCAA1B709F42000CDE06 /* popUpView.m */,
+				A14BFCAC1B709F55000CDE06 /* popUpView.xib */,
+				A14BFCAE1B70A029000CDE06 /* customAnnotationView.h */,
+				A14BFCAF1B70A029000CDE06 /* customAnnotationView.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		A14C4E141B61CFF60045D442 /* 新闻 */ = {
 			isa = PBXGroup;
 			children = (
@@ -561,6 +581,7 @@
 		A14C4E1D1B61D17F0045D442 /* 活动 */ = {
 			isa = PBXGroup;
 			children = (
+				A14BFCA81B709F27000CDE06 /* views */,
 				A14BFCA41B708CAA000CDE06 /* controller */,
 			);
 			name = "活动";
@@ -1065,6 +1086,7 @@
 				A189FBB91B5F8ECE0002AAA5 /* UMShareEditViewControlleriPad.xib in Resources */,
 				A189FBB51B5F8ECE0002AAA5 /* UMSCommentDetailController.xib in Resources */,
 				F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */,
+				A14BFCAD1B709F55000CDE06 /* popUpView.xib in Resources */,
 				A189FBB81B5F8ECE0002AAA5 /* UMShareEditViewController.xib in Resources */,
 				A189FBB31B5F8ECE0002AAA5 /* UMSocialLocalizable.strings in Resources */,
 				A176036D1B68CC47002583BC /* sponsorCell.xib in Resources */,
@@ -1161,10 +1183,12 @@
 				A14C4E7E1B6221F30045D442 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				A14C4E441B61ECF60045D442 /* alreadyloginViewController.m in Sources */,
 				A14BFCA71B708CE0000CDE06 /* activityViewController.m in Sources */,
+				A14BFCB01B70A029000CDE06 /* customAnnotationView.m in Sources */,
 				A14C4E741B6221F30045D442 /* AFHTTPRequestOperationManager.m in Sources */,
 				A1D77EDD1B672C3C008847FE /* careProgramTableViewController.m in Sources */,
 				F0860E1E1B6E278D003DBF17 /* niuRenGuandianViewController.m in Sources */,
 				A107CFBF1B6B31F8002DFC58 /* CAStreamBasicDescription.cpp in Sources */,
+				A14BFCAB1B709F42000CDE06 /* popUpView.m in Sources */,
 				A14C4E851B6221F30045D442 /* UIWebView+AFNetworking.m in Sources */,
 				A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */,
 				A18C3A891B5DF98000BC5BF1 /* programViewController.m in Sources */,
