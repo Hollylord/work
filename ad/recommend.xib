@@ -23,7 +23,7 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpc-X7-SeW">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpc-X7-SeW">
                     <rect key="frame" x="120" y="42" width="223" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="Tpj-g2-x4p"/>

@@ -50,7 +50,6 @@
     
     [self.view insertSubview:background belowSubview:self.scrollView];
     
-    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 800);
     
     
     //配置搜索框
@@ -68,15 +67,17 @@
     
     
     
-    //配置recommendView
+    //配置第一个recommendView
     recommendView *recommendView = [[[NSBundle mainBundle] loadNibNamed:@"recommend" owner:self options:nil] firstObject];
     self.programs  = [NSMutableArray arrayWithObject:recommendView];
     
     recommendView.frame = CGRectMake(6.5, segmentView.frame.origin.y + segmentView.frame.size.height, 362, 212);
     [self.scrollView addSubview:recommendView];
+    
     //负责传递点击recommendView事件
     recommendView.delegate = self;
-    
+    //设置scrollView的滚动范围
+    self.scrollView.contentSize = CGSizeMake(0,recommendView.frame.origin.y + recommendView.frame.size.height + 20 );
     [self progress];
  
     
@@ -156,9 +157,17 @@
     [self progress];
     self.segmentView.backgroundImage.image = [UIImage imageNamed:@"segmentBackground1"];
     
-    recommendView *view = self.programs[1];
-    [view removeFromSuperview];
-    [self.programs removeObjectAtIndex:1];
+    //拿到总共的recommendView数量
+    NSInteger countOfRecommendViews = self.programs.count;
+    //把除了第一个recommendView的其他recommendView删除
+    for (int i = 1; i < countOfRecommendViews; i ++) {
+        recommendView *view = [self.programs lastObject];
+        [view removeFromSuperview];
+        [self.programs removeLastObject];
+    }
+    //重新计算scrollView的滚动范围
+    recommendView *lastView = [self.programs lastObject];
+    self.scrollView.contentSize = CGSizeMake(0,lastView.frame.origin.y + lastView.frame.size.height + 20 );
     
 
 }
@@ -167,15 +176,40 @@
     
     self.prepareBtn.selected = YES;
     self.onGoingBtn.selected = NO;
-
-
-    recommendView *View2 = [[[NSBundle mainBundle] loadNibNamed:@"recommend" owner:self options:nil] firstObject];
+    
+    //计算第一个recommendview的y 和高
     UIView *view = self.programs[0];
     CGFloat y = view.frame.origin.y;
     CGFloat height = view.frame.size.height;
-    View2.frame = CGRectMake(6.5, y + height +20 , 362, 212);
-    [self.programs addObject:View2];
-    [self.scrollView addSubview:View2];
+    
+    //拿到总共的recommendView数量
+    NSInteger countOfRecommendViews = self.programs.count;
+    //把所有recommendview清除
+    for (int i = 0; i < countOfRecommendViews; i ++) {
+        recommendView *view = [self.programs lastObject];
+        [view removeFromSuperview];
+        [self.programs removeLastObject];
+    }
+    
+    
+
+    
+    
+    //循环创建recommendview
+    for (int i = 0; i < 5; i ++) {
+        recommendView *View2 = [[[NSBundle mainBundle] loadNibNamed:@"recommend" owner:self options:nil] firstObject];
+
+        View2.frame = CGRectMake(6.5, y + (height +20) * i , 362, 212);
+        View2.delegate = self;
+        [self.programs addObject:View2];
+        [self.scrollView addSubview:View2];
+        
+
+    }
+    
+    //重新计算scrollView的滚动范围
+    recommendView *lastView = [self.programs lastObject];
+    self.scrollView.contentSize = CGSizeMake(0,lastView.frame.origin.y + lastView.frame.size.height + 20 );
     
     for (recommendView *view in self.programs) {
         [view.progressView setProgress:0 animated:YES];

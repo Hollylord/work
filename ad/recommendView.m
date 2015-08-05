@@ -20,8 +20,6 @@
 
 //这个方法只对于自己的创建，这个方法当中，子控件并没有创建完；如果是用xib创建view，尽量不要用这个方法！
 - (id)initWithCoder:(NSCoder *)aDecoder{
-    
-    
     self = [super initWithCoder:aDecoder];
     if (self) {
    
