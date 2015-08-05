@@ -9,8 +9,9 @@
 #import "alreadyloginViewController.h"
 
 @interface alreadyloginViewController () <UITableViewDataSource,UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @property (strong,nonatomic) NSArray *items;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -19,40 +20,73 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
+
     
     self.items = @[@"个人信息",@"申请成为领投人",@"我关注的投资人",@"发布项目",@"我发起的项目",@"我投资的项目",@"我关注的项目"];
 }
-
-#pragma mark - tableView代理
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - tableView代理
+//- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+//    
+//}
 
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return  7;
+    if (section == 0) {
+        return 1;
+    }
+    else {
+        return  7;
+    }
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 50;
+    if (indexPath.section == 0) {
+        return 152;
+    }
+    else {
+        return 50;
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
     
-    cell.backgroundColor = [UIColor clearColor];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(30, 0, cell.frame.size.width - 30, cell.frame.size.height)];
-    label.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
-    label.text = self.items[indexPath.row];
-    //把东西加载contentView上面 不能直接设置字了！
-    [cell.contentView addSubview:label] ;
-    return cell;
+    if (indexPath.section == 0) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"denglu1" forIndexPath:indexPath];
+        return cell;
+    }
+    else {
+        
+        //用这个带forIndexPath的，返回指定的cell
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"denglu2" forIndexPath:indexPath];
+        UIImageView *imageView = (UIImageView *)[cell viewWithTag:1];
+        NSString *imageName = [NSString stringWithFormat:@"%@",@(indexPath.row + 1)];
+        imageView.image = [UIImage imageNamed:imageName];
+        UILabel *label = (UILabel *)[cell viewWithTag:2];
+        label.text = self.items[indexPath.row];
+        return cell;
+        
+        
+       
+    }
+    
+   
+    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0) {
+        return ;
+    }
     
     if (indexPath.row == 0) {
         
