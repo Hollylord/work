@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIButton *onGoingBtn;
 @property (weak, nonatomic) IBOutlet UIButton *prepareBtn;
+@property (weak, nonatomic) IBOutlet UIButton *abroadBtn;
 
 //用来存放recommendViews
 @property (strong,nonatomic) NSMutableArray *programs;
@@ -35,6 +36,7 @@
 
 - (IBAction)onGoingBtn:(id)sender;
 - (IBAction)prepareBtn:(id)sender;
+- (IBAction)abroad:(UIButton *)sender;
 
 @end
 
@@ -149,6 +151,8 @@
     
     self.onGoingBtn.selected = YES;
     self.prepareBtn.selected = NO;
+    self.abroadBtn.selected = NO;
+    
     for (recommendView *view in self.programs) {
         view.progressView.popUpViewColor = [UIColor grayColor];
             view.backgroundImage.image = [UIImage imageNamed:@"recommendBackground"];
@@ -176,6 +180,7 @@
     
     self.prepareBtn.selected = YES;
     self.onGoingBtn.selected = NO;
+    self.abroadBtn.selected = NO;
     
     //计算第一个recommendview的y 和高
     UIView *view = self.programs[0];
@@ -224,12 +229,59 @@
    
 }
 
+- (IBAction)abroad:(UIButton *)sender {
+    self.prepareBtn.selected = NO;
+    self.onGoingBtn.selected = NO;
+    self.abroadBtn.selected = YES;
+    
+    //计算第一个recommendview的y 和高
+    UIView *view = self.programs[0];
+    CGFloat y = view.frame.origin.y;
+    CGFloat height = view.frame.size.height;
+    
+    //拿到总共的recommendView数量
+    NSInteger countOfRecommendViews = self.programs.count;
+    //把所有recommendview清除
+    for (int i = 0; i < countOfRecommendViews; i ++) {
+        recommendView *view = [self.programs lastObject];
+        [view removeFromSuperview];
+        [self.programs removeLastObject];
+    }
+    
+    //循环创建recommendview
+    for (int i = 0; i < 5; i ++) {
+        recommendView *View2 = [[[NSBundle mainBundle] loadNibNamed:@"recommend" owner:self options:nil] firstObject];
+        
+        View2.frame = CGRectMake(6.5, y + (height +20) * i , 362, 212);
+        View2.delegate = self;
+        [self.programs addObject:View2];
+        [self.scrollView addSubview:View2];
+        
+        
+    }
+    
+    //重新计算scrollView的滚动范围
+    recommendView *lastView = [self.programs lastObject];
+    self.scrollView.contentSize = CGSizeMake(0,lastView.frame.origin.y + lastView.frame.size.height + 20 );
+    
+    //设置每一个recommendView
+    for (recommendView *view in self.programs) {
+        [view.progressView setProgress:0 animated:YES];
+        view.progressView.popUpViewColor = [UIColor redColor];
+        view.backgroundImage.image = [UIImage imageNamed:@"yurezhongBackground"];
+    }
+
+    
+    self.segmentView.backgroundImage.image = [UIImage imageNamed:@"segmentBackground3"];
+    
+}
+
 #pragma mark - 进度条
 - (void)progress
 {
     recommendView *view1 = self.programs[0];
     float progress = view1.progressView.progress;
-    if (progress < 1.0 && self.prepareBtn.selected == NO) {
+    if (progress < 1.0 && self.prepareBtn.selected == NO && self.abroadBtn.selected == 0) {
         
         progress += 0.005;
         
