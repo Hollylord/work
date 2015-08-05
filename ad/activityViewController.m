@@ -29,7 +29,7 @@
     [MAMapServices sharedServices].apiKey = @"39bf91da25d83ab8d35f6e7e4a9ada45";
     MAMapView *mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     _map = mapView;
-    mapView.delegate = self;
+    _map.delegate = self;
     _map.translatesAutoresizingMaskIntoConstraints = NO;
     MACoordinateRegion customRegion = MACoordinateRegionMake(_map.centerCoordinate, MACoordinateSpanMake(0.1, 0.1));
     [_map setRegion:customRegion animated:YES];
@@ -41,7 +41,7 @@
     _searchAPI = [[AMapSearchAPI alloc] initWithSearchKey:@"39bf91da25d83ab8d35f6e7e4a9ada45" Delegate:self];
     AMapGeocodeSearchRequest *request = [[AMapGeocodeSearchRequest alloc] init];
     request.city = @[@"深圳"];
-    request.address = @"卫东龙商务大厦";
+    request.address = @"五和";
     [_searchAPI AMapGeocodeSearch:request];
     
     
@@ -77,7 +77,7 @@
             
         }
         annotationView.image = [UIImage imageNamed:@"touhu"];
-//        annotationView.canShowCallout = YES;r
+//        [annotationView setSelected:YES animated:YES];
         
         return annotationView;
     }
@@ -85,26 +85,12 @@
     
 }
 - (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view{
-    
-    view.selected = YES;
-        
-//        annotationView.translatesAutoresizingMaskIntoConstraints = NO;
-//        annotationView.popView.translatesAutoresizingMaskIntoConstraints = NO;
-//        
-//        NSLayoutConstraint *center = [NSLayoutConstraint constraintWithItem:annotationView.popView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:annotationView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0];
-//        NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:annotationView.popView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:annotationView attribute:NSLayoutAttributeTop multiplier:1 constant:0];
-//        NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:annotationView.popView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:100];
-//        NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:annotationView.popView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:100];
-//        [callout addConstraints:@[width,height]];
-//        [self.view addConstraints:@[center,bottom]];
+//    if (view.selected == YES) {
+//        [view setSelected:NO animated:YES];
 //    }
 //    else {
-//        [annotationView setSelected:YES animated:YES];
-//        [annotationView.popView removeFromSuperview];
+//        [view setSelected:YES animated:YES];
 //    }
-//
-//    NSLog(@"123");
 }
-
 
 @end
