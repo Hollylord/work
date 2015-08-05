@@ -34,6 +34,7 @@
     MACoordinateRegion customRegion = MACoordinateRegionMake(_map.centerCoordinate, MACoordinateSpanMake(0.1, 0.1));
     [_map setRegion:customRegion animated:YES];
     [self.view addSubview:mapView];
+    _map.showsUserLocation = YES;
     [_map setUserTrackingMode:MAUserTrackingModeFollow animated:YES];
     
     //搜索设置

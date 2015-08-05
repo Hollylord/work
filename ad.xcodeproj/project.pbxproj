@@ -101,6 +101,7 @@
 		A18C3ABB1B5E399F00BC5BF1 /* segmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18C3ABA1B5E399F00BC5BF1 /* segmentView.xib */; };
 		A18C3ABE1B5E453800BC5BF1 /* recommendView.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C3ABD1B5E453800BC5BF1 /* recommendView.m */; };
 		A18C3AC01B5E454900BC5BF1 /* recommend.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18C3ABF1B5E454900BC5BF1 /* recommend.xib */; };
+		A196CAD51B71A2E100ABA78B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A196CAD41B71A2E100ABA78B /* Foundation.framework */; };
 		A1C4D3471B607F5E00FE4A35 /* login.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C4D3461B607F5E00FE4A35 /* login.xib */; };
 		A1C4D34D1B60BA0D00FE4A35 /* dengluViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C4D34C1B60BA0D00FE4A35 /* dengluViewController.m */; };
 		A1C4D35A1B60EED000FE4A35 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4D3501B60EED000FE4A35 /* libSocialQQ.a */; };
@@ -301,6 +302,7 @@
 		A18C3ABC1B5E453800BC5BF1 /* recommendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recommendView.h; sourceTree = "<group>"; };
 		A18C3ABD1B5E453800BC5BF1 /* recommendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recommendView.m; sourceTree = "<group>"; };
 		A18C3ABF1B5E454900BC5BF1 /* recommend.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = recommend.xib; sourceTree = "<group>"; };
+		A196CAD41B71A2E100ABA78B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1C4D3461B607F5E00FE4A35 /* login.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = login.xib; sourceTree = "<group>"; };
 		A1C4D34B1B60BA0D00FE4A35 /* dengluViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dengluViewController.h; sourceTree = "<group>"; };
 		A1C4D34C1B60BA0D00FE4A35 /* dengluViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dengluViewController.m; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A196CAD51B71A2E100ABA78B /* Foundation.framework in Frameworks */,
 				F06F9F8F1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a in Frameworks */,
 				A107CFCE1B6B4A1D002DFC58 /* libz.1.2.5.dylib in Frameworks */,
 				A14C4E101B61CC520045D442 /* libstdc++.dylib in Frameworks */,
@@ -402,6 +405,7 @@
 		9F698B40384B11C53D41C3E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A196CAD41B71A2E100ABA78B /* Foundation.framework */,
 				F06F9F8E1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a */,
 				A107CFCD1B6B4A1D002DFC58 /* libz.1.2.5.dylib */,
 				A107CFA01B6B30F1002DFC58 /* AVFoundation.framework */,
@@ -1337,7 +1341,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0109AF12ACFB05CCF50B74B8 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1371,7 +1375,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE12D6506F96786A2FADEB22 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
 				FRAMEWORK_SEARCH_PATHS = (
