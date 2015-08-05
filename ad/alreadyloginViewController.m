@@ -12,6 +12,7 @@
 
 @property (strong,nonatomic) NSArray *items;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topConstraint;
 
 @end
 
@@ -20,19 +21,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    self.tableView.bounces = NO;
     
     self.items = @[@"个人信息",@"申请成为领投人",@"我关注的投资人",@"发布项目",@"我发起的项目",@"我投资的项目",@"我关注的项目"];
+}
+- (void)viewWillAppear:(BOOL)animated{
+    self.topConstraint.constant = -64;
+    [self.view layoutIfNeeded];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 #pragma mark - tableView代理
-//- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-//    
-//}
-
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    if (section == 0) {
+        UIView *footerView = [[[NSBundle mainBundle] loadNibNamed:@"dengluFooter" owner:nil options:nil] firstObject ];
+        return footerView;
+    }
+    else{
+        return  nil;
+    }
+    
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    if (section == 0) {
+        return 35;
+    }
+    else {
+        return 0;
+    }
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
