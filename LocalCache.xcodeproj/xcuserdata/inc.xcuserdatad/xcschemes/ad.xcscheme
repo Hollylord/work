@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A1CB48A71B578DBC00BB2489"
-               BuildableName = "ad.app"
-               BlueprintName = "ad"
-               ReferencedContainer = "container:ad.xcodeproj">
+               BuildableName = "LocalCache.app"
+               BlueprintName = "LocalCache"
+               ReferencedContainer = "container:LocalCache.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A1CB48C01B578DBC00BB2489"
-               BuildableName = "adTests.xctest"
-               BlueprintName = "adTests"
-               ReferencedContainer = "container:ad.xcodeproj">
+               BuildableName = "LocalCacheTests.xctest"
+               BlueprintName = "LocalCacheTests"
+               ReferencedContainer = "container:LocalCache.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A1CB48C01B578DBC00BB2489"
-               BuildableName = "adTests.xctest"
-               BlueprintName = "adTests"
-               ReferencedContainer = "container:ad.xcodeproj">
+               BuildableName = "LocalCacheTests.xctest"
+               BlueprintName = "LocalCacheTests"
+               ReferencedContainer = "container:LocalCache.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A1CB48A71B578DBC00BB2489"
-            BuildableName = "ad.app"
-            BlueprintName = "ad"
-            ReferencedContainer = "container:ad.xcodeproj">
+            BuildableName = "LocalCache.app"
+            BlueprintName = "LocalCache"
+            ReferencedContainer = "container:LocalCache.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A1CB48A71B578DBC00BB2489"
-            BuildableName = "ad.app"
-            BlueprintName = "ad"
-            ReferencedContainer = "container:ad.xcodeproj">
+            BuildableName = "LocalCache.app"
+            BlueprintName = "LocalCache"
+            ReferencedContainer = "container:LocalCache.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A1CB48A71B578DBC00BB2489"
-            BuildableName = "ad.app"
-            BlueprintName = "ad"
-            ReferencedContainer = "container:ad.xcodeproj">
+            BuildableName = "LocalCache.app"
+            BlueprintName = "LocalCache"
+            ReferencedContainer = "container:LocalCache.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
