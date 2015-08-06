@@ -149,14 +149,14 @@
                     <exclude reference="0oR-1L-TSZ"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="b8C-gV-T9w"/>
-                    <exclude reference="yjR-0z-Yys"/>
+                    <exclude reference="SQJ-dW-IMK"/>
+                    <exclude reference="ay0-7x-qf8"/>
+                    <exclude reference="Dpa-IG-DCE"/>
                     <exclude reference="V8p-Kt-c1j"/>
                     <exclude reference="b12-el-Qkc"/>
                     <exclude reference="vQ2-Xn-fYL"/>
-                    <exclude reference="Dpa-IG-DCE"/>
-                    <exclude reference="SQJ-dW-IMK"/>
-                    <exclude reference="ay0-7x-qf8"/>
+                    <exclude reference="b8C-gV-T9w"/>
+                    <exclude reference="yjR-0z-Yys"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -167,14 +167,14 @@
                     <include reference="0oR-1L-TSZ"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="b8C-gV-T9w"/>
-                    <include reference="yjR-0z-Yys"/>
+                    <include reference="SQJ-dW-IMK"/>
+                    <include reference="ay0-7x-qf8"/>
+                    <include reference="Dpa-IG-DCE"/>
                     <include reference="V8p-Kt-c1j"/>
                     <include reference="b12-el-Qkc"/>
                     <include reference="vQ2-Xn-fYL"/>
-                    <include reference="Dpa-IG-DCE"/>
-                    <include reference="SQJ-dW-IMK"/>
-                    <include reference="ay0-7x-qf8"/>
+                    <include reference="b8C-gV-T9w"/>
+                    <include reference="yjR-0z-Yys"/>
                 </mask>
             </variation>
             <connections>

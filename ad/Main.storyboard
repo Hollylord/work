@@ -124,7 +124,9 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="JeM-pW-gLR"/>
+                    <navigationItem key="navigationItem" id="JeM-pW-gLR">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="xqa-fd-s6x"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="z1a-gG-eFD" id="lbR-ct-DCG"/>
                         <segue destination="qyG-bv-P4G" kind="show" identifier="program2zhongchouzhong" id="uCd-Nn-fJ5"/>
