@@ -316,12 +316,12 @@
 		A1C4D3571B60EED000FE4A35 /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
 		A1C4D3581B60EED000FE4A35 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		A1C4D3591B60EED000FE4A35 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		A1CB48A81B578DBC00BB2489 /* LocalCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CB48A81B578DBC00BB2489 /* ZBT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CB48AC1B578DBC00BB2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CB48AD1B578DBC00BB2489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1CB48AF1B578DBC00BB2489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1CB48B01B578DBC00BB2489 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A1CB48C11B578DBC00BB2489 /* LocalCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CB48C11B578DBC00BB2489 /* ZBTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZBTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CB48C61B578DBC00BB2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CB48C71B578DBC00BB2489 /* adTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = adTests.m; sourceTree = "<group>"; };
 		A1CB48D11B578E6600BB2489 /* advertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = advertViewController.h; sourceTree = "<group>"; };
@@ -936,8 +936,8 @@
 		A1CB48A91B578DBC00BB2489 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1CB48A81B578DBC00BB2489 /* LocalCache.app */,
-				A1CB48C11B578DBC00BB2489 /* LocalCacheTests.xctest */,
+				A1CB48A81B578DBC00BB2489 /* ZBT.app */,
+				A1CB48C11B578DBC00BB2489 /* ZBTTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1002,9 +1002,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A1CB48A71B578DBC00BB2489 /* LocalCache */ = {
+		A1CB48A71B578DBC00BB2489 /* ZBT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1CB48CB1B578DBC00BB2489 /* Build configuration list for PBXNativeTarget "LocalCache" */;
+			buildConfigurationList = A1CB48CB1B578DBC00BB2489 /* Build configuration list for PBXNativeTarget "ZBT" */;
 			buildPhases = (
 				88758B560FD1F233CE7644FB /* Check Pods Manifest.lock */,
 				A1CB48A41B578DBC00BB2489 /* Sources */,
@@ -1016,14 +1016,14 @@
 			);
 			dependencies = (
 			);
-			name = LocalCache;
+			name = ZBT;
 			productName = ad;
-			productReference = A1CB48A81B578DBC00BB2489 /* LocalCache.app */;
+			productReference = A1CB48A81B578DBC00BB2489 /* ZBT.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A1CB48C01B578DBC00BB2489 /* LocalCacheTests */ = {
+		A1CB48C01B578DBC00BB2489 /* ZBTTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1CB48CE1B578DBC00BB2489 /* Build configuration list for PBXNativeTarget "LocalCacheTests" */;
+			buildConfigurationList = A1CB48CE1B578DBC00BB2489 /* Build configuration list for PBXNativeTarget "ZBTTests" */;
 			buildPhases = (
 				A1CB48BD1B578DBC00BB2489 /* Sources */,
 				A1CB48BE1B578DBC00BB2489 /* Frameworks */,
@@ -1034,9 +1034,9 @@
 			dependencies = (
 				A1CB48C31B578DBC00BB2489 /* PBXTargetDependency */,
 			);
-			name = LocalCacheTests;
+			name = ZBTTests;
 			productName = adTests;
-			productReference = A1CB48C11B578DBC00BB2489 /* LocalCacheTests.xctest */;
+			productReference = A1CB48C11B578DBC00BB2489 /* ZBTTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -1054,11 +1054,12 @@
 					};
 					A1CB48C01B578DBC00BB2489 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = GRGPBN7QSU;
 						TestTargetID = A1CB48A71B578DBC00BB2489;
 					};
 				};
 			};
-			buildConfigurationList = A1CB48A31B578DBC00BB2489 /* Build configuration list for PBXProject "LocalCache" */;
+			buildConfigurationList = A1CB48A31B578DBC00BB2489 /* Build configuration list for PBXProject "ZBT" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1072,8 +1073,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1CB48A71B578DBC00BB2489 /* LocalCache */,
-				A1CB48C01B578DBC00BB2489 /* LocalCacheTests */,
+				A1CB48A71B578DBC00BB2489 /* ZBT */,
+				A1CB48C01B578DBC00BB2489 /* ZBTTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1234,7 +1235,7 @@
 /* Begin PBXTargetDependency section */
 		A1CB48C31B578DBC00BB2489 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A1CB48A71B578DBC00BB2489 /* LocalCache */;
+			target = A1CB48A71B578DBC00BB2489 /* ZBT */;
 			targetProxy = A1CB48C21B578DBC00BB2489 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1366,8 +1367,8 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = LocalCache;
-				PROVISIONING_PROFILE = "cbf60412-3163-43d5-86b2-f24bdecd0b40";
+				PRODUCT_NAME = ZBT;
+				PROVISIONING_PROFILE = "38fadc82-a89b-464c-9025-eba3c45d3ee2";
 				VALID_ARCHS = "armv7 armv7s  arm64";
 			};
 			name = Debug;
@@ -1400,8 +1401,8 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = LocalCache;
-				PROVISIONING_PROFILE = "cbf60412-3163-43d5-86b2-f24bdecd0b40";
+				PRODUCT_NAME = ZBT;
+				PROVISIONING_PROFILE = "38fadc82-a89b-464c-9025-eba3c45d3ee2";
 				VALID_ARCHS = "armv7 armv7s  arm64";
 			};
 			name = Release;
@@ -1410,6 +1411,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1420,7 +1423,8 @@
 				);
 				INFOPLIST_FILE = adTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = LocalCacheTests;
+				PRODUCT_NAME = ZBTTests;
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ad.app/ad";
 			};
 			name = Debug;
@@ -1429,13 +1433,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = adTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = LocalCacheTests;
+				PRODUCT_NAME = ZBTTests;
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ad.app/ad";
 			};
 			name = Release;
@@ -1443,7 +1450,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A1CB48A31B578DBC00BB2489 /* Build configuration list for PBXProject "LocalCache" */ = {
+		A1CB48A31B578DBC00BB2489 /* Build configuration list for PBXProject "ZBT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1CB48C91B578DBC00BB2489 /* Debug */,
@@ -1452,7 +1459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1CB48CB1B578DBC00BB2489 /* Build configuration list for PBXNativeTarget "LocalCache" */ = {
+		A1CB48CB1B578DBC00BB2489 /* Build configuration list for PBXNativeTarget "ZBT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1CB48CC1B578DBC00BB2489 /* Debug */,
@@ -1461,7 +1468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1CB48CE1B578DBC00BB2489 /* Build configuration list for PBXNativeTarget "LocalCacheTests" */ = {
+		A1CB48CE1B578DBC00BB2489 /* Build configuration list for PBXNativeTarget "ZBTTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1CB48CF1B578DBC00BB2489 /* Debug */,
