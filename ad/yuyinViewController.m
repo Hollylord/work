@@ -155,6 +155,10 @@
 
 //语音
 - (IBAction)talk:(UIButton *)sender {
+    self.typeField.hidden = NO;
+    self.talkBtn.hidden = YES;
+    self.toggleBtn.selected = YES;
+    
     BDRecognizerViewController *recognizerViewController = [[BDRecognizerViewController alloc] initWithOrigin:CGPointMake(30, 250) withTheme:[BDTheme defaultTheme]];
     recognizerViewController.enableFullScreenMode = NO; //设置是否全屏模式
     recognizerViewController.delegate = self;
@@ -169,7 +173,7 @@
     paramsObject.secretKey = SECRET_KEY;
     
     //    // 设置是否需要语义理解，只在搜索模式有效
-    paramsObject.isNeedNLU = YES;
+    paramsObject.isNeedNLU = NO;
     paramsObject.tipsTitle = @"请说话";
     //
     //    // 设置识别语言
@@ -214,19 +218,76 @@
 }
 
 #pragma mark - 百度语音回调
-- (void)onEndWithViews:(BDRecognizerViewController *)aBDRecognizerViewController withResults:(NSArray *)aResults{
+- (void)onEndWithViews:(BDRecognizerViewController *)aBDRecognizerView withResults:(NSArray *)aResults
+{
+    self.typeField.text = nil;
+    
     if ([[BDVoiceRecognitionClient sharedInstance] getRecognitionProperty] != EVoiceRecognitionPropertyInput)
     {
-        // 在非输入模式下，当 isNeedNLU = NO 时，结果是一个候选句列表，为 NSArray，
-        // 元素是 NSString，例如["公园", "公元"]
-        // 当 isNeedNLU = YES 时，结果类型仍为 NSArray，只有一个 NSString 元素，
-        // 内容是 JSON 串，开发者需要自行解析，解析方法请参考语义解析文档
-        NSMutableString *tmpString = [aResults objectAtIndex:0];
-        self.inputString = tmpString;
+        // 搜索模式下的结果为数组，示例为
+        // ["公园", "公元"]
+        NSMutableArray *audioResultData = (NSMutableArray *)aResults;
+        NSMutableString *tmpString = [[NSMutableString alloc] initWithString:@""];
+        
+        for (int i=0; i < [audioResultData count]; i++)
+        {
+            [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
+        }
+        
+        self.typeField.text = [self.typeField.text stringByAppendingString:tmpString];
+        self.typeField.text = [self.typeField.text stringByAppendingString:@"\n"];
+        
+
     }
     else
     {
+        // 输入模式下的结果为带置信度的结果，示例如下：
+        //  [
+        //      [
+        //         {
+        //             "百度" = "0.6055192947387695";
+        //         },
+        //         {
+        //             "摆渡" = "0.3625582158565521";
+        //         },
+        //      ]
+        //      [
+        //         {
+        //             "一下" = "0.7665404081344604";
+        //         }
+        //      ],
+        //   ]
+//        NSString *tmpString = [[BDVRSConfig sharedInstance] composeInputModeResult:aResults];
         
+//        self.typeField.text = [self.typeField.text stringByAppendingString:tmpString];
+//        self.typeField.text = [self.typeField.text stringByAppendingString:@"\n"];
     }
 }
+
+//- (void)onEndWithViews:(BDRecognizerViewController *)aBDRecognizerViewController withResults:(NSArray *)aResults{
+//    if ([[BDVoiceRecognitionClient sharedInstance] getRecognitionProperty] != EVoiceRecognitionPropertyInput)
+//    {
+//        // 在非输入模式下，当 isNeedNLU = NO 时，结果是一个候选句列表，为 NSArray，
+//        // 元素是 NSString，例如["公园", "公元"]
+//        // 当 isNeedNLU = YES 时，结果类型仍为 NSArray，只有一个 NSString 元素，
+//        // 内容是 JSON 串，开发者需要自行解析，解析方法请参考语义解析文档
+//        NSMutableArray *audioResultData = (NSMutableArray *)aResults;
+//        NSMutableString *tmpString = [[NSMutableString alloc] initWithString:@""];
+//        
+//        for (int i=0; i < [audioResultData count]; i++)
+//        {
+//            [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
+//        }
+//        
+//        self.typeField.text = [self.typeField.text stringByAppendingString:tmpString];
+//        self.typeField.text = [self.typeField.text stringByAppendingString:@"\n"];
+//        
+//
+//    }
+//    else
+//    {
+//        
+//    }
+//}
+
 @end
