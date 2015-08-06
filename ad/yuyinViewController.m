@@ -24,7 +24,7 @@
 - (IBAction)talk:(UIButton *)sender;
 
 @property (strong,nonatomic) NSMutableArray *heights;
-@property (copy,nonatomic) NSMutableArray *inputArray;
+@property (copy,nonatomic) NSString *inputString;
 @property (assign,nonatomic) int messages;
 @end
 
@@ -40,9 +40,6 @@
     
     self.messages = 1;
     self.heights = [NSMutableArray arrayWithObject:@50];
-    
-    self.inputArray = [[NSMutableArray alloc] init];
-    
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.typeField resignFirstResponder];
@@ -130,9 +127,7 @@
         UIImageView *talking = (UIImageView *)[cell viewWithTag:2];
         talking.image = talkingBG;
         UILabel *label = (UILabel *)[cell viewWithTag:3];
-        
-        label.text = [self.inputArray lastObject];
-        
+        label.text = self.inputString;
         return cell;
     }
     
@@ -143,7 +138,7 @@
 }
 
 
-#pragma mark - 切换按钮点击
+#pragma mark - 按钮点击
 - (IBAction)toggleKey:(UIButton *)sender {
     sender.selected = !sender.selected;
     if (sender.selected == YES) {
@@ -200,11 +195,10 @@
 }
 
 #pragma mark - textField
-//文本框完成输入
 - (void)textFieldDidEndEditing:(UITextField *)textField{
-    [self.inputArray addObject:textField.text];
+    self.inputString = textField.text;
     NSDictionary *attribute = [NSDictionary dictionaryWithObject:[UIFont systemFontOfSize:17.0] forKey:NSFontAttributeName];
-    CGSize textRect = [textField.text boundingRectWithSize:CGSizeMake(250, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
+    CGSize textRect = [self.inputString boundingRectWithSize:CGSizeMake(250, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
 
     NSString *height = [NSString stringWithFormat:@"%f",textRect.height];
     [self.heights addObject:height];
@@ -212,7 +206,7 @@
     [self.tableView reloadData];
     
 }
-//textField 点击回车
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [self.typeField endEditing:YES];
     self.typeField.text = nil;
@@ -228,11 +222,7 @@
         // 当 isNeedNLU = YES 时，结果类型仍为 NSArray，只有一个 NSString 元素，
         // 内容是 JSON 串，开发者需要自行解析，解析方法请参考语义解析文档
         NSMutableString *tmpString = [aResults objectAtIndex:0];
-        NSLog(@"%@",tmpString);
-        [self.inputArray addObject:tmpString] ;
-        self.talkBtn.hidden = YES;
-        self.typeField.hidden = NO;
-        self.typeField.text = tmpString;
+        self.inputString = tmpString;
     }
     else
     {
