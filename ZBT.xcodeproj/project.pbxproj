@@ -1368,7 +1368,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ZBT;
-				PROVISIONING_PROFILE = "38fadc82-a89b-464c-9025-eba3c45d3ee2";
+				PROVISIONING_PROFILE = "6a6bf218-848d-4240-91d7-e6ebbae404cb";
 				VALID_ARCHS = "armv7 armv7s  arm64";
 			};
 			name = Debug;
@@ -1402,7 +1402,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ZBT;
-				PROVISIONING_PROFILE = "38fadc82-a89b-464c-9025-eba3c45d3ee2";
+				PROVISIONING_PROFILE = "6a6bf218-848d-4240-91d7-e6ebbae404cb";
 				VALID_ARCHS = "armv7 armv7s  arm64";
 			};
 			name = Release;

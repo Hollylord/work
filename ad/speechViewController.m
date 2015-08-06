@@ -7,6 +7,7 @@
 //
 
 #import "speechViewController.h"
+#import "tabViewController.h"
 
 @interface speechViewController () <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *browser;
@@ -24,6 +25,10 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     [self.browser loadRequest:request];
+}
+- (void)viewWillAppear:(BOOL)animated{
+    tabViewController *tabbarController = (tabViewController *)self.tabBarController;
+    tabbarController.customTabBar.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {

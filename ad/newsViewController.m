@@ -20,28 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURL *url = [NSURL URLWithString:@"http://www.touwho.com/topic_66.htm"];
+    NSURL *url = [NSURL URLWithString:@"http://www.pedaily.cn/"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     //网页大小自适应功能
     self.browser.scalesPageToFit = YES;
     [self.browser loadRequest:request ];
-    
-    
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
-    
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer ];
-    
-    
-    
-    
-    
-    [manager GET:@"http://www.touwho.com/topic_66.htm" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-//        NSLog(@"%@",[NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil]);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        NSLog(@"%@",[error localizedDescription]);
-    }];
+
     
 
 }

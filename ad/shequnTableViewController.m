@@ -8,6 +8,7 @@
 
 #import "shequnTableViewController.h"
 #import "tabViewController.h"
+#import "speechViewController.h"
 
 @interface shequnTableViewController ()
 
@@ -163,6 +164,14 @@
         else if (indexPath.row == 0)
         {
             [self performSegueWithIdentifier:@"shequn2hangyetaolun" sender:nil];
+        }
+        else if (indexPath.row == 2)
+        {
+            UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            speechViewController *speech = [story instantiateViewControllerWithIdentifier:@"speech"];
+            //设置转场效果
+            speech.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+            [self presentViewController:speech animated:YES completion:nil];
         }
     }
 }
