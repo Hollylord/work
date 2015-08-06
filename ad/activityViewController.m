@@ -30,12 +30,12 @@
     MAMapView *mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     _map = mapView;
     _map.delegate = self;
-    _map.translatesAutoresizingMaskIntoConstraints = NO;
+ 
     MACoordinateRegion customRegion = MACoordinateRegionMake(_map.centerCoordinate, MACoordinateSpanMake(0.1, 0.1));
     [_map setRegion:customRegion animated:YES];
-    [self.view addSubview:mapView];
     _map.showsUserLocation = YES;
     [_map setUserTrackingMode:MAUserTrackingModeFollow animated:YES];
+    [self.view addSubview:mapView];
     
     //搜索设置
     _searchAPI = [[AMapSearchAPI alloc] initWithSearchKey:@"39bf91da25d83ab8d35f6e7e4a9ada45" Delegate:self];
@@ -47,6 +47,10 @@
     
     
     
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [self dismissViewControllerAnimated:YES completion:^{
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

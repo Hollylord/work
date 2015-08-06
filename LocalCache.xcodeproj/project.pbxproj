@@ -44,7 +44,6 @@
 		A14C4E2A1B61D46D0045D442 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E291B61D46D0045D442 /* CoreLocation.framework */; };
 		A14C4E2C1B61D4A10045D442 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E2B1B61D4A10045D442 /* libstdc++.6.0.9.dylib */; };
 		A14C4E391B61D72D0045D442 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E371B61D72D0045D442 /* AMapSearchKit.framework */; };
-		A14C4E3A1B61D72D0045D442 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14C4E381B61D72D0045D442 /* MAMapKit.framework */; };
 		A14C4E3E1B61D7A50045D442 /* neighborViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C4E3D1B61D7A50045D442 /* neighborViewController.m */; };
 		A14C4E441B61ECF60045D442 /* alreadyloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C4E431B61ECF60045D442 /* alreadyloginViewController.m */; };
 		A14C4E491B620F5D0045D442 /* speechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C4E481B620F5D0045D442 /* speechViewController.m */; };
@@ -69,6 +68,7 @@
 		A14C4E851B6221F30045D442 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C4E721B6221F30045D442 /* UIWebView+AFNetworking.m */; };
 		A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461731B5F2E51004CA48D /* ASPopUpView.m */; };
 		A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */; };
+		A15A3E9A1B72F6AA00DBE065 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15A3E991B72F6AA00DBE065 /* MAMapKit.framework */; };
 		A161A3E21B6F4EA6005FDD79 /* yuyinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A161A3E11B6F4EA6005FDD79 /* yuyinViewController.m */; };
 		A17603651B686901002583BC /* zhongchouzhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17603641B686901002583BC /* zhongchouzhongViewController.m */; };
 		A176036B1B68CAE1002583BC /* sponsorsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = A176036A1B68CAE1002583BC /* sponsorsList.xib */; };
@@ -245,6 +245,7 @@
 		A15461731B5F2E51004CA48D /* ASPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopUpView.m; sourceTree = "<group>"; };
 		A15461741B5F2E51004CA48D /* ASProgressPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProgressPopUpView.h; sourceTree = "<group>"; };
 		A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASProgressPopUpView.m; sourceTree = "<group>"; };
+		A15A3E991B72F6AA00DBE065 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../Downloads/AMap_iOS_API_2DMap_Lib_V2.6.0/MAMapKit.framework; sourceTree = "<group>"; };
 		A161A3E01B6F4EA6005FDD79 /* yuyinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyinViewController.h; sourceTree = "<group>"; };
 		A161A3E11B6F4EA6005FDD79 /* yuyinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyinViewController.m; sourceTree = "<group>"; };
 		A17603631B686901002583BC /* zhongchouzhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhongchouzhongViewController.h; sourceTree = "<group>"; };
@@ -350,6 +351,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15A3E9A1B72F6AA00DBE065 /* MAMapKit.framework in Frameworks */,
 				A196CAD51B71A2E100ABA78B /* Foundation.framework in Frameworks */,
 				F06F9F8F1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a in Frameworks */,
 				A107CFCE1B6B4A1D002DFC58 /* libz.1.2.5.dylib in Frameworks */,
@@ -362,7 +364,6 @@
 				A107CF971B6B30AB002DFC58 /* OpenGLES.framework in Frameworks */,
 				A107CF951B6B3091002DFC58 /* CFNetwork.framework in Frameworks */,
 				A14C4E391B61D72D0045D442 /* AMapSearchKit.framework in Frameworks */,
-				A14C4E3A1B61D72D0045D442 /* MAMapKit.framework in Frameworks */,
 				A14C4E2C1B61D4A10045D442 /* libstdc++.6.0.9.dylib in Frameworks */,
 				A14C4E121B61CC5A0045D442 /* libz.dylib in Frameworks */,
 				A14C4E2A1B61D46D0045D442 /* CoreLocation.framework in Frameworks */,
@@ -405,6 +406,7 @@
 		9F698B40384B11C53D41C3E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A15A3E991B72F6AA00DBE065 /* MAMapKit.framework */,
 				A196CAD41B71A2E100ABA78B /* Foundation.framework */,
 				F06F9F8E1B6C67C60031BC97 /* libBDVoiceRecognitionClient.a */,
 				A107CFCD1B6B4A1D002DFC58 /* libz.1.2.5.dylib */,
@@ -1349,6 +1351,7 @@
 					/Users/inc/Downloads,
 					"$(PROJECT_DIR)/AMap.bundle",
 					"$(PROJECT_DIR)",
+					/Users/inc/Downloads/AMap_iOS_API_2DMap_Lib_V2.6.0,
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ad/Info.plist;
@@ -1383,6 +1386,7 @@
 					/Users/inc/Downloads,
 					"$(PROJECT_DIR)/AMap.bundle",
 					"$(PROJECT_DIR)",
+					/Users/inc/Downloads/AMap_iOS_API_2DMap_Lib_V2.6.0,
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ad/Info.plist;

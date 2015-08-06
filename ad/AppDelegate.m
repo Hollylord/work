@@ -11,6 +11,7 @@
 #import "advertViewController.h"
 #import "tabViewController.h"
 #import "UMSocialWechatHandler.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface AppDelegate ()
 
@@ -41,7 +42,8 @@ NSString *version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBund
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabbar"];
     }
-    
+    CLLocationManager *manager = [[CLLocationManager alloc] init];
+    [manager requestWhenInUseAuthorization];
     
     return YES;
 }

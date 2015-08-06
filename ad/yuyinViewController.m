@@ -64,7 +64,7 @@
 - (void)keyboardRise:(NSNotification *)aNotification{
 //    NSDictionary *userInfo = [aNotification userInfo];
 //    CGRect keyboardRect = [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
-    NSLog(@"123");
+//    NSLog(@"123");
 //
 //    CGFloat y = keyboardRect.size.height + self.yOfInputView.constant ;
     self.yOfInputView.constant = 258;
@@ -83,7 +83,7 @@
 //    CGFloat y =  self.yOfInputView.constant - keyboardRect.size.height ;
     self.yOfInputView.constant = 0;
     
-    NSLog(@"%@",self.yOfInputView);
+//    NSLog(@"%@",self.yOfInputView);
     
     
     [UIView animateWithDuration:1.0 animations:^{
@@ -98,15 +98,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    NSLog(@"%d",self.messages);
 
     return self.messages;
 }
 
 //每次reload 高度会重新计算
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"reload %f",[[self.heights objectAtIndex:indexPath.row] floatValue] + 10);
+    
     return [[self.heights objectAtIndex:indexPath.row] floatValue] + 10;
 }
 
@@ -122,6 +120,7 @@
         return cell;
     }
     else {
+        
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"yuyin" forIndexPath:indexPath];
         
         UIImage *talkingBG = [[UIImage imageNamed:@"liuyan2"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch];
