@@ -1039,7 +1039,8 @@
                                         <exclude reference="hls-3b-lqe"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="661" width="400" height="44"/>
                                     <mask key="constraints">
                                         <include reference="hls-3b-lqe"/>
                                     </mask>
@@ -1061,9 +1062,6 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="acf-9w-l45">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
-                                                    </variation>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -1149,9 +1147,6 @@
                                                         </fragment>
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="83" y="18" width="217" height="14"/>
-                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>

@@ -73,6 +73,7 @@
 		A15A3EA31B7301C500DBE065 /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4D3551B60EED000FE4A35 /* libSocialWechat.a */; };
 		A15A3EA41B7301E500DBE065 /* libUMSocial_Sdk_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A189FBA71B5F8ECE0002AAA5 /* libUMSocial_Sdk_4.2.3.a */; };
 		A161A3E21B6F4EA6005FDD79 /* yuyinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A161A3E11B6F4EA6005FDD79 /* yuyinViewController.m */; };
+		A173320C1B745299001284C6 /* BDVRSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A173320B1B745299001284C6 /* BDVRSConfig.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A17603651B686901002583BC /* zhongchouzhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17603641B686901002583BC /* zhongchouzhongViewController.m */; };
 		A176036B1B68CAE1002583BC /* sponsorsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = A176036A1B68CAE1002583BC /* sponsorsList.xib */; };
 		A176036D1B68CC47002583BC /* sponsorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A176036C1B68CC47002583BC /* sponsorCell.xib */; };
@@ -248,6 +249,8 @@
 		A15A3EA01B7300F000DBE065 /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBDVoiceRecognitionClient.a; path = "../../Downloads/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient.a"; sourceTree = "<group>"; };
 		A161A3E01B6F4EA6005FDD79 /* yuyinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyinViewController.h; sourceTree = "<group>"; };
 		A161A3E11B6F4EA6005FDD79 /* yuyinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyinViewController.m; sourceTree = "<group>"; };
+		A173320A1B745299001284C6 /* BDVRSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRSConfig.h; sourceTree = "<group>"; };
+		A173320B1B745299001284C6 /* BDVRSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRSConfig.m; sourceTree = "<group>"; };
 		A17603631B686901002583BC /* zhongchouzhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhongchouzhongViewController.h; sourceTree = "<group>"; };
 		A17603641B686901002583BC /* zhongchouzhongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhongchouzhongViewController.m; sourceTree = "<group>"; };
 		A176036A1B68CAE1002583BC /* sponsorsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = sponsorsList.xib; sourceTree = "<group>"; };
@@ -423,6 +426,8 @@
 		A107CFA31B6B3156002DFC58 /* 百度语音 */ = {
 			isa = PBXGroup;
 			children = (
+				A173320A1B745299001284C6 /* BDVRSConfig.h */,
+				A173320B1B745299001284C6 /* BDVRSConfig.m */,
 				A107CFC31B6B322E002DFC58 /* BDVoiceRecognitionClientResources */,
 				A107CFAF1B6B31F8002DFC58 /* Third-party */,
 				A107CFA41B6B316B002DFC58 /* Headers */,
@@ -1161,6 +1166,7 @@
 			files = (
 				A18A26F01B6F0C5F00E23AF7 /* jigouzhuantiViewController.m in Sources */,
 				A14C4E801B6221F30045D442 /* UIAlertView+AFNetworking.m in Sources */,
+				A173320C1B745299001284C6 /* BDVRSConfig.m in Sources */,
 				A14C4E821B6221F30045D442 /* UIImageView+AFNetworking.m in Sources */,
 				A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */,
 				A1CB48D91B57A80800BB2489 /* tabViewController.m in Sources */,

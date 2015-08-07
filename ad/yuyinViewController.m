@@ -9,6 +9,8 @@
 #import "yuyinViewController.h"
 #import "tabViewController.h"
 #import "Headers/BDRecognizerViewController.h"
+#import "BDVRSConfig.h"
+
 #define API_KEY @"ZVijfxAIyfLMeqFAxylgCYWo" // 请修改为您在百度开发者平台申请的API_KEY
 #define SECRET_KEY @"1103449e1c6520155a4ef7950ed1a6a6" // 请修改您在百度开发者平台申请的SECRET_KEY
 
@@ -105,7 +107,7 @@
 //每次reload 高度会重新计算
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return [[self.heights objectAtIndex:indexPath.row] floatValue] + 10;
+    return [[self.heights objectAtIndex:indexPath.row] floatValue] + 30;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -158,6 +160,8 @@
     self.typeField.hidden = NO;
     self.talkBtn.hidden = YES;
     self.toggleBtn.selected = YES;
+    //让键盘下去
+    [self.typeField resignFirstResponder];
     
     BDRecognizerViewController *recognizerViewController = [[BDRecognizerViewController alloc] initWithOrigin:CGPointMake(30, 250) withTheme:[BDTheme defaultTheme]];
     recognizerViewController.enableFullScreenMode = NO; //设置是否全屏模式
@@ -172,16 +176,19 @@
     paramsObject.apiKey = API_KEY;
     paramsObject.secretKey = SECRET_KEY;
     
-    //    // 设置是否需要语义理解，只在搜索模式有效
-    paramsObject.isNeedNLU = NO;
-    paramsObject.tipsTitle = @"请说话";
-    //
-    //    // 设置识别语言
-    //    paramsObject.language = [BDVRSConfig sharedInstance].recognitionLanguage;
-    //
-    //    // 设置识别模式，分为搜索和输入
-    //    paramsObject.recogPropList = @[@1];
+    // 设置是否需要语义理解，只在搜索模式有效
+    paramsObject.isNeedNLU = [BDVRSConfig sharedInstance].isNeedNLU;
     
+    // 设置识别语言
+    paramsObject.language = [BDVRSConfig sharedInstance].recognitionLanguage;
+    
+    // 设置识别模式，分为搜索和输入
+    paramsObject.recogPropList = @[[BDVRSConfig sharedInstance].recognitionProperty];
+    
+    
+    
+    paramsObject.tipsTitle = @"请说话";
+
     paramsObject.resultShowMode = BDRecognizerResultShowModeContinuousShow;
     
     paramsObject.isShowTipAfter3sSilence = NO;
@@ -220,7 +227,7 @@
 #pragma mark - 百度语音回调
 - (void)onEndWithViews:(BDRecognizerViewController *)aBDRecognizerView withResults:(NSArray *)aResults
 {
-    self.typeField.text = nil;
+//    self.typeField.text = nil;
     
     if ([[BDVoiceRecognitionClient sharedInstance] getRecognitionProperty] != EVoiceRecognitionPropertyInput)
     {
@@ -228,14 +235,15 @@
         // ["公园", "公元"]
         NSMutableArray *audioResultData = (NSMutableArray *)aResults;
         NSMutableString *tmpString = [[NSMutableString alloc] initWithString:@""];
-        
-        for (int i=0; i < [audioResultData count]; i++)
-        {
-            [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
-        }
+        tmpString = aResults[0];
+//        for (int i=0; i < [audioResultData count]; i++)
+//        {
+//            [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
+//        }
         
         self.typeField.text = [self.typeField.text stringByAppendingString:tmpString];
-        self.typeField.text = [self.typeField.text stringByAppendingString:@"\n"];
+//        self.typeField.text = [self.typeField.text stringByAppendingString:@"\n"];
+        NSLog(@"%@",tmpString);
         
 
     }
@@ -257,37 +265,12 @@
         //         }
         //      ],
         //   ]
-//        NSString *tmpString = [[BDVRSConfig sharedInstance] composeInputModeResult:aResults];
+        NSString *tmpString = [[BDVRSConfig sharedInstance] composeInputModeResult:aResults];
         
-//        self.typeField.text = [self.typeField.text stringByAppendingString:tmpString];
-//        self.typeField.text = [self.typeField.text stringByAppendingString:@"\n"];
+        self.typeField.text = [self.typeField.text stringByAppendingString:tmpString];
+        self.typeField.text = [self.typeField.text stringByAppendingString:@"\n"];
     }
 }
 
-//- (void)onEndWithViews:(BDRecognizerViewController *)aBDRecognizerViewController withResults:(NSArray *)aResults{
-//    if ([[BDVoiceRecognitionClient sharedInstance] getRecognitionProperty] != EVoiceRecognitionPropertyInput)
-//    {
-//        // 在非输入模式下，当 isNeedNLU = NO 时，结果是一个候选句列表，为 NSArray，
-//        // 元素是 NSString，例如["公园", "公元"]
-//        // 当 isNeedNLU = YES 时，结果类型仍为 NSArray，只有一个 NSString 元素，
-//        // 内容是 JSON 串，开发者需要自行解析，解析方法请参考语义解析文档
-//        NSMutableArray *audioResultData = (NSMutableArray *)aResults;
-//        NSMutableString *tmpString = [[NSMutableString alloc] initWithString:@""];
-//        
-//        for (int i=0; i < [audioResultData count]; i++)
-//        {
-//            [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
-//        }
-//        
-//        self.typeField.text = [self.typeField.text stringByAppendingString:tmpString];
-//        self.typeField.text = [self.typeField.text stringByAppendingString:@"\n"];
-//        
-//
-//    }
-//    else
-//    {
-//        
-//    }
-//}
 
 @end
