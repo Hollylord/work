@@ -1039,8 +1039,7 @@
                                         <exclude reference="hls-3b-lqe"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="661" width="400" height="44"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="hls-3b-lqe"/>
                                     </mask>
@@ -1062,6 +1061,9 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="acf-9w-l45">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+                                                    </variation>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -1147,6 +1149,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="83" y="18" width="217" height="14"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -4150,19 +4155,24 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7bj-IC-q5d" id="OPJ-nw-fab">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lkP-C1-Aab">
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touhu" translatesAutoresizingMaskIntoConstraints="NO" id="lkP-C1-Aab">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="73" id="Jhg-rV-hwa"/>
+                                                        <constraint firstAttribute="width" constant="73" id="Jhg-rV-hwa">
+                                                            <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="height" constant="50" id="ccp-OT-Vjl"/>
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="Jhg-rV-hwa"/>
+                                                            <exclude reference="ccp-OT-Vjl"/>
                                                         </mask>
                                                     </variation>
                                                     <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="Jhg-rV-hwa"/>
+                                                            <include reference="ccp-OT-Vjl"/>
                                                         </mask>
                                                     </variation>
                                                 </imageView>
@@ -4239,7 +4249,7 @@
                                                     <exclude reference="yTW-Mb-OSh"/>
                                                     <include reference="Pm1-1n-jEo"/>
                                                     <include reference="eWr-X8-N2i"/>
-                                                    <include reference="qah-ca-9O9"/>
+                                                    <exclude reference="qah-ca-9O9"/>
                                                     <include reference="sdd-7d-Gs6"/>
                                                 </mask>
                                             </variation>
@@ -4261,8 +4271,7 @@
                                                             <exclude reference="fzY-G3-MSz"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="254" y="4" width="58" height="86"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="fzY-G3-MSz"/>
                                                         </mask>
@@ -4282,8 +4291,7 @@
                                                             <exclude reference="o8t-89-x8z"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="-46" y="30" width="260" height="35"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="nmg-gA-1FY"/>
                                                             <exclude reference="o8t-89-x8z"/>
@@ -4303,8 +4311,7 @@
                                                             <exclude reference="YtR-9G-qoL"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="-41" y="30" width="250" height="35"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="YtR-9G-qoL"/>
                                                         </mask>
@@ -6542,12 +6549,12 @@
                                 <exclude reference="qE8-yC-ESX"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="k1l-a7-Vod"/>
                                 <exclude reference="5dS-ET-QVB"/>
                                 <exclude reference="Ax7-ZF-XAT"/>
                                 <exclude reference="JbC-O7-K5v"/>
                                 <exclude reference="Uty-rW-Isc"/>
                                 <exclude reference="voU-wt-6Pm"/>
-                                <exclude reference="k1l-a7-Vod"/>
                                 <exclude reference="1g8-SV-vS5"/>
                                 <exclude reference="MfU-W7-7A7"/>
                                 <exclude reference="scm-lq-Mtw"/>
@@ -6559,12 +6566,12 @@
                                 <include reference="qE8-yC-ESX"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="k1l-a7-Vod"/>
                                 <include reference="5dS-ET-QVB"/>
                                 <include reference="Ax7-ZF-XAT"/>
                                 <exclude reference="JbC-O7-K5v"/>
                                 <include reference="Uty-rW-Isc"/>
                                 <include reference="voU-wt-6Pm"/>
-                                <exclude reference="k1l-a7-Vod"/>
                                 <include reference="1g8-SV-vS5"/>
                                 <include reference="MfU-W7-7A7"/>
                                 <include reference="scm-lq-Mtw"/>
@@ -6769,6 +6776,7 @@
         <image name="playBackground" width="319" height="162"/>
         <image name="qq" width="50" height="50"/>
         <image name="searchBar" width="375" height="64"/>
+        <image name="touhu" width="50" height="50"/>
         <image name="touxiang" width="100" height="100"/>
         <image name="touzibeijing" width="365" height="130"/>
         <image name="wb" width="50" height="50"/>
