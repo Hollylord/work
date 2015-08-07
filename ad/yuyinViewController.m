@@ -26,7 +26,7 @@
 - (IBAction)talk:(UIButton *)sender;
 
 @property (strong,nonatomic) NSMutableArray *heights;
-@property (copy,nonatomic) NSString *inputString;
+@property (strong,nonatomic) NSMutableArray *inputStrings;
 @property (assign,nonatomic) int messages;
 @end
 
@@ -42,6 +42,7 @@
     
     self.messages = 1;
     self.heights = [NSMutableArray arrayWithObject:@50];
+    self.inputStrings = [NSMutableArray arrayWithObject:@""];
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.typeField resignFirstResponder];
@@ -129,7 +130,7 @@
         UIImageView *talking = (UIImageView *)[cell viewWithTag:2];
         talking.image = talkingBG;
         UILabel *label = (UILabel *)[cell viewWithTag:3];
-        label.text = self.inputString;
+        label.text = self.inputStrings[indexPath.row];
         return cell;
     }
     
@@ -207,9 +208,11 @@
 
 #pragma mark - textField
 - (void)textFieldDidEndEditing:(UITextField *)textField{
-    self.inputString = textField.text;
+    NSString *text = textField.text;
+    [self.inputStrings addObject:text];
+    
     NSDictionary *attribute = [NSDictionary dictionaryWithObject:[UIFont systemFontOfSize:17.0] forKey:NSFontAttributeName];
-    CGSize textRect = [self.inputString boundingRectWithSize:CGSizeMake(250, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
+    CGSize textRect = [textField.text boundingRectWithSize:CGSizeMake(250, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
 
     NSString *height = [NSString stringWithFormat:@"%f",textRect.height];
     [self.heights addObject:height];
