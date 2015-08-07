@@ -80,6 +80,7 @@
     recommendView.delegate = self;
     //设置scrollView的滚动范围
     self.scrollView.contentSize = CGSizeMake(0,recommendView.frame.origin.y + recommendView.frame.size.height + 20 );
+    
     [self progress];
  
     
@@ -281,13 +282,15 @@
 {
     recommendView *view1 = self.programs[0];
     float progress = view1.progressView.progress;
-    if (progress < 1.0 && self.prepareBtn.selected == NO && self.abroadBtn.selected == 0) {
+    //设置进度条的进度
+    if (progress < 0.5 && self.prepareBtn.selected == NO && self.abroadBtn.selected == 0) {
         
         progress += 0.005;
         
         [view1.progressView setProgress:progress animated:YES];
         
-        [NSTimer scheduledTimerWithTimeInterval:0.1
+        //调进度条的速度
+        [NSTimer scheduledTimerWithTimeInterval:0.03
                                          target:self
                                        selector:@selector(progress)
                                        userInfo:nil
