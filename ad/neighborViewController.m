@@ -40,10 +40,7 @@
 
 #pragma mark - 地图代理
 
-- (void)mapViewDidStopLocatingUser:(MAMapView *)mapView{
-    NSLog(@"123");
 
-}
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
     if (_map.userLocation.subtitle != nil) {
         return ;
