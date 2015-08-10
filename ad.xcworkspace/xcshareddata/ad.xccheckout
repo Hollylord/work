@@ -10,8 +10,6 @@
 	<string>ad</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6BB11C583CF2DB9E6B1058482B3328F9C7D79DB1</key>
-		<string>https://github.com/touWho/touwhoAPP_iphone.git</string>
 		<key>B3FA03DF3195CB63BA851093D6BC482CD149D9CA</key>
 		<string>https://github.com/Hollylord/work.git</string>
 	</dict>
@@ -19,27 +17,17 @@
 	<string>ad.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6BB11C583CF2DB9E6B1058482B3328F9C7D79DB1</key>
-		<string>..</string>
 		<key>B3FA03DF3195CB63BA851093D6BC482CD149D9CA</key>
-		<string>../../work</string>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/touWho/touwhoAPP_iphone.git</string>
+	<string>https://github.com/Hollylord/work.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6BB11C583CF2DB9E6B1058482B3328F9C7D79DB1</string>
+	<string>B3FA03DF3195CB63BA851093D6BC482CD149D9CA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6BB11C583CF2DB9E6B1058482B3328F9C7D79DB1</string>
-			<key>IDESourceControlWCCName</key>
-			<string>touwhoAPP_iphone</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
