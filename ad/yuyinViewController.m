@@ -24,6 +24,7 @@
 @property (nonatomic, retain) BDRecognizerViewController *recognizerViewController;
 - (IBAction)toggleKey:(UIButton *)sender;
 - (IBAction)talk:(UIButton *)sender;
+- (IBAction)send:(UIButton *)sender;
 
 @property (strong,nonatomic) NSMutableArray *heights;
 @property (strong,nonatomic) NSMutableArray *inputStrings;
@@ -206,6 +207,12 @@
     
 }
 
+//发送按钮
+- (IBAction)send:(UIButton *)sender {
+    [self.typeField endEditing:YES];
+    self.typeField.text = nil;
+}
+
 #pragma mark - textField
 - (void)textFieldDidEndEditing:(UITextField *)textField{
     NSString *text = textField.text;
@@ -222,8 +229,8 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [self.typeField endEditing:YES];
-    self.typeField.text = nil;
+    
+    
     return YES;
 }
 
