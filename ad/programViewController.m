@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *onGoingBtn;
 @property (weak, nonatomic) IBOutlet UIButton *prepareBtn;
 @property (weak, nonatomic) IBOutlet UIButton *abroadBtn;
+@property (weak,nonatomic)   UIButton *call;
 
 //用来存放recommendViews
 @property (strong,nonatomic) NSMutableArray *programs;
@@ -44,7 +45,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    //添加一个大背景
     self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = [UIColor blackColor];
     //这种方式设置imageview 默认大小和图片一样
@@ -55,10 +57,16 @@
     
     
     //配置搜索框
-    self.searchBarWithDelegate = [[INSSearchBar alloc] initWithFrame:CGRectMake(10, 20, 44, 34)];
+    self.searchBarWithDelegate = [[INSSearchBar alloc] initWithFrame:CGRectMake(15, 25, 44, 34)];
     self.searchBarWithDelegate.delegate = self;
     [self.view addSubview:self.searchBarWithDelegate];
-   
+    
+    UIButton *callBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.call = callBtn;
+    [self.call setImage:[UIImage imageNamed:@"call"] forState:UIControlStateNormal];
+    self.call.frame = CGRectMake(CGRectGetWidth(self.view.bounds) - 40, 28, 27, 27);
+    [self.view addSubview:self.call];
+    
     //配置segementView
     segmentView *segmentView = [[[NSBundle mainBundle] loadNibNamed:@"segmentView" owner:self options:nil] firstObject];
     self.segmentView = segmentView;
@@ -106,7 +114,7 @@
 
 - (CGRect)destinationFrameForSearchBar:(INSSearchBar *)searchBar
 {
-    return CGRectMake(10, 20, CGRectGetWidth(self.view.bounds) - 40.0, 34.0);
+    return CGRectMake(15, 25, CGRectGetWidth(self.view.bounds) - 70.0, 30);
 }
 
 - (void)searchBar:(INSSearchBar *)searchBar willStartTransitioningToState:(INSSearchBarState)destinationState
