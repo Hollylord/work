@@ -1025,6 +1025,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7gm-08-kmR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zDW-7V-5Ng">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8X-Gc-pEi">
@@ -4516,20 +4517,19 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="md6-Zr-eeP"/>
+                                        <exclude reference="1eQ-tK-Xnv"/>
+                                        <exclude reference="aVS-va-9JW"/>
                                         <exclude reference="ehB-ax-ara"/>
                                         <exclude reference="fN3-z2-irc"/>
                                         <exclude reference="6Eo-aW-YOK"/>
                                         <exclude reference="8K6-Pf-4eJ"/>
                                         <exclude reference="Qpy-Ns-TAi"/>
-                                        <exclude reference="1eQ-tK-Xnv"/>
-                                        <exclude reference="aVS-va-9JW"/>
                                         <exclude reference="Bkz-GR-3fy"/>
                                         <exclude reference="k7i-xl-3Am"/>
                                         <exclude reference="t2e-ww-Ufq"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="691" width="400" height="44"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="8R6-8g-4IT"/>
                                         <include reference="Ooe-YU-PSK"/>
@@ -4538,13 +4538,13 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="md6-Zr-eeP"/>
+                                        <include reference="1eQ-tK-Xnv"/>
+                                        <include reference="aVS-va-9JW"/>
                                         <include reference="ehB-ax-ara"/>
                                         <include reference="fN3-z2-irc"/>
                                         <include reference="6Eo-aW-YOK"/>
                                         <include reference="8K6-Pf-4eJ"/>
                                         <exclude reference="Qpy-Ns-TAi"/>
-                                        <include reference="1eQ-tK-Xnv"/>
-                                        <include reference="aVS-va-9JW"/>
                                         <include reference="Bkz-GR-3fy"/>
                                         <include reference="k7i-xl-3Am"/>
                                         <exclude reference="t2e-ww-Ufq"/>
@@ -4691,6 +4691,7 @@
                                 <exclude reference="opE-H5-enV"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="uRw-sz-TjG"/>
                                 <exclude reference="Ktg-xa-nUc"/>
                                 <exclude reference="gVC-pJ-ebb"/>
                                 <exclude reference="sjW-yH-eUl"/>
@@ -4698,7 +4699,6 @@
                                 <exclude reference="KCq-ry-geq"/>
                                 <exclude reference="LRF-tj-z5P"/>
                                 <exclude reference="zzB-y3-GPW"/>
-                                <exclude reference="uRw-sz-TjG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -4707,6 +4707,7 @@
                                 <include reference="opE-H5-enV"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="uRw-sz-TjG"/>
                                 <include reference="Ktg-xa-nUc"/>
                                 <include reference="gVC-pJ-ebb"/>
                                 <include reference="sjW-yH-eUl"/>
@@ -4714,7 +4715,6 @@
                                 <include reference="KCq-ry-geq"/>
                                 <include reference="LRF-tj-z5P"/>
                                 <exclude reference="zzB-y3-GPW"/>
-                                <include reference="uRw-sz-TjG"/>
                             </mask>
                         </variation>
                     </view>
@@ -6568,6 +6568,9 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ERh-Us-pEF">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                                                    </variation>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
