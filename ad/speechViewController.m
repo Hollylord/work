@@ -12,6 +12,7 @@
 @interface speechViewController () <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *browser;
 
+
 @end
 
 @implementation speechViewController
@@ -38,4 +39,8 @@
 
 
 
+
+- (void)dealloc {
+    NSLog(@"dealloc");
+}
 @end

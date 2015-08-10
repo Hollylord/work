@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Chg-Xw-JOh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="au3-Mr-Bll">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -1016,6 +1016,63 @@
             </objects>
             <point key="canvasLocation" x="2149.5" y="-852.75"/>
         </scene>
+        <!--路演-->
+        <scene sceneID="tct-sH-tAI">
+            <objects>
+                <viewController id="1we-aY-8Ox" customClass="speechViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EYp-jo-vlh"/>
+                        <viewControllerLayoutGuide type="bottom" id="7gm-08-kmR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zDW-7V-5Ng">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8X-Gc-pEi">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="O8X-Gc-pEi" secondAttribute="trailing" id="4GS-pa-vc2"/>
+                            <constraint firstAttribute="bottom" secondItem="O8X-Gc-pEi" secondAttribute="bottom" id="BdV-yB-Pax"/>
+                            <constraint firstItem="O8X-Gc-pEi" firstAttribute="top" secondItem="EYp-jo-vlh" secondAttribute="bottom" id="LCy-dN-h7V"/>
+                            <constraint firstItem="O8X-Gc-pEi" firstAttribute="leading" secondItem="zDW-7V-5Ng" secondAttribute="leading" id="ffK-YO-6Ht"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="O8X-Gc-pEi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4GS-pa-vc2"/>
+                                <exclude reference="BdV-yB-Pax"/>
+                                <exclude reference="LCy-dN-h7V"/>
+                                <exclude reference="ffK-YO-6Ht"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="O8X-Gc-pEi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4GS-pa-vc2"/>
+                                <include reference="BdV-yB-Pax"/>
+                                <include reference="LCy-dN-h7V"/>
+                                <include reference="ffK-YO-6Ht"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="路演" id="z3V-Xe-Sqe">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="UD8-M4-PrQ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="browser" destination="O8X-Gc-pEi" id="4uH-MM-VMG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZF-Z7-SvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="23.25"/>
+        </scene>
         <!--行业讨论-->
         <scene sceneID="1es-q5-1xY">
             <objects>
@@ -1462,7 +1519,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZc-wP-P6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1159.5" y="285.75"/>
+            <point key="canvasLocation" x="1211" y="49"/>
         </scene>
         <!--新闻-->
         <scene sceneID="FeH-jf-0Cm">
@@ -1517,7 +1574,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kfg-I8-xG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-877.5" y="369.75"/>
+            <point key="canvasLocation" x="-586" y="73"/>
         </scene>
         <!--个人中心-->
         <scene sceneID="H91-id-sBZ">
@@ -1583,7 +1640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="skI-m8-afp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192.5" y="1658.25"/>
+            <point key="canvasLocation" x="1176" y="1888"/>
         </scene>
         <!--登录-->
         <scene sceneID="GKr-Rx-xZ3">
@@ -1834,7 +1891,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txm-0g-5YY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2001" y="1658.25"/>
+            <point key="canvasLocation" x="1965" y="1922"/>
         </scene>
         <!--个人信息-->
         <scene sceneID="lDQ-d3-biy">
@@ -2593,7 +2650,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peD-JE-8bp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2802" y="2694"/>
+            <point key="canvasLocation" x="2650" y="2870"/>
         </scene>
         <!--我关注的投资人-->
         <scene sceneID="cMe-tU-S78">
@@ -3261,7 +3318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaV-zS-4KV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2958" y="1664.25"/>
+            <point key="canvasLocation" x="2638" y="1896"/>
         </scene>
         <!--我投资的项目-->
         <scene sceneID="BWv-kg-gDw">
@@ -4106,7 +4163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TqD-R3-99e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3723" y="1194"/>
+            <point key="canvasLocation" x="-2793" y="1062"/>
         </scene>
         <!--未注册个人中心-->
         <scene sceneID="orq-IS-RCW">
@@ -4131,7 +4188,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iik-IU-0bG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="1664.25"/>
+            <point key="canvasLocation" x="304" y="1888"/>
         </scene>
         <!--语音留言-->
         <scene sceneID="rda-6e-aBc">
@@ -4271,7 +4328,8 @@
                                                             <exclude reference="fzY-G3-MSz"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="254" y="4" width="58" height="86"/>
                                                         <mask key="constraints">
                                                             <include reference="fzY-G3-MSz"/>
                                                         </mask>
@@ -4291,7 +4349,8 @@
                                                             <exclude reference="o8t-89-x8z"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="-46" y="30" width="260" height="35"/>
                                                         <mask key="constraints">
                                                             <include reference="nmg-gA-1FY"/>
                                                             <exclude reference="o8t-89-x8z"/>
@@ -4311,7 +4370,8 @@
                                                             <exclude reference="YtR-9G-qoL"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="-41" y="30" width="250" height="35"/>
                                                         <mask key="constraints">
                                                             <include reference="YtR-9G-qoL"/>
                                                         </mask>
@@ -4572,33 +4632,62 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opE-H5-enV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="barTintColor" red="0.18039215689999999" green="0.49803921569999998" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="路演" id="gsh-rV-vve"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
+                        <color key="backgroundColor" red="0.1803921568627451" green="0.49803921568627452" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="PqA-fu-VMu" firstAttribute="leading" secondItem="TCE-ON-Yqn" secondAttribute="leading" id="EPy-hs-VZD"/>
                             <constraint firstAttribute="trailing" secondItem="PqA-fu-VMu" secondAttribute="trailing" id="KCq-ry-geq"/>
+                            <constraint firstItem="opE-H5-enV" firstAttribute="leading" secondItem="TCE-ON-Yqn" secondAttribute="leading" id="Ktg-xa-nUc"/>
+                            <constraint firstItem="PqA-fu-VMu" firstAttribute="top" secondItem="opE-H5-enV" secondAttribute="bottom" constant="24" id="LRF-tj-z5P">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="opE-H5-enV" secondAttribute="trailing" id="gVC-pJ-ebb"/>
+                            <constraint firstItem="opE-H5-enV" firstAttribute="top" secondItem="TCE-ON-Yqn" secondAttribute="top" id="sjW-yH-eUl">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="4KB-sD-82s" firstAttribute="top" secondItem="PqA-fu-VMu" secondAttribute="bottom" id="uRw-sz-TjG"/>
                             <constraint firstItem="PqA-fu-VMu" firstAttribute="top" secondItem="TCE-ON-Yqn" secondAttribute="top" id="zzB-y3-GPW"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="PqA-fu-VMu"/>
+                                <exclude reference="opE-H5-enV"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="uRw-sz-TjG"/>
+                                <exclude reference="Ktg-xa-nUc"/>
+                                <exclude reference="gVC-pJ-ebb"/>
+                                <exclude reference="sjW-yH-eUl"/>
                                 <exclude reference="EPy-hs-VZD"/>
                                 <exclude reference="KCq-ry-geq"/>
+                                <exclude reference="LRF-tj-z5P"/>
                                 <exclude reference="zzB-y3-GPW"/>
+                                <exclude reference="uRw-sz-TjG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="PqA-fu-VMu"/>
+                                <include reference="opE-H5-enV"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="uRw-sz-TjG"/>
+                                <include reference="Ktg-xa-nUc"/>
+                                <include reference="gVC-pJ-ebb"/>
+                                <include reference="sjW-yH-eUl"/>
                                 <include reference="EPy-hs-VZD"/>
                                 <include reference="KCq-ry-geq"/>
-                                <include reference="zzB-y3-GPW"/>
+                                <include reference="LRF-tj-z5P"/>
+                                <exclude reference="zzB-y3-GPW"/>
+                                <include reference="uRw-sz-TjG"/>
                             </mask>
                         </variation>
                     </view>
@@ -4609,7 +4698,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5u-X5-OpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1350" y="1878.75"/>
+            <point key="canvasLocation" x="-1266" y="1911.75"/>
         </scene>
         <!--附近的人-->
         <scene sceneID="MSN-ot-0P7">
@@ -4628,7 +4717,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07L-Qc-izt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-511.5" y="1878.75"/>
+            <point key="canvasLocation" x="-620" y="2090"/>
         </scene>
         <!--注册-->
         <scene sceneID="PeD-Ig-9Qk">
@@ -4795,7 +4884,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8c-wF-5dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192" y="2683"/>
+            <point key="canvasLocation" x="1192" y="2819"/>
         </scene>
         <!--填写验证码-->
         <scene sceneID="GNe-wx-IWB">
@@ -5611,7 +5700,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wld-yA-dCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343.5" y="978.75"/>
+            <point key="canvasLocation" x="324" y="970"/>
         </scene>
         <!--社群-->
         <scene sceneID="1La-WJ-k0p">
@@ -5891,11 +5980,12 @@
                         <segue destination="2rm-Oh-ZNq" kind="show" identifier="shequn2points" id="01e-i3-siA"/>
                         <segue destination="dil-gP-mbE" kind="show" identifier="shequn2jigouzhuanti" id="CbO-LI-f8S"/>
                         <segue destination="izH-f8-wNt" kind="show" identifier="shequn2hangyetaolun" id="xqd-5M-BUU"/>
+                        <segue destination="1we-aY-8Ox" kind="show" identifier="shequn2luyan" id="YjV-yD-Jeb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8E-de-rZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150.5" y="975"/>
+            <point key="canvasLocation" x="1256" y="915"/>
         </scene>
         <!--牛人观点-->
         <scene sceneID="CaN-89-zla">
@@ -6372,6 +6462,9 @@
                                                             </fragment>
                                                         </attributedString>
                                                     </state>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="232" y="17" width="36" height="30"/>
+                                                    </variation>
                                                 </button>
                                             </subviews>
                                             <constraints>

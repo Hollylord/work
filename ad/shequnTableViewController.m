@@ -167,11 +167,13 @@
         }
         else if (indexPath.row == 2)
         {
-            UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            speechViewController *speech = [story instantiateViewControllerWithIdentifier:@"speech"];
-            //设置转场效果
-            speech.modalTransitionStyle = UIModalTransitionStylePartialCurl;
-            [self presentViewController:speech animated:YES completion:nil];
+//            UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//            speechViewController *speech = [story instantiateViewControllerWithIdentifier:@"speech"];
+//            //设置转场效果
+//            speech.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+//            //跳转到路演
+//            [self presentViewController:speech animated:YES completion:nil];
+            [self performSegueWithIdentifier:@"shequn2luyan" sender:nil];
         }
     }
 }
