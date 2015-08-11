@@ -32,19 +32,23 @@
     
     //删除系统自带的tabBar
     [self.tabBar removeFromSuperview];
-//    NSLog(@"%@",NSStringFromCGRect(self.view.frame));
+    NSLog(@"%@",NSStringFromCGRect(self.view.frame));
     
     //加载自定义的tabbar
     UIView *myTabBar = [[[NSBundle mainBundle] loadNibNamed:@"MyTabBar" owner:self options:nil] firstObject];
-    
     myTabBar.backgroundColor = [UIColor clearColor];
+    myTabBar.frame = CGRectMake(0, 606, 375, 61);
     [self.view addSubview:myTabBar];
-    NSLayoutConstraint *leadingofTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
-    NSLayoutConstraint *trailingofTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
-    NSLayoutConstraint *bottomofTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
-    NSLayoutConstraint *heightOfTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:60];
-    [myTabBar addConstraint:heightOfTabbar];
-    [self.view addConstraints:@[leadingofTabbar,trailingofTabbar,bottomofTabbar]];
+    
+//    NSLayoutConstraint *leadingofTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
+//    NSLayoutConstraint *trailingofTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:1 constant:0];
+//    NSLayoutConstraint *bottomofTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+//    NSLayoutConstraint *heightOfTabbar = [NSLayoutConstraint constraintWithItem:myTabBar attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:60];
+//    myTabBar.translatesAutoresizingMaskIntoConstraints = NO;
+//    self.view.translatesAutoresizingMaskIntoConstraints = NO;
+//    [myTabBar addConstraint:heightOfTabbar];
+//    [self.view addConstraints:@[leadingofTabbar,trailingofTabbar,bottomofTabbar]];
+    
     
     
     //加载rainbow
@@ -60,22 +64,10 @@
     NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:rainBow attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:20];
     NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:rainBow attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:1 constant:0];
     NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:rainBow attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:129];
+    
+       rainBow.translatesAutoresizingMaskIntoConstraints = NO;
     [rainBow addConstraint:height];
     [self.view addConstraints:@[leading,bottom,width]];
-    
-    self.view.translatesAutoresizingMaskIntoConstraints = NO;
-    rainBow.translatesAutoresizingMaskIntoConstraints = NO;
-    myTabBar.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    
-    
-    
-//    
-//    UIViewController *testViewcontroller = [[UIViewController alloc] init];
-//    
-//    testViewcontroller.view.backgroundColor = [UIColor redColor];
-    
-//    NSLog(@"%@",self.viewControllers);
     
     
 }
