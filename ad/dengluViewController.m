@@ -55,6 +55,7 @@
 //    }
 //}
 
+#pragma mark - 第三方登录
 - (IBAction)weiboBtn:(id)sender {
     UMSocialSnsPlatform *snsPlatform = [UMSocialSnsPlatformManager getSocialPlatformWithName:UMShareToSina];
     

@@ -10,7 +10,9 @@
 #import "UMSocial.h"
 #import "advertViewController.h"
 #import "tabViewController.h"
+#import "UMSocialQQHandler.h"
 #import "UMSocialWechatHandler.h"
+
 #import <CoreLocation/CoreLocation.h>
 
 @interface AppDelegate ()
@@ -27,6 +29,11 @@
 
     //设置微信AppId、appSecret，分享url
     [UMSocialWechatHandler setWXAppId:@"wx43b8499d08842d8a" appSecret:@"80e470d7cc365cea2e677a87fb84e2bb" url:@"http://www.umeng.com/social"];
+    
+    //设置qq的AppId、appSecret，分享url
+    [UMSocialQQHandler setQQWithAppId:@"1104734143" appKey:@"otFu8s5Dv6u8sFBm" url:@"http://www.umeng.com/social"];
+    
+    
     
 NSString *version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"];
     
