@@ -94,7 +94,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UITabBarController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"tabbar"];
 //    UIViewController *firstViewController = [[UIViewController alloc]initWithNibName:@"firstViewController" bundle:nil];
-    [self presentViewController:viewController animated:YES completion:NULL];
+    [self presentViewController:viewController animated:NO completion:NULL];
     
 }
 

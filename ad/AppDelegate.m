@@ -30,18 +30,18 @@
     
 NSString *version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"];
     
-//    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"version"] == nil) {
-//        [[NSUserDefaults standardUserDefaults] setValue:version forKey:@"version"];
-//    }
-//    else if (![[[NSUserDefaults standardUserDefaults] valueForKey:@"version"] isEqualToString:version])
-//    {
-//        self.window.rootViewController = [[advertViewController alloc] init];
-//        
-//    }
-//    else {
-//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabbar"];
-//    }
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"version"] == nil) {
+        [[NSUserDefaults standardUserDefaults] setValue:version forKey:@"version"];
+    }
+    else if (![[[NSUserDefaults standardUserDefaults] valueForKey:@"version"] isEqualToString:version])
+    {
+        self.window.rootViewController = [[advertViewController alloc] init];
+        
+    }
+    else {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabbar"];
+    }
    
     
     return YES;
