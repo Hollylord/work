@@ -40,7 +40,5 @@
 
 
 
-- (void)dealloc {
-    NSLog(@"dealloc");
-}
+
 @end

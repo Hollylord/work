@@ -56,16 +56,18 @@
     
     
     
-    //配置搜索框
+    //添加搜索框
     self.searchBarWithDelegate = [[INSSearchBar alloc] initWithFrame:CGRectMake(15, 25, 44, 34)];
     self.searchBarWithDelegate.delegate = self;
     [self.view addSubview:self.searchBarWithDelegate];
     
+    //添加电话按键
     UIButton *callBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.call = callBtn;
     [self.call setImage:[UIImage imageNamed:@"call"] forState:UIControlStateNormal];
     self.call.frame = CGRectMake(CGRectGetWidth(self.view.bounds) - 40, 28, 27, 27);
     [self.view addSubview:self.call];
+    [self.call addTarget:self action:@selector(phoneCall) forControlEvents:UIControlEventTouchUpInside];
     
     //配置segementView
     segmentView *segmentView = [[[NSBundle mainBundle] loadNibNamed:@"segmentView" owner:self options:nil] firstObject];
@@ -284,6 +286,11 @@
     self.segmentView.backgroundImage.image = [UIImage imageNamed:@"segmentBackground3"];
     
 }
+- (void)phoneCall{
+    NSString *phoneNumber = @"0755-23765675";
+    NSString *num = [[NSString alloc]initWithFormat:@"tel://%@",phoneNumber];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:num]];
+}
 
 #pragma mark - 进度条
 - (void)progress
@@ -305,6 +312,7 @@
                                         repeats:NO];
     }
 }
+
 
 
 @end
