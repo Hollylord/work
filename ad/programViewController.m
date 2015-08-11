@@ -51,8 +51,14 @@
     self.view.backgroundColor = [UIColor blackColor];
     //这种方式设置imageview 默认大小和图片一样
     UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"dabeijing"]];
-    
     [self.view insertSubview:background belowSubview:self.scrollView];
+    NSLayoutConstraint *leading = [NSLayoutConstraint constraintWithItem:background attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
+    NSLayoutConstraint *trailing = [NSLayoutConstraint constraintWithItem:background attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
+    NSLayoutConstraint *top = [NSLayoutConstraint constraintWithItem:background attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:0];
+    NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:background attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+    [self.view addConstraints:@[leading,trailing,top,bottom]];
+    self.view.translatesAutoresizingMaskIntoConstraints = NO;
+    background.translatesAutoresizingMaskIntoConstraints = NO;
     
     
     
