@@ -169,11 +169,8 @@
         }
         else if (indexPath.row == 2)
         {
-//            [self performSegueWithIdentifier:@"shequn2yuyin" sender:nil];
-            UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-           UIViewController *viewcontroller = [story instantiateViewControllerWithIdentifier:@"test"];
-            [self presentViewController:viewcontroller animated:YES
-                             completion:nil];
+            [self performSegueWithIdentifier:@"shequn2yuyin" sender:nil];
+            
         }
     }
 }

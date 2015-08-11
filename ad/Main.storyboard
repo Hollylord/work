@@ -4120,48 +4120,6 @@
             </objects>
             <point key="canvasLocation" x="-2793" y="1062"/>
         </scene>
-        <!--Test View Controller-->
-        <scene sceneID="hvg-8O-T7q">
-            <objects>
-                <viewController storyboardIdentifier="test" id="jrM-h5-1lT" customClass="testViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BZ7-Jl-LtJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="WXr-ed-vlX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EyV-P7-xVy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcN-Cv-yt7">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="252" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="back:" destination="jrM-h5-1lT" eventType="touchUpInside" id="6Qd-jz-fcp"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="vcN-Cv-yt7"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="vcN-Cv-yt7"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IJb-YM-Fy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1840.5" y="1052.25"/>
-        </scene>
         <!--未注册个人中心-->
         <scene sceneID="orq-IS-RCW">
             <objects>

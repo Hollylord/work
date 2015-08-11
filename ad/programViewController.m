@@ -15,7 +15,7 @@
 #import "zhongchouzhongViewController.h"
 
 
-@interface programViewController () <INSSearchBarDelegate,recommendViewDelegate>
+@interface programViewController () <INSSearchBarDelegate,recommendViewDelegate,UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet segmentView *segmentView;
 
 
@@ -57,7 +57,7 @@
     NSLayoutConstraint *top = [NSLayoutConstraint constraintWithItem:background attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:0];
     NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:background attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
     [self.view addConstraints:@[leading,trailing,top,bottom]];
-    self.view.translatesAutoresizingMaskIntoConstraints = NO;
+
     background.translatesAutoresizingMaskIntoConstraints = NO;
     
     
@@ -292,10 +292,22 @@
     self.segmentView.backgroundImage.image = [UIImage imageNamed:@"segmentBackground3"];
     
 }
+
+#pragma mark - 打电话按钮
 - (void)phoneCall{
-    NSString *phoneNumber = @"0755-23765675";
-    NSString *num = [[NSString alloc]initWithFormat:@"tel://%@",phoneNumber];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:num]];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"拨打热线电话" message:@"您将拨打投壶网" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
+    [alert show];
+    
+//
+}
+
+#pragma mark - alertview代理
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 1) {
+        NSString *phoneNumber = @"0755-23765675";
+        NSString *num = [[NSString alloc]initWithFormat:@"tel://%@",phoneNumber];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:num]];
+    }
 }
 
 #pragma mark - 进度条

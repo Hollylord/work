@@ -62,7 +62,6 @@
 		A14C4E851B6221F30045D442 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A14C4E721B6221F30045D442 /* UIWebView+AFNetworking.m */; };
 		A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461731B5F2E51004CA48D /* ASPopUpView.m */; };
 		A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */; };
-		A155EF231B79A9D8008B1519 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A155EF221B79A9D8008B1519 /* testViewController.m */; };
 		A15A3E9A1B72F6AA00DBE065 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15A3E991B72F6AA00DBE065 /* MAMapKit.framework */; };
 		A15A3EA11B7300F000DBE065 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15A3EA01B7300F000DBE065 /* libBDVoiceRecognitionClient.a */; };
 		A15A3EA21B73018D00DBE065 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4D3501B60EED000FE4A35 /* libSocialQQ.a */; };
@@ -241,8 +240,6 @@
 		A15461731B5F2E51004CA48D /* ASPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopUpView.m; sourceTree = "<group>"; };
 		A15461741B5F2E51004CA48D /* ASProgressPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProgressPopUpView.h; sourceTree = "<group>"; };
 		A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASProgressPopUpView.m; sourceTree = "<group>"; };
-		A155EF211B79A9D8008B1519 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
-		A155EF221B79A9D8008B1519 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		A15A3E991B72F6AA00DBE065 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = ../../Downloads/AMap_iOS_API_2DMap_Lib_V2.6.0/MAMapKit.framework; sourceTree = "<group>"; };
 		A15A3EA01B7300F000DBE065 /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBDVoiceRecognitionClient.a; path = "../../Downloads/Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient.a"; sourceTree = "<group>"; };
 		A15AAB4C1B79C9A300C2DAFC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -962,8 +959,6 @@
 				A107CF921B6B1BCE002DFC58 /* Images.xcassets */,
 				F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */,
 				F00A177C1B5FBBCE00763096 /* Main.storyboard */,
-				A155EF211B79A9D8008B1519 /* testViewController.h */,
-				A155EF221B79A9D8008B1519 /* testViewController.m */,
 				A189FB341B5F7E580002AAA5 /* library */,
 				A14C4E1E1B61D1840045D442 /* 路演 */,
 				A14C4E1D1B61D17F0045D442 /* 活动 */,
@@ -1227,7 +1222,6 @@
 				A18C3ABE1B5E453800BC5BF1 /* recommendView.m in Sources */,
 				A1C4D34D1B60BA0D00FE4A35 /* dengluViewController.m in Sources */,
 				A1D77EDA1B67161F008847FE /* myProgramTableViewController.m in Sources */,
-				A155EF231B79A9D8008B1519 /* testViewController.m in Sources */,
 				A161A3E21B6F4EA6005FDD79 /* yuyinViewController.m in Sources */,
 				A18C3A9B1B5E2CFD00BC5BF1 /* INSSearchBar.m in Sources */,
 				A107CFC21B6B31F8002DFC58 /* TTTAttributedLabel.m in Sources */,
