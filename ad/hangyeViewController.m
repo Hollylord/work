@@ -89,11 +89,11 @@
             detail.text = article;
             
             //获得自动换行后的UILabel的size
-            NSDictionary *attribute = [NSDictionary dictionaryWithObject:detail.font forKey:NSFontAttributeName];
+//            NSDictionary *attribute = [NSDictionary dictionaryWithObject:detail.font forKey:NSFontAttributeName];
             
             //获得UILabel的size的方法：参数1：讲文字限制在多大的rect中
             //然后，它通过自动换行后计算出这个rect的实际大小。
-            CGSize textSize = [detail.text boundingRectWithSize:CGSizeMake(350, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
+//            CGSize textSize = [detail.text boundingRectWithSize:CGSizeMake(350, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil].size;
 //            NSLog(@"%@",NSStringFromCGSize(textSize));
             
            

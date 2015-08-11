@@ -26,6 +26,7 @@
 - (IBAction)talk:(UIButton *)sender;
 - (IBAction)send:(UIButton *)sender;
 
+
 @property (strong,nonatomic) NSMutableArray *heights;
 @property (strong,nonatomic) NSMutableArray *inputStrings;
 @property (assign,nonatomic) int messages;
@@ -212,6 +213,8 @@
     [self.typeField endEditing:YES];
     self.typeField.text = nil;
 }
+
+
 
 #pragma mark - textField
 - (void)textFieldDidEndEditing:(UITextField *)textField{
