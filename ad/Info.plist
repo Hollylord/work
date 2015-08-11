@@ -42,10 +42,11 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.touwho.ZBT</string>
+			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>ZBT</string>
+				<string>QQ41D8E7BF</string>
+				<string>tencent1104734143</string>
 			</array>
 		</dict>
 	</array>

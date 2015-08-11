@@ -53,7 +53,7 @@ NSString *version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBund
     
     return YES;
 }
-//微信分享
+//微信分享 QQ分享
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
     return  [UMSocialSnsService handleOpenURL:url];
@@ -65,6 +65,9 @@ NSString *version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBund
 {
     return  [UMSocialSnsService handleOpenURL:url];
 }
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
