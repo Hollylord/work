@@ -38,4 +38,8 @@
     }
     [super setSelected:selected animated:animated];
 }
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    self.selected = NO;
+}
 @end

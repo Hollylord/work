@@ -48,10 +48,7 @@
     
     
 }
-- (void)viewWillDisappear:(BOOL)animated{
-    [self dismissViewControllerAnimated:YES completion:^{
-    }];
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -74,6 +71,7 @@
 #pragma mark - annotationView
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation{
     if ([annotation isKindOfClass:[MAPointAnnotation class]]) {
+
         static NSString *reusedID = @"annotation";
         customAnnotationView *annotationView = (customAnnotationView *)[_map dequeueReusableAnnotationViewWithIdentifier:reusedID];
         if (annotationView == nil) {
@@ -88,13 +86,16 @@
     return nil;
     
 }
-- (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view{
-//    if (view.selected == YES) {
-//        [view setSelected:NO animated:YES];
-//    }
-//    else {
-//        [view setSelected:YES animated:YES];
-//    }
+
+- (void)mapView:(MAMapView *)mapView didAddAnnotationViews:(NSArray *)views{
+    customAnnotationView *annotationView = views[0];
+    annotationView.selected = YES;
 }
+
+
+//如果已经有popUpview进不来这个方法
+//- (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view{
+//    
+//}
 
 @end
