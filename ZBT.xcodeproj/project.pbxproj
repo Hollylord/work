@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12EA2E4942253233CE3B14D7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EAA7DE7524D176D822A4D /* libPods.a */; };
 		A107CF931B6B1BCE002DFC58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A107CF921B6B1BCE002DFC58 /* Images.xcassets */; };
 		A107CF951B6B3091002DFC58 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF941B6B3091002DFC58 /* CFNetwork.framework */; };
 		A107CF971B6B30AB002DFC58 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF961B6B30AB002DFC58 /* OpenGLES.framework */; };
@@ -73,6 +72,7 @@
 		A15AAB531B79CB1500C2DAFC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A15AAB521B79CB1500C2DAFC /* libz.dylib */; };
 		A15AAB551B79CB4C00C2DAFC /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A15AAB541B79CB4C00C2DAFC /* libstdc++.6.0.9.dylib */; };
 		A161A3E21B6F4EA6005FDD79 /* yuyinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A161A3E11B6F4EA6005FDD79 /* yuyinViewController.m */; };
+		A167E90E1B7B225500DC799D /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23BC7E1B7B17F700F97808 /* libBDVoiceRecognitionClient.a */; };
 		A173320C1B745299001284C6 /* BDVRSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A173320B1B745299001284C6 /* BDVRSConfig.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A17603651B686901002583BC /* zhongchouzhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17603641B686901002583BC /* zhongchouzhongViewController.m */; };
 		A176036B1B68CAE1002583BC /* sponsorsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = A176036A1B68CAE1002583BC /* sponsorsList.xib */; };
@@ -120,7 +120,6 @@
 		A1D77EE01B672FB3008847FE /* publishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77EDF1B672FB3008847FE /* publishViewController.m */; };
 		A1D77EE31B6757ED008847FE /* lingtourenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77EE21B6757ED008847FE /* lingtourenViewController.m */; };
 		A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */; };
-		CE23BC7F1B7B17F700F97808 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23BC7E1B7B17F700F97808 /* libBDVoiceRecognitionClient.a */; };
 		F00A177D1B5FBBCE00763096 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */; };
 		F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A177C1B5FBBCE00763096 /* Main.storyboard */; };
 		F0860E1E1B6E278D003DBF17 /* niuRenGuandianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0860E1D1B6E278D003DBF17 /* niuRenGuandianViewController.m */; };
@@ -355,7 +354,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE23BC7F1B7B17F700F97808 /* libBDVoiceRecognitionClient.a in Frameworks */,
+				A167E90E1B7B225500DC799D /* libBDVoiceRecognitionClient.a in Frameworks */,
 				A15AAB551B79CB4C00C2DAFC /* libstdc++.6.0.9.dylib in Frameworks */,
 				A15AAB531B79CB1500C2DAFC /* libz.dylib in Frameworks */,
 				A15AAB511B79C9E700C2DAFC /* libstdc++.dylib in Frameworks */,
@@ -384,7 +383,6 @@
 				A1C4D35E1B60EED000FE4A35 /* libWeChatSDK.a in Frameworks */,
 				A1C4D35B1B60EED000FE4A35 /* TencentOpenAPI.framework in Frameworks */,
 				A189FB971B5F8D410002AAA5 /* SystemConfiguration.framework in Frameworks */,
-				12EA2E4942253233CE3B14D7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1370,7 +1368,7 @@
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3",
-					"/Users/user/Desktop/Baidu-Voice-SDK-iOS-1.6.1",
+					"/Users/inc/Desktop/Baidu-Voice-SDK-iOS-1.6.1",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1403,7 +1401,7 @@
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3",
-					"/Users/user/Desktop/Baidu-Voice-SDK-iOS-1.6.1",
+					"/Users/inc/Desktop/Baidu-Voice-SDK-iOS-1.6.1",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
