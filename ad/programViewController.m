@@ -13,7 +13,7 @@
 #import "segmentView.h"
 #import "tabViewController.h"
 #import "zhongchouzhongViewController.h"
-
+#import "TalkingData.h"
 
 @interface programViewController () <INSSearchBarDelegate,recommendViewDelegate,UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet segmentView *segmentView;
@@ -110,6 +110,10 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     tabViewController *myTabBarController = (tabViewController *)self.tabBarController;
     [myTabBarController.customTabBar setHidden:NO];
+    [TalkingData trackPageBegin:@"首页"];
+}
+- (void)viewDidDisappear:(BOOL)animated{
+    [TalkingData trackPageEnd:@"首页"];
 }
 
 - (void)didReceiveMemoryWarning {

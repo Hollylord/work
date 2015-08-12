@@ -73,6 +73,7 @@
 		A15AAB551B79CB4C00C2DAFC /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A15AAB541B79CB4C00C2DAFC /* libstdc++.6.0.9.dylib */; };
 		A161A3E21B6F4EA6005FDD79 /* yuyinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A161A3E11B6F4EA6005FDD79 /* yuyinViewController.m */; };
 		A167E90E1B7B225500DC799D /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23BC7E1B7B17F700F97808 /* libBDVoiceRecognitionClient.a */; };
+		A167E9171B7B405A00DC799D /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A167E9151B7B405A00DC799D /* libTalkingData.a */; };
 		A173320C1B745299001284C6 /* BDVRSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A173320B1B745299001284C6 /* BDVRSConfig.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A17603651B686901002583BC /* zhongchouzhongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17603641B686901002583BC /* zhongchouzhongViewController.m */; };
 		A176036B1B68CAE1002583BC /* sponsorsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = A176036A1B68CAE1002583BC /* sponsorsList.xib */; };
@@ -249,6 +250,8 @@
 		A15AAB541B79CB4C00C2DAFC /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		A161A3E01B6F4EA6005FDD79 /* yuyinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuyinViewController.h; sourceTree = "<group>"; };
 		A161A3E11B6F4EA6005FDD79 /* yuyinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuyinViewController.m; sourceTree = "<group>"; };
+		A167E9151B7B405A00DC799D /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTalkingData.a; sourceTree = "<group>"; };
+		A167E9161B7B405A00DC799D /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingData.h; sourceTree = "<group>"; };
 		A173320A1B745299001284C6 /* BDVRSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRSConfig.h; sourceTree = "<group>"; };
 		A173320B1B745299001284C6 /* BDVRSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRSConfig.m; sourceTree = "<group>"; };
 		A17603631B686901002583BC /* zhongchouzhongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhongchouzhongViewController.h; sourceTree = "<group>"; };
@@ -376,6 +379,7 @@
 				A14C4E391B61D72D0045D442 /* AMapSearchKit.framework in Frameworks */,
 				A14C4E2A1B61D46D0045D442 /* CoreLocation.framework in Frameworks */,
 				A14C4E281B61D4600045D442 /* QuartzCore.framework in Frameworks */,
+				A167E9171B7B405A00DC799D /* libTalkingData.a in Frameworks */,
 				A14C4E261B61D4490045D442 /* UIKit.framework in Frameworks */,
 				A14C4E0E1B61CC480045D442 /* CoreTelephony.framework in Frameworks */,
 				A14C4E0A1B61CC350045D442 /* CoreGraphics.framework in Frameworks */,
@@ -707,6 +711,15 @@
 			name = controller;
 			sourceTree = "<group>";
 		};
+		A167E9141B7B404800DC799D /* talkingdata */ = {
+			isa = PBXGroup;
+			children = (
+				A167E9151B7B405A00DC799D /* libTalkingData.a */,
+				A167E9161B7B405A00DC799D /* TalkingData.h */,
+			);
+			name = talkingdata;
+			sourceTree = "<group>";
+		};
 		A1770A501B5C887100C272E9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -787,6 +800,7 @@
 		A189FB341B5F7E580002AAA5 /* library */ = {
 			isa = PBXGroup;
 			children = (
+				A167E9141B7B404800DC799D /* talkingdata */,
 				A107CFA31B6B3156002DFC58 /* 百度语音 */,
 				A14C4E4A1B6221F30045D442 /* AFNetworking */,
 				A1C4D34E1B60EED000FE4A35 /* UMSocial_Sdk_Extra_Frameworks */,
@@ -1369,6 +1383,7 @@
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3",
 					"/Users/inc/Desktop/Baidu-Voice-SDK-iOS-1.6.1",
+					"$(PROJECT_DIR)/ad",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1402,6 +1417,7 @@
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3",
 					"/Users/inc/Desktop/Baidu-Voice-SDK-iOS-1.6.1",
+					"$(PROJECT_DIR)/ad",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
