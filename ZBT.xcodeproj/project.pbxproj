@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12EA2E4942253233CE3B14D7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EAA7DE7524D176D822A4D /* libPods.a */; };
 		A107CF931B6B1BCE002DFC58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A107CF921B6B1BCE002DFC58 /* Images.xcassets */; };
 		A107CF951B6B3091002DFC58 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF941B6B3091002DFC58 /* CFNetwork.framework */; };
 		A107CF971B6B30AB002DFC58 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF961B6B30AB002DFC58 /* OpenGLES.framework */; };
@@ -63,7 +64,6 @@
 		A15461761B5F2E51004CA48D /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461731B5F2E51004CA48D /* ASPopUpView.m */; };
 		A15461771B5F2E51004CA48D /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15461751B5F2E51004CA48D /* ASProgressPopUpView.m */; };
 		A15A3E9A1B72F6AA00DBE065 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15A3E991B72F6AA00DBE065 /* MAMapKit.framework */; };
-		A15A3EA11B7300F000DBE065 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15A3EA01B7300F000DBE065 /* libBDVoiceRecognitionClient.a */; };
 		A15A3EA21B73018D00DBE065 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4D3501B60EED000FE4A35 /* libSocialQQ.a */; };
 		A15A3EA31B7301C500DBE065 /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4D3551B60EED000FE4A35 /* libSocialWechat.a */; };
 		A15A3EA41B7301E500DBE065 /* libUMSocial_Sdk_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A189FBA71B5F8ECE0002AAA5 /* libUMSocial_Sdk_4.2.3.a */; };
@@ -120,6 +120,7 @@
 		A1D77EE01B672FB3008847FE /* publishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77EDF1B672FB3008847FE /* publishViewController.m */; };
 		A1D77EE31B6757ED008847FE /* lingtourenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77EE21B6757ED008847FE /* lingtourenViewController.m */; };
 		A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */; };
+		CE23BC7F1B7B17F700F97808 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23BC7E1B7B17F700F97808 /* libBDVoiceRecognitionClient.a */; };
 		F00A177D1B5FBBCE00763096 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */; };
 		F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A177C1B5FBBCE00763096 /* Main.storyboard */; };
 		F0860E1E1B6E278D003DBF17 /* niuRenGuandianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0860E1D1B6E278D003DBF17 /* niuRenGuandianViewController.m */; };
@@ -341,6 +342,7 @@
 		A1D77EE21B6757ED008847FE /* lingtourenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lingtourenViewController.m; sourceTree = "<group>"; };
 		A1DB59221B65E34900FAD6C4 /* personInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personInformationViewController.h; sourceTree = "<group>"; };
 		A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personInformationViewController.m; sourceTree = "<group>"; };
+		CE23BC7E1B7B17F700F97808 /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBDVoiceRecognitionClient.a; path = "../Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient.a"; sourceTree = "<group>"; };
 		DE12D6506F96786A2FADEB22 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F00A177C1B5FBBCE00763096 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE23BC7F1B7B17F700F97808 /* libBDVoiceRecognitionClient.a in Frameworks */,
 				A15AAB551B79CB4C00C2DAFC /* libstdc++.6.0.9.dylib in Frameworks */,
 				A15AAB531B79CB1500C2DAFC /* libz.dylib in Frameworks */,
 				A15AAB511B79C9E700C2DAFC /* libstdc++.dylib in Frameworks */,
@@ -361,7 +364,6 @@
 				A15A3EA41B7301E500DBE065 /* libUMSocial_Sdk_4.2.3.a in Frameworks */,
 				A15A3EA31B7301C500DBE065 /* libSocialWechat.a in Frameworks */,
 				A15A3EA21B73018D00DBE065 /* libSocialQQ.a in Frameworks */,
-				A15A3EA11B7300F000DBE065 /* libBDVoiceRecognitionClient.a in Frameworks */,
 				A15A3E9A1B72F6AA00DBE065 /* MAMapKit.framework in Frameworks */,
 				A196CAD51B71A2E100ABA78B /* Foundation.framework in Frameworks */,
 				A107CFCE1B6B4A1D002DFC58 /* libz.1.2.5.dylib in Frameworks */,
@@ -382,6 +384,7 @@
 				A1C4D35E1B60EED000FE4A35 /* libWeChatSDK.a in Frameworks */,
 				A1C4D35B1B60EED000FE4A35 /* TencentOpenAPI.framework in Frameworks */,
 				A189FB971B5F8D410002AAA5 /* SystemConfiguration.framework in Frameworks */,
+				12EA2E4942253233CE3B14D7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +410,7 @@
 		9F698B40384B11C53D41C3E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE23BC7E1B7B17F700F97808 /* libBDVoiceRecognitionClient.a */,
 				A15AAB541B79CB4C00C2DAFC /* libstdc++.6.0.9.dylib */,
 				A15AAB521B79CB1500C2DAFC /* libz.dylib */,
 				A15AAB501B79C9E700C2DAFC /* libstdc++.dylib */,
@@ -1355,20 +1359,18 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
-					/Users/inc/Downloads,
 					"$(PROJECT_DIR)/AMap.bundle",
 					"$(PROJECT_DIR)",
-					/Users/inc/Downloads/AMap_iOS_API_2DMap_Lib_V2.6.0,
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"/Users/inc/Downloads/Baidu-Voice-SDK-iOS-1.6.1",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3",
+					"/Users/user/Desktop/Baidu-Voice-SDK-iOS-1.6.1",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1390,20 +1392,18 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
-					/Users/inc/Downloads,
 					"$(PROJECT_DIR)/AMap.bundle",
 					"$(PROJECT_DIR)",
-					/Users/inc/Downloads/AMap_iOS_API_2DMap_Lib_V2.6.0,
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"/Users/inc/Downloads/Baidu-Voice-SDK-iOS-1.6.1",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3",
+					"/Users/user/Desktop/Baidu-Voice-SDK-iOS-1.6.1",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
