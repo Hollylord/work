@@ -12,7 +12,7 @@
 #import "tabViewController.h"
 #import "UMSocialQQHandler.h"
 #import "UMSocialWechatHandler.h"
-
+#import "TalkingData.h"
 #import <CoreLocation/CoreLocation.h>
 
 @interface AppDelegate ()
@@ -33,7 +33,8 @@
     //设置qq的AppId、appSecret，分享url
     [UMSocialQQHandler setQQWithAppId:@"1104734143" appKey:@"otFu8s5Dv6u8sFBm" url:@"http://www.umeng.com/social"];
     
-    
+    //设置talkingdata
+    [TalkingData sessionStarted:@"B0F98DC3C80B5B50019F545B871BB778" withChannelId:@"default"];
     
 NSString *version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"];
     
