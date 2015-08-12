@@ -156,10 +156,12 @@
 - (void)tapProgram {
     if (self.onGoingBtn.selected) {
         [self performSegueWithIdentifier:@"program2zhongchouzhong" sender:nil];
+        [TalkingData trackEvent:@"点击项目" label:@"众筹中"];
     }
     else
     {
         [self performSegueWithIdentifier:@"program2yurezhong" sender:nil];
+        [TalkingData trackEvent:@"点击项目" label:@"预热中"];
     }
     
    
