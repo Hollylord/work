@@ -34,7 +34,7 @@
     [UMSocialQQHandler setQQWithAppId:@"1104734143" appKey:@"otFu8s5Dv6u8sFBm" url:@"http://www.umeng.com/social"];
     
     //设置talkingdata
-    [TalkingData sessionStarted:@"B0F98DC3C80B5B50019F545B871BB778" withChannelId:@"default"];
+    [TalkingData sessionStarted:@"E4A64C23A0CCFFDC6C752E0C65269078" withChannelId:@"default"];
     
 NSString *version = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"];
     
