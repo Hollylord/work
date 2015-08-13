@@ -14,6 +14,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        
+        
         self.backgroundColor = [UIColor clearColor];
         UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"biaoqian"]];
         [self addSubview:background];

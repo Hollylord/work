@@ -8,9 +8,12 @@
 
 #import "speechViewController.h"
 #import "tabViewController.h"
+#import  <MediaPlayer/MediaPlayer.h>
 
 @interface speechViewController () <UIWebViewDelegate>
-@property (weak, nonatomic) IBOutlet UIWebView *browser;
+{
+    MPMoviePlayerController *_play;
+}
 
 
 @end
@@ -20,12 +23,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.browser.delegate = self;
+    _play = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:@"http://pl.youku.com/playlist/m3u8?vid=321514956&type=flv&ts=1439366893&keyframe=0&ep=dCaXE0qLUMYJ5ifaiz8bMyW0ISQOXP0I9xqEhdtnBtQlTuC2&sid=643936689345312d9fec1&token=1689&ctype=12&ev=1&oip=3071127905"]];
+    _play.view.frame = CGRectMake(0, 0, 375, 400);
+    _play.scalingMode = MPMovieScalingModeAspectFit;
+//    [_play setFullscreen:YES animated:YES];
     
-    NSURL *url = [NSURL URLWithString:@"http://v.youku.com/v_show/id_XMTI4NjA1OTgyNA==.html"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self.view addSubview:_play.view];
+    [_play play];
     
-    [self.browser loadRequest:request];
+    
 }
 - (void)viewWillAppear:(BOOL)animated{
     tabViewController *tabbarController = (tabViewController *)self.tabBarController;

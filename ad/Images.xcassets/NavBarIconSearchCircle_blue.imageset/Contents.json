@@ -2,13 +2,13 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "NavBarIconSearchCircle_blue.png"
+      "filename" : "NavBarIconSearchCircle_blue.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "NavBarIconSearchCircle_blue@2x.png"
+      "filename" : "NavBarIconSearchCircle_blue@2x.png",
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",

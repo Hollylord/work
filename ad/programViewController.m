@@ -13,10 +13,14 @@
 #import "segmentView.h"
 #import "tabViewController.h"
 #import "zhongchouzhongViewController.h"
+<<<<<<< HEAD
 
 #import "segmentView6p.h"
 
 
+=======
+#import "TalkingData.h"
+>>>>>>> origin/master
 
 @interface programViewController () <INSSearchBarDelegate,recommendViewDelegate,UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet segmentView *segmentView;
@@ -153,6 +157,10 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     tabViewController *myTabBarController = (tabViewController *)self.tabBarController;
     [myTabBarController.customTabBar setHidden:NO];
+    [TalkingData trackPageBegin:@"首页"];
+}
+- (void)viewDidDisappear:(BOOL)animated{
+    [TalkingData trackPageEnd:@"首页"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -195,10 +203,12 @@
 - (void)tapProgram {
     if (self.onGoingBtn.selected) {
         [self performSegueWithIdentifier:@"program2zhongchouzhong" sender:nil];
+        [TalkingData trackEvent:@"点击项目" label:@"众筹中"];
     }
     else
     {
         [self performSegueWithIdentifier:@"program2yurezhong" sender:nil];
+        [TalkingData trackEvent:@"点击项目" label:@"预热中"];
     }
     
    

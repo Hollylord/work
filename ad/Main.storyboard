@@ -3406,7 +3406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaV-zS-4KV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2638" y="1896"/>
+            <point key="canvasLocation" x="2661" y="1902"/>
         </scene>
         <!--我投资的项目-->
         <scene sceneID="BWv-kg-gDw">
@@ -4792,11 +4792,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PqA-fu-VMu">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+=======
+>>>>>>> origin/master
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opE-H5-enV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <animations/>
@@ -4812,56 +4815,34 @@
                         <animations/>
                         <color key="backgroundColor" red="0.1803921568627451" green="0.49803921568627452" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="PqA-fu-VMu" firstAttribute="leading" secondItem="TCE-ON-Yqn" secondAttribute="leading" id="EPy-hs-VZD"/>
-                            <constraint firstAttribute="trailing" secondItem="PqA-fu-VMu" secondAttribute="trailing" id="KCq-ry-geq"/>
                             <constraint firstItem="opE-H5-enV" firstAttribute="leading" secondItem="TCE-ON-Yqn" secondAttribute="leading" id="Ktg-xa-nUc"/>
-                            <constraint firstItem="PqA-fu-VMu" firstAttribute="top" secondItem="opE-H5-enV" secondAttribute="bottom" constant="24" id="LRF-tj-z5P">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="opE-H5-enV" secondAttribute="trailing" id="gVC-pJ-ebb"/>
                             <constraint firstItem="opE-H5-enV" firstAttribute="top" secondItem="TCE-ON-Yqn" secondAttribute="top" id="sjW-yH-eUl">
                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                             </constraint>
-                            <constraint firstItem="4KB-sD-82s" firstAttribute="top" secondItem="PqA-fu-VMu" secondAttribute="bottom" id="uRw-sz-TjG"/>
-                            <constraint firstItem="PqA-fu-VMu" firstAttribute="top" secondItem="TCE-ON-Yqn" secondAttribute="top" id="zzB-y3-GPW"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="PqA-fu-VMu"/>
                                 <exclude reference="opE-H5-enV"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="uRw-sz-TjG"/>
                                 <exclude reference="Ktg-xa-nUc"/>
                                 <exclude reference="gVC-pJ-ebb"/>
                                 <exclude reference="sjW-yH-eUl"/>
-                                <exclude reference="EPy-hs-VZD"/>
-                                <exclude reference="KCq-ry-geq"/>
-                                <exclude reference="LRF-tj-z5P"/>
-                                <exclude reference="zzB-y3-GPW"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="PqA-fu-VMu"/>
                                 <include reference="opE-H5-enV"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="uRw-sz-TjG"/>
                                 <include reference="Ktg-xa-nUc"/>
                                 <include reference="gVC-pJ-ebb"/>
                                 <include reference="sjW-yH-eUl"/>
-                                <include reference="EPy-hs-VZD"/>
-                                <include reference="KCq-ry-geq"/>
-                                <include reference="LRF-tj-z5P"/>
-                                <exclude reference="zzB-y3-GPW"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="UsM-I1-JNi"/>
-                    <connections>
-                        <outlet property="browser" destination="PqA-fu-VMu" id="tt1-ZZ-daq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5u-X5-OpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5900,7 +5881,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wld-yA-dCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324" y="970"/>
+            <point key="canvasLocation" x="327" y="956.25"/>
         </scene>
         <!--社群-->
         <scene sceneID="1La-WJ-k0p">
@@ -6204,7 +6185,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8E-de-rZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256" y="915"/>
+            <point key="canvasLocation" x="1237.5" y="964.5"/>
         </scene>
         <!--牛人观点-->
         <scene sceneID="CaN-89-zla">
