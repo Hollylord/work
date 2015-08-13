@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12EA2E4942253233CE3B14D7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049EAA7DE7524D176D822A4D /* libPods.a */; };
 		A107CF931B6B1BCE002DFC58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A107CF921B6B1BCE002DFC58 /* Images.xcassets */; };
 		A107CF951B6B3091002DFC58 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF941B6B3091002DFC58 /* CFNetwork.framework */; };
 		A107CF971B6B30AB002DFC58 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A107CF961B6B30AB002DFC58 /* OpenGLES.framework */; };
@@ -121,6 +120,12 @@
 		A1D77EE31B6757ED008847FE /* lingtourenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D77EE21B6757ED008847FE /* lingtourenViewController.m */; };
 		A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */; };
 		CE23BC7F1B7B17F700F97808 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23BC7E1B7B17F700F97808 /* libBDVoiceRecognitionClient.a */; };
+		CE68A56F1B7C856F00126DA9 /* recommend6p.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68A56E1B7C856F00126DA9 /* recommend6p.xib */; };
+		CE68A5711B7C87F100126DA9 /* login6p.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68A5701B7C87F100126DA9 /* login6p.xib */; };
+		CE68A5731B7C880600126DA9 /* dengluFooter6p.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68A5721B7C880600126DA9 /* dengluFooter6p.xib */; };
+		CE68A5751B7C958800126DA9 /* RainBow6p.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68A5741B7C958800126DA9 /* RainBow6p.xib */; };
+		CE81C3861B7C6D2A00454AC8 /* segmentView6p.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81C3841B7C6D2A00454AC8 /* segmentView6p.m */; };
+		CE81C3871B7C6D2A00454AC8 /* segmentView6p.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE81C3851B7C6D2A00454AC8 /* segmentView6p.xib */; };
 		F00A177D1B5FBBCE00763096 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */; };
 		F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A177C1B5FBBCE00763096 /* Main.storyboard */; };
 		F0860E1E1B6E278D003DBF17 /* niuRenGuandianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0860E1D1B6E278D003DBF17 /* niuRenGuandianViewController.m */; };
@@ -343,6 +348,13 @@
 		A1DB59221B65E34900FAD6C4 /* personInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personInformationViewController.h; sourceTree = "<group>"; };
 		A1DB59231B65E34900FAD6C4 /* personInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personInformationViewController.m; sourceTree = "<group>"; };
 		CE23BC7E1B7B17F700F97808 /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBDVoiceRecognitionClient.a; path = "../Baidu-Voice-SDK-iOS-1.6.1/libBDVoiceRecognitionClient.a"; sourceTree = "<group>"; };
+		CE68A56E1B7C856F00126DA9 /* recommend6p.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = recommend6p.xib; sourceTree = "<group>"; };
+		CE68A5701B7C87F100126DA9 /* login6p.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = login6p.xib; sourceTree = "<group>"; };
+		CE68A5721B7C880600126DA9 /* dengluFooter6p.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dengluFooter6p.xib; sourceTree = "<group>"; };
+		CE68A5741B7C958800126DA9 /* RainBow6p.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RainBow6p.xib; sourceTree = "<group>"; };
+		CE81C3831B7C6D2A00454AC8 /* segmentView6p.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = segmentView6p.h; sourceTree = "<group>"; };
+		CE81C3841B7C6D2A00454AC8 /* segmentView6p.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = segmentView6p.m; sourceTree = "<group>"; };
+		CE81C3851B7C6D2A00454AC8 /* segmentView6p.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = segmentView6p.xib; sourceTree = "<group>"; };
 		DE12D6506F96786A2FADEB22 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F00A177C1B5FBBCE00763096 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -384,7 +396,6 @@
 				A1C4D35E1B60EED000FE4A35 /* libWeChatSDK.a in Frameworks */,
 				A1C4D35B1B60EED000FE4A35 /* TencentOpenAPI.framework in Frameworks */,
 				A189FB971B5F8D410002AAA5 /* SystemConfiguration.framework in Frameworks */,
-				12EA2E4942253233CE3B14D7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,6 +749,7 @@
 				A1770A581B5CE0F400C272E9 /* RainBow.h */,
 				A1770A591B5CE0F400C272E9 /* RainBow.m */,
 				A1770A5B1B5CE10200C272E9 /* RainBow.xib */,
+				CE68A5741B7C958800126DA9 /* RainBow6p.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -781,6 +793,8 @@
 			isa = PBXGroup;
 			children = (
 				A1C4D3461B607F5E00FE4A35 /* login.xib */,
+				CE68A5701B7C87F100126DA9 /* login6p.xib */,
+				CE68A5721B7C880600126DA9 /* dengluFooter6p.xib */,
 				A196CAD61B71C08E00ABA78B /* dengluFooter.xib */,
 			);
 			name = views;
@@ -871,12 +885,16 @@
 				A18C3A9A1B5E2CFD00BC5BF1 /* INSSearchBar.m */,
 				A18C3A961B5E29AF00BC5BF1 /* pictureView.h */,
 				A18C3A971B5E29AF00BC5BF1 /* pictureView.m */,
+				CE81C3831B7C6D2A00454AC8 /* segmentView6p.h */,
+				CE81C3841B7C6D2A00454AC8 /* segmentView6p.m */,
+				CE81C3851B7C6D2A00454AC8 /* segmentView6p.xib */,
 				A18C3AB71B5E398500BC5BF1 /* segmentView.h */,
 				A18C3AB81B5E398500BC5BF1 /* segmentView.m */,
 				A18C3ABA1B5E399F00BC5BF1 /* segmentView.xib */,
 				A18C3ABC1B5E453800BC5BF1 /* recommendView.h */,
 				A18C3ABD1B5E453800BC5BF1 /* recommendView.m */,
 				A18C3ABF1B5E454900BC5BF1 /* recommend.xib */,
+				CE68A56E1B7C856F00126DA9 /* recommend6p.xib */,
 				A15461721B5F2E51004CA48D /* ASPopUpView.h */,
 				A15461731B5F2E51004CA48D /* ASPopUpView.m */,
 				A15461741B5F2E51004CA48D /* ASProgressPopUpView.h */,
@@ -964,10 +982,7 @@
 				F00A177B1B5FBBCE00763096 /* LaunchScreen.xib */,
 				F00A177C1B5FBBCE00763096 /* Main.storyboard */,
 				A189FB341B5F7E580002AAA5 /* library */,
-				A14C4E1E1B61D1840045D442 /* 路演 */,
-				A14C4E1D1B61D17F0045D442 /* 活动 */,
-				A14C4E1C1B61D1770045D442 /* 语音留言 */,
-				A14C4E1B1B61D15C0045D442 /* 附近的人 */,
+				CE23BC811B7B488900F97808 /* 发现目录 */,
 				A1770A501B5C887100C272E9 /* Main */,
 				A18C3A841B5DF93500BC5BF1 /* 首页 */,
 				A14C4E141B61CFF60045D442 /* 新闻 */,
@@ -1006,6 +1021,17 @@
 				A1CB48C61B578DBC00BB2489 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE23BC811B7B488900F97808 /* 发现目录 */ = {
+			isa = PBXGroup;
+			children = (
+				A14C4E1E1B61D1840045D442 /* 路演 */,
+				A14C4E1D1B61D17F0045D442 /* 活动 */,
+				A14C4E1C1B61D1770045D442 /* 语音留言 */,
+				A14C4E1B1B61D15C0045D442 /* 附近的人 */,
+			);
+			name = "发现目录";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1059,7 +1085,7 @@
 				TargetAttributes = {
 					A1CB48A71B578DBC00BB2489 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = GRGPBN7QSU;
+						DevelopmentTeam = 9996F9XW3E;
 					};
 					A1CB48C01B578DBC00BB2489 = {
 						CreatedOnToolsVersion = 6.4;
@@ -1095,11 +1121,15 @@
 			files = (
 				A18C3ABB1B5E399F00BC5BF1 /* segmentView.xib in Resources */,
 				A107CF931B6B1BCE002DFC58 /* Images.xcassets in Resources */,
+				CE81C3871B7C6D2A00454AC8 /* segmentView6p.xib in Resources */,
+				CE68A5711B7C87F100126DA9 /* login6p.xib in Resources */,
+				CE68A56F1B7C856F00126DA9 /* recommend6p.xib in Resources */,
 				A189FBB61B5F8ECE0002AAA5 /* UMSCommentInputController.xib in Resources */,
 				A14C4E7C1B6221F30045D442 /* LICENSE in Resources */,
 				A189FBBC1B5F8ECE0002AAA5 /* UMSShareListController.xib in Resources */,
 				A189FBB91B5F8ECE0002AAA5 /* UMShareEditViewControlleriPad.xib in Resources */,
 				A189FBB51B5F8ECE0002AAA5 /* UMSCommentDetailController.xib in Resources */,
+				CE68A5731B7C880600126DA9 /* dengluFooter6p.xib in Resources */,
 				F00A177E1B5FBBCE00763096 /* Main.storyboard in Resources */,
 				A189FBB81B5F8ECE0002AAA5 /* UMShareEditViewController.xib in Resources */,
 				A189FBB31B5F8ECE0002AAA5 /* UMSocialLocalizable.strings in Resources */,
@@ -1111,6 +1141,7 @@
 				A189FBBD1B5F8ECE0002AAA5 /* UMSocialSDKResourcesNew.bundle in Resources */,
 				A107CFC41B6B322E002DFC58 /* BDVoiceRecognitionClientResources in Resources */,
 				A18C3AC01B5E454900BC5BF1 /* recommend.xib in Resources */,
+				CE68A5751B7C958800126DA9 /* RainBow6p.xib in Resources */,
 				A189FBBA1B5F8ECE0002AAA5 /* UMSLoginViewController.xib in Resources */,
 				A1C4D3471B607F5E00FE4A35 /* login.xib in Resources */,
 				A196CAD71B71C08E00ABA78B /* dengluFooter.xib in Resources */,
@@ -1204,6 +1235,7 @@
 				A1D77EDD1B672C3C008847FE /* careProgramTableViewController.m in Sources */,
 				F0860E1E1B6E278D003DBF17 /* niuRenGuandianViewController.m in Sources */,
 				A107CFBF1B6B31F8002DFC58 /* CAStreamBasicDescription.cpp in Sources */,
+				CE81C3861B7C6D2A00454AC8 /* segmentView6p.m in Sources */,
 				A14BFCAB1B709F42000CDE06 /* popUpView.m in Sources */,
 				A14C4E851B6221F30045D442 /* UIWebView+AFNetworking.m in Sources */,
 				A1DB59241B65E34900FAD6C4 /* personInformationViewController.m in Sources */,
@@ -1300,7 +1332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1339,7 +1371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1351,6 +1383,39 @@
 		A1CB48CC1B578DBC00BB2489 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0109AF12ACFB05CCF50B74B8 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: JIAN PENG (GXRWRW28TT)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/AMap.bundle",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = ad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/Wechat",
+					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3",
+					"/Users/user/Desktop/Baidu-Voice-SDK-iOS-1.6.1",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.touwho.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = ZBT;
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s  arm64";
+			};
+			name = Debug;
+		};
+		A1CB48CD1B578DBC00BB2489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE12D6506F96786A2FADEB22 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LIBRARY = "compiler-default";
@@ -1376,40 +1441,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.touwho.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ZBT;
-				PROVISIONING_PROFILE = "6a6bf218-848d-4240-91d7-e6ebbae404cb";
-				VALID_ARCHS = "armv7 armv7s  arm64";
-			};
-			name = Debug;
-		};
-		A1CB48CD1B578DBC00BB2489 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE12D6506F96786A2FADEB22 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LIBRARY = "compiler-default";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
-					"$(PROJECT_DIR)/AMap.bundle",
-					"$(PROJECT_DIR)",
-				);
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = ad/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
-					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3/UMSocial_Sdk_Extra_Frameworks/Wechat",
-					"$(PROJECT_DIR)/ad/UMSocial_Sdk_4.2.3",
-					"/Users/user/Desktop/Baidu-Voice-SDK-iOS-1.6.1",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.touwho.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = ZBT;
-				PROVISIONING_PROFILE = "6a6bf218-848d-4240-91d7-e6ebbae404cb";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s  arm64";
 			};
 			name = Release;

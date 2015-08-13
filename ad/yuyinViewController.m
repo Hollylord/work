@@ -45,6 +45,12 @@
     self.messages = 1;
     self.heights = [NSMutableArray arrayWithObject:@50];
     self.inputStrings = [NSMutableArray arrayWithObject:@""];
+    
+    
+    
+    
+    
+    
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.typeField resignFirstResponder];

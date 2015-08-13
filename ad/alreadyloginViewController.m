@@ -37,6 +37,11 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     if (section == 0) {
         UIView *footerView = [[[NSBundle mainBundle] loadNibNamed:@"dengluFooter" owner:nil options:nil] firstObject ];
+        
+    if ([[UIScreen mainScreen] bounds].size.width > 375) {
+        footerView = [[[NSBundle mainBundle] loadNibNamed:@"dengluFooter6p" owner:nil options:nil] firstObject ];
+            
+        }
         return footerView;
     }
     else{

@@ -139,9 +139,9 @@
                 </constraint>
                 <constraint firstItem="1RF-VO-7e1" firstAttribute="top" secondItem="2oy-P1-Xqh" secondAttribute="top" constant="10" id="b8C-gV-T9w"/>
                 <constraint firstItem="zbg-Jx-rVY" firstAttribute="leading" secondItem="2oy-P1-Xqh" secondAttribute="leading" constant="50" id="vQ2-Xn-fYL">
-                    <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="80"/>
                 </constraint>
-                <constraint firstItem="1RF-VO-7e1" firstAttribute="leading" secondItem="2oy-P1-Xqh" secondAttribute="leading" constant="32" id="yjR-0z-Yys"/>
+                <constraint firstItem="1RF-VO-7e1" firstAttribute="leading" secondItem="2oy-P1-Xqh" secondAttribute="leading" constant="52" id="yjR-0z-Yys"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

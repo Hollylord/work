@@ -24,6 +24,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     //网页大小自适应功能
     self.browser.scalesPageToFit = YES;
+    
     [self.browser loadRequest:request ];
 
     

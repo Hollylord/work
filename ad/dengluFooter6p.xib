@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A225f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elV-iK-E4a">
+                    <rect key="frame" x="145" y="9" width="30" height="30"/>
+                    <animations/>
+                    <state key="normal" title="私信">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3E9-Jb-G8I">
+                    <rect key="frame" x="236" y="8" width="30" height="30"/>
+                    <animations/>
+                    <state key="normal" title="收藏">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="cac-Jo-eRo">
+                    <rect key="frame" x="118" y="10" width="180" height="25"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Xps-vX-Xqu"/>
+                        <constraint firstAttribute="width" constant="180" id="gjA-NA-cRP"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3E9-Jb-G8I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="6mz-XA-k64"/>
+                <constraint firstItem="cac-Jo-eRo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="EB4-JJ-2QN"/>
+                <constraint firstItem="elV-iK-E4a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="145" id="QfS-OL-p1l"/>
+                <constraint firstItem="elV-iK-E4a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="70" id="Rct-nJ-PAH"/>
+                <constraint firstItem="elV-iK-E4a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="S0J-3u-SEZ"/>
+                <constraint firstAttribute="bottom" secondItem="cac-Jo-eRo" secondAttribute="bottom" id="ZjQ-mt-HnC"/>
+                <constraint firstItem="cac-Jo-eRo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="118" id="dln-Va-FXP"/>
+                <constraint firstAttribute="trailing" secondItem="3E9-Jb-G8I" secondAttribute="trailing" constant="148" id="hCq-vn-xVs"/>
+                <constraint firstItem="elV-iK-E4a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="mOr-WA-W3d"/>
+                <constraint firstAttribute="trailing" secondItem="3E9-Jb-G8I" secondAttribute="trailing" constant="70" id="vWB-Jp-cud"/>
+                <constraint firstAttribute="trailing" secondItem="cac-Jo-eRo" secondAttribute="trailing" id="xXm-JQ-gb0"/>
+                <constraint firstItem="3E9-Jb-G8I" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="yhH-Xv-L7U"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ZjQ-mt-HnC"/>
+                    <exclude reference="xXm-JQ-gb0"/>
+                    <exclude reference="Rct-nJ-PAH"/>
+                    <exclude reference="mOr-WA-W3d"/>
+                    <exclude reference="vWB-Jp-cud"/>
+                    <exclude reference="yhH-Xv-L7U"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="57.5" y="171.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="8" width="180" height="25"/>
+    </resources>
+</document>

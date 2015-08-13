@@ -131,17 +131,17 @@
             <animations/>
             <constraints>
                 <constraint firstItem="j5w-XR-UWg" firstAttribute="leading" secondItem="rEK-pF-ng0" secondAttribute="leading" id="5bJ-Cw-kaF"/>
-                <constraint firstItem="Cdt-6d-yHR" firstAttribute="leading" secondItem="rEK-pF-ng0" secondAttribute="leading" constant="31" id="98h-VJ-Oyr"/>
-                <constraint firstAttribute="trailing" secondItem="jbr-Iq-9NX" secondAttribute="trailing" constant="31" id="FH5-Ka-mw7"/>
+                <constraint firstItem="Cdt-6d-yHR" firstAttribute="leading" secondItem="rEK-pF-ng0" secondAttribute="leading" constant="40" id="98h-VJ-Oyr"/>
+                <constraint firstAttribute="trailing" secondItem="jbr-Iq-9NX" secondAttribute="trailing" constant="40" id="FH5-Ka-mw7"/>
                 <constraint firstAttribute="bottom" secondItem="Cdt-6d-yHR" secondAttribute="bottom" constant="15" id="IFE-3C-Ra9"/>
-                <constraint firstItem="tS3-FZ-eCA" firstAttribute="leading" secondItem="rEK-pF-ng0" secondAttribute="leading" constant="112" id="MES-Np-gAQ"/>
-                <constraint firstAttribute="trailing" secondItem="6Op-FD-Rnl" secondAttribute="trailing" constant="115" id="MXW-0g-ZP9"/>
+                <constraint firstItem="tS3-FZ-eCA" firstAttribute="leading" secondItem="rEK-pF-ng0" secondAttribute="leading" constant="132" id="MES-Np-gAQ"/>
+                <constraint firstAttribute="trailing" secondItem="6Op-FD-Rnl" secondAttribute="trailing" constant="132" id="MXW-0g-ZP9"/>
                 <constraint firstAttribute="trailing" secondItem="j5w-XR-UWg" secondAttribute="trailing" id="O2r-8q-Qe4"/>
                 <constraint firstAttribute="bottom" secondItem="jbr-Iq-9NX" secondAttribute="bottom" constant="15" id="cZT-q4-bS9"/>
-                <constraint firstAttribute="bottom" secondItem="6Op-FD-Rnl" secondAttribute="bottom" constant="60" id="fgK-PW-1t8">
+                <constraint firstAttribute="bottom" secondItem="6Op-FD-Rnl" secondAttribute="bottom" constant="65" id="fgK-PW-1t8">
                     <variation key="heightClass=regular-widthClass=compact" constant="65"/>
                 </constraint>
-                <constraint firstAttribute="bottom" secondItem="tS3-FZ-eCA" secondAttribute="bottom" constant="54" id="gds-Lt-Ovk">
+                <constraint firstAttribute="bottom" secondItem="tS3-FZ-eCA" secondAttribute="bottom" constant="65" id="gds-Lt-Ovk">
                     <variation key="heightClass=regular-widthClass=compact" constant="65"/>
                 </constraint>
                 <constraint firstItem="j5w-XR-UWg" firstAttribute="top" secondItem="rEK-pF-ng0" secondAttribute="top" id="hzI-bu-sST"/>

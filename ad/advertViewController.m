@@ -6,6 +6,10 @@
 //  Copyright (c) 2015年 touwho. All rights reserved.
 //
 
+
+
+//  这里是广告页面
+
 #import "advertViewController.h"
 
 #import "tabViewController.h"
@@ -32,7 +36,6 @@
     //    self.scrollView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:self.scrollView];
     
-
     
     //创建3个imageview
     int i;

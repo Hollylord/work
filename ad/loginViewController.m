@@ -22,8 +22,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView *loginView = [[[NSBundle mainBundle] loadNibNamed:@"login" owner:self options:nil] firstObject];
-    loginView.frame = CGRectMake(0, 128/2, 375, 152);
+    UIView *loginView;
+    //  这个就是上面整块，登陆头像注册；
+    
+    if ([[UIScreen mainScreen] bounds].size.width > 375) {
+        loginView = [[[NSBundle mainBundle] loadNibNamed:@"login6p" owner:self options:nil] firstObject];
+        loginView.frame = CGRectMake(0, 128/2, 414, 152);
+    }else{
+        loginView = [[[NSBundle mainBundle] loadNibNamed:@"login" owner:self options:nil] firstObject];
+        loginView.frame = CGRectMake(0, 128/2, 375, 152);
+
+    }
+
     [self.view addSubview:loginView];
     
     self.tableView.delegate = self;
